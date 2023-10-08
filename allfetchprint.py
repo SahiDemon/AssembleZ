@@ -1,27 +1,6 @@
 import scrapy
 from scrapy.http import HtmlResponse
 import sys
-from contextlib import contextmanager
-
-# Define a custom context manager to tee the output to a file and the console
-@contextmanager
-def tee_output(file, console):
-    class TeeOutput:
-        def write(self, data):
-            file.write(data)
-            console.write(data)
-
-        def flush(self):
-            file.flush()
-            console.flush()
-
-    original_stdout = sys.stdout
-    sys.stdout = TeeOutput()
-
-    try:
-        yield None
-    finally:
-        sys.stdout = original_stdout
 
 class ProductSpider(scrapy.Spider):
     name = "product_info"
@@ -76,7 +55,6 @@ class ProductSpider(scrapy.Spider):
         product_info = response.css('.ty-productPage-info::text').getall()
         product_info_text = "\n".join(product_info).strip()
 
-        
         print()
         print("Title:", title.strip() if title else "N/A")
 
@@ -93,19 +71,6 @@ class ProductSpider(scrapy.Spider):
 if __name__ == "__main__":
     from scrapy.crawler import CrawlerProcess
 
-    # Configure Scrapy settings to suppress most logging output
-    settings = {
-        'LOG_LEVEL': 'ERROR',  # Suppress most log messages
-    }
-
-    # Open a log file for writing
-    log_file = open('spider_output.txt', 'w')
-
-    # Use the custom context manager to tee the output to both console and file
-    with tee_output(log_file, sys.stdout):
-        process = CrawlerProcess(settings=settings)
-        process.crawl(ProductSpider)
-        process.start()
-
-    # Close the log file
-    log_file.close()
+    process = CrawlerProcess()
+    process.crawl(ProductSpider)
+    process.start()
