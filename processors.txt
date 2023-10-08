@@ -1,0 +1,1299 @@
+
+
+Title: Intel Core i9-13900K Processor
+Stock: In Stock - Not Sold Seperately
+Price: LKR 205,000
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+CPU Specifications
+Total Cores
+24
+# of Performance-cores
+8
+# of Efficient-cores
+16
+Total Threads
+32
+Max Turbo Frequency
+5.80 GHz
+Intel® Thermal Velocity Boost Frequency
+5.80 GHz
+Intel® Turbo Boost Max Technology 3.0 Frequency ‡
+5.70 GHz
+Performance-core Max Turbo Frequency
+5.40 GHz
+Efficient-core Max Turbo Frequency
+4.30 GHz
+Performance-core Base Frequency
+3.00 GHz
+Efficient-core Base Frequency
+2.20 GHz
+Cache
+36 MB Intel® Smart Cache
+Total L2 Cache
+32 MB
+Processor Base Power
+125 W
+Maximum Turbo Power
+253 W
+Supplemental Information
+Embedded Options Available
+No
+Memory Specifications
+Max Memory Size (dependent on memory type)
+128 GB
+Memory Types
+Up to DDR5 5600 MT/s
+Up to DDR4 3200 MT/s
+Max # of Memory Channels
+2
+Max Memory Bandwidth
+89.6 GB/s
+ECC Memory Supported ‡
+Yes
+Processor Graphics
+Processor Graphics ‡
+Intel® UHD Graphics 770
+Graphics Base Frequency
+300 MHz
+Graphics Max Dynamic Frequency
+1.65 GHz
+Graphics Output
+eDP 1.4b, DP 1.4a, HDMI 2.1
+Execution Units
+32
+Max Resolution (HDMI)‡
+4096 x 2160 @ 60Hz
+Max Resolution (DP)‡
+7680 x 4320 @ 60Hz
+Max Resolution (eDP - Integrated Flat Panel)‡
+5120 x 3200 @ 120Hz
+DirectX* Support
+12
+OpenGL* Support
+4.5
+OpenCL* Support
+3.0
+Multi-Format Codec Engines
+2
+Intel® Quick Sync Video
+Yes
+Intel® Clear Video HD Technology
+Yes
+# of Displays Supported ‡
+4
+Device ID
+0xA780
+Expansion Options
+Direct Media Interface (DMI) Revision
+4.0
+Max # of DMI Lanes
+8
+Scalability
+1S Only
+PCI Express Revision
+5.0 and 4.0
+PCI Express Configurations ‡
+Up to 1x16+4, 2x8+4
+Max # of PCI Express Lanes
+20
+Package Specifications
+Sockets Supported
+FCLGA1700
+Max CPU Configuration
+1
+TJUNCTION
+100°C
+Advanced Technologies
+Intel® Gaussian & Neural Accelerator
+3.0
+Intel® Thread Director
+Yes
+Intel® Deep Learning Boost (Intel® DL Boost)
+Yes
+Intel® Speed Shift Technology
+Yes
+Intel® Thermal Velocity Boost
+Yes
+Intel® Turbo Boost Max Technology 3.0 ‡
+Yes
+Intel® Turbo Boost Technology ‡
+2.0
+Intel® Hyper-Threading Technology ‡
+Yes
+Intel® 64 ‡
+Yes
+Instruction Set
+64-bit
+Instruction Set Extensions
+Intel® SSE4.1, Intel® SSE4.2, Intel® AVX2
+Idle States
+Yes
+Enhanced Intel SpeedStep® Technology
+Yes
+Thermal Monitoring Technologies
+Yes
+Intel® Volume Management Device (VMD)
+Yes
+Security & Reliability
+Intel® Standard Manageability (ISM) ‡
+Yes
+Intel® Control-Flow Enforcement Technology
+Yes
+Intel® AES New Instructions
+Yes
+Secure Key
+Yes
+Intel® OS Guard
+Yes
+Intel® Trusted Execution Technology ‡
+Yes
+Execute Disable Bit ‡
+Yes
+Intel® Boot Guard
+Yes
+Mode-based Execute Control (MBEC)
+Yes
+Intel® Stable IT Platform Program (SIPP)
+Yes
+Intel® Virtualization Technology with Redirect Protection (VT-rp) ‡
+Yes
+Intel® Virtualization Technology (VT-x) ‡
+Yes
+Intel® Virtualization Technology for Directed I/O (VT-d) ‡
+Yes
+Intel® VT-x with Extended Page Tables (EPT) ‡
+Yes
+
+
+
+Title: AMD  Ryzen 5 7600X
+Stock: In Stock - Not Sold Separately
+Price: LKR 89,000
+
+Category: Processors
+
+Product Info:
+3 years Warranty
+of CPU Cores
+6
+# of Threads
+12
+Max. Boost Clock
+Up to 5.3GHz
+Base Clock
+4.7GHz
+L1 Cache
+384KB
+L2 Cache
+6MB
+L3 Cache
+32MB
+Default TDP
+105W
+Processor Technology for CPU Cores
+TSMC 5nm FinFET
+Unlocked for Overclocking
+Yes
+CPU Socket
+AM5
+Thermal Solution (PIB)
+Not included
+Max. Operating Temperature (Tjmax)
+95°C
+Launch Date
+9/27/2022
+*OS Support
+Windows 11 - 64-Bit Edition
+Windows 10 - 64-Bit Edition
+RHEL x86 64-Bit
+Ubuntu x86 64-Bit
+*Operating System (OS) support will vary by manufacturer.
+
+
+
+Title: AMD Ryzen™ 7 7700X (up to 5.4Ghz 8-cores 16-threads) 40M Cache
+Stock: In Stock - Not Sold Separately
+Price: LKR 110,000
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+General Specifications
+Platform
+Desktop
+Market Segment
+Enthusiast Desktop
+Product Family
+AMD Ryzen™ Processors
+Product Line
+AMD Ryzen™ 7 Desktop Processors
+AMD PRO Technologies
+No
+Consumer Use
+Yes
+Regional Availability
+Global
+Former Codename
+"Raphael AM5"
+Architecture
+"Zen 4"
+# of CPU Cores
+8
+Multithreading (SMT)
+Yes
+# of Threads
+16
+Max. Boost Clock
+Up to 5.4GHz
+Base Clock
+4.5GHz
+L1 Cache
+512KB
+L2 Cache
+8MB
+L3 Cache
+32MB
+Default TDP
+105W
+Processor Technology for I/O Die
+TSMC 6nm FinFET
+CPU Compute Die (CCD) Size
+71mm²
+I/O Die (IOD) Size
+122mm²
+Package Die Count
+2
+Unlocked for Overclocking
+Yes
+AMD EXPO™ Memory Overclocking Technology
+Yes
+Precision Boost Overdrive
+Yes
+Curve Optimizer Voltage Offsets
+Yes
+AMD Ryzen™ Master Support
+Yes
+CPU Socket
+AM5
+Supporting Chipsets
+X670E
+X670
+B650E
+B650
+CPU Boost Technology
+Precision Boost 2
+Instruction Set
+x86-64
+Supported Extensions
+AES, AMD-V, AVX, AVX2, AVX512, FMA3, MMX(+), SHA, SSE, SSE2, SSE3, SSE4.1, SSE4.2, SSE4A, SSSE3, x86-64
+Thermal Solution (PIB)
+Not included
+Max. Operating Temperature (Tjmax)
+95°C
+Launch Date
+9/27/2022
+*OS Support
+Windows 11 - 64-Bit Edition
+Windows 10 - 64-Bit Edition
+RHEL x86 64-Bit
+Ubuntu x86 64-Bit
+*Operating System (OS) support will vary by manufacturer.
+Connectivity
+USB Type-C® Support
+Yes
+Native USB 3.2 Gen 2 (10Gbps) Ports
+4
+Native USB 3.2 Gen 1 (5Gbps) Ports
+0
+Native USB 2.0 (480Mbps) Ports
+1
+Native SATA Ports
+0
+Native PCIe® Lanes (Total/Usable)
+28/24
+Additional Usable PCIe Lanes from Motherboard
+AMD X670E
+12x Gen4
+AMD X670
+12x Gen4
+AMD B650E
+8x Gen4
+AMD B650
+8x Gen4
+NVMe Support
+Boot, RAID0, RAID1, RAID10
+System Memory Type
+DDR5
+Memory Channels
+2
+Max. Memory
+128GB
+System Memory Subtype
+UDIMM
+Max Memory Speed
+2x1R
+DDR5-5200
+2x2R
+DDR5-5200
+4x1R
+DDR5-3600
+4x2R
+DDR5-3600
+ECC Support
+Yes (Requires mobo support)
+Graphics Capabilities
+Integrated Graphics
+Yes
+Graphics Model
+AMD Radeon™ Graphics
+Graphics Core Count
+2
+Graphics Frequency
+2200 MHz
+GPU Base
+400 MHz
+USB Type-C® DisplayPort™ Alternate Mode
+Yes
+Product IDs
+Product ID Boxed
+100-100000591WOF
+Product ID Tray
+100-000000591
+Key Features
+Supported Technologies
+AMD EXPO™ Technology
+AMD Ryzen™ Technologies
+
+
+
+Title: Intel Core i7-12700F Processor
+Stock: In stock "Not sold separately"
+Price: LKR 105,000
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+Total Cores
+12
+# of Performance-cores
+8
+# of Efficient-cores
+4
+Total Threads
+20
+Max Turbo Frequency
+4.90 GHz
+Intel® Turbo Boost Max Technology 3.0 Frequency ‡
+4.90 GHz
+Performance-core Max Turbo Frequency
+4.80 GHz
+Efficient-core Max Turbo Frequency
+3.60 GHz
+Performance-core Base Frequency
+2.10 GHz
+Efficient-core Base Frequency
+1.60 GHz
+Cache
+25 MB Intel® Smart Cache
+Total L2 Cache
+12 MB
+Processor Base Power
+65 W
+Maximum Turbo Power
+180 W
+Supplemental Information
+Embedded Options Available
+No
+Memory Specifications
+Max Memory Size (dependent on memory type)
+128 GB
+Memory Types
+Up to DDR5 4800 MT/s
+Up to DDR4 3200 MT/s
+Max # of Memory Channels
+2
+Max Memory Bandwidth
+76.8 GB/s
+Expansion Options
+Direct Media Interface (DMI) Revision
+4.0
+Max # of DMI Lanes
+8
+Scalability
+1S Only
+PCI Express Revision
+5.0 and 4.0
+PCI Express Configurations ‡
+Up to 1x16+4, 2x8+4
+Max # of PCI Express Lanes
+20
+Package Specifications
+Max CPU Configuration
+1
+Thermal Solution Specification
+PCG 2020C
+TJUNCTION
+100°C
+Package Size
+45.0 mm x 37.5 mm
+Advanced Technologies
+Intel® Gaussian & Neural Accelerator
+3.0
+Intel® Thread Director
+Yes
+Intel® Deep Learning Boost (Intel® DL Boost)
+Yes
+Intel® Optane™ Memory Supported ‡
+Yes
+Intel® Speed Shift Technology
+Yes
+Intel® Turbo Boost Max Technology 3.0 ‡
+Yes
+Intel® Turbo Boost Technology ‡
+2.0
+Intel® Hyper-Threading Technology ‡
+Yes
+Intel® Virtualization Technology (VT-x) ‡
+Yes
+Intel® Virtualization Technology for Directed I/O (VT-d) ‡
+Yes
+Intel® VT-x with Extended Page Tables (EPT) ‡
+Yes
+Intel® 64 ‡
+Yes
+Instruction Set
+64-bit
+Instruction Set Extensions
+Intel® SSE4.1, Intel® SSE4.2, Intel® AVX2
+Idle States
+Yes
+Enhanced Intel SpeedStep® Technology
+Yes
+Thermal Monitoring Technologies
+Yes
+Intel® Volume Management Device (VMD)
+Yes
+Security & Reliability
+Intel® AES New Instructions
+Yes
+Secure Key
+Yes
+Intel® OS Guard
+Yes
+Execute Disable Bit ‡
+Yes
+Intel® Boot Guard
+Yes
+Mode-based Execute Control (MBE)
+Yes
+Intel® Control-Flow Enforcement Technology
+Yes
+
+
+
+Title: Intel® Core™ i7-12700 Processor (25M Cache, up to 4.90)
+Stock: In Stock - Not Sold Separately
+Price: LKR 112,000
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+Product Collection
+12th Generation Intel® Core™ i7 Processors
+Code Name
+Products formerly Alder Lake
+Vertical Segment
+Desktop
+Processor Number
+i7-12700
+Status
+Launched
+Launch Date
+Q1'22
+Lithography
+Intel 7
+Use Conditions
+PC/Client/Tablet, Workstation
+CPU Specifications
+Total Cores
+12
+# of Performance-cores
+8
+# of Efficient-cores
+4
+Total Threads
+20
+Max Turbo Frequency
+4.90 GHz
+Intel® Turbo Boost Max Technology 3.0 Frequency ‡
+4.90 GHz
+Performance-core Max Turbo Frequency
+4.80 GHz
+Efficient-core Max Turbo Frequency
+3.60 GHz
+Performance-core Base Frequency
+2.10 GHz
+Efficient-core Base Frequency
+1.60 GHz
+Cache
+25 MB Intel® Smart Cache
+Total L2 Cache
+12 MB
+Processor Base Power
+65 W
+Maximum Turbo Power
+180 W
+Supplemental Information
+Embedded Options Available
+Yes
+Datasheet
+View now
+Memory Specifications
+Max Memory Size (dependent on memory type)
+128 GB
+Memory Types
+Up to DDR5 4800 MT/s
+Up to DDR4 3200 MT/s
+Max # of Memory Channels
+2
+Max Memory Bandwidth
+76.8 GB/s
+ECC Memory Supported ‡
+Yes
+Processor Graphics
+Processor Graphics ‡
+Intel® UHD Graphics 770
+Graphics Base Frequency
+300 MHz
+Graphics Max Dynamic Frequency
+1.50 GHz
+Graphics Output
+eDP 1.4b, DP 1.4a, HDMI 2.1
+Execution Units
+32
+Max Resolution (HDMI)‡
+4096 x 2160 @ 60Hz
+Max Resolution (DP)‡
+7680 x 4320 @ 60Hz
+Max Resolution (eDP - Integrated Flat Panel)‡
+5120 x 3200 @ 120Hz
+DirectX* Support
+12
+OpenGL* Support
+4.5
+OpenCL* Support
+3.0
+Multi-Format Codec Engines
+2
+Intel® Quick Sync Video
+Yes
+Intel® Clear Video HD Technology
+Yes
+# of Displays Supported ‡
+4
+Device ID
+0x4680
+Expansion Options
+Direct Media Interface (DMI) Revision
+4.0
+Max # of DMI Lanes
+8
+Scalability
+1S Only
+PCI Express Revision
+5.0 and 4.0
+PCI Express Configurations ‡
+Up to 1x16+4, 2x8+4
+Max # of PCI Express Lanes
+20
+Package Specifications
+Sockets Supported
+FCLGA1700
+Max CPU Configuration
+1
+Thermal Solution Specification
+PCG 2020C
+TJUNCTION
+100°C
+Package Size
+45.0 mm x 37.5 mm
+Advanced Technologies
+Intel® Gaussian & Neural Accelerator
+3.0
+Intel® Thread Director
+Yes
+Intel® Deep Learning Boost (Intel® DL Boost)
+Yes
+Intel® Optane™ Memory Supported ‡
+Yes
+Intel® Speed Shift Technology
+Yes
+Intel® Turbo Boost Max Technology 3.0 ‡
+Yes
+Intel® Turbo Boost Technology ‡
+2.0
+Intel® Hyper-Threading Technology ‡
+Yes
+Intel® 64 ‡
+Yes
+Instruction Set
+64-bit
+Instruction Set Extensions
+Intel® SSE4.1, Intel® SSE4.2, Intel® AVX2
+Idle States
+Yes
+Enhanced Intel SpeedStep® Technology
+Yes
+Thermal Monitoring Technologies
+Yes
+Intel® Volume Management Device (VMD)
+Yes
+Security & Reliability
+Intel vPro® Platform Eligibility ‡
+Yes
+Intel vPro® Enterprise Platform Eligibility ‡
+Yes
+Intel vPro® Essentials Platform Eligibility ‡
+Yes
+Intel® Threat Detection Technology (TDT)
+Yes
+Intel® Active Management Technology (AMT) ‡
+Yes
+Intel® Standard Manageability (ISM) ‡
+Yes
+Intel® One-Click Recovery ‡
+Yes
+Intel® Hardware Shield Eligibility ‡
+Yes
+Intel® Control-Flow Enforcement Technology
+Yes
+Intel® Total Memory Encryption - Multi Key
+Yes
+Intel® Total Memory Encryption
+Yes
+Intel® AES New Instructions
+Yes
+Secure Key
+Yes
+Intel® OS Guard
+Yes
+Intel® Trusted Execution Technology ‡
+Yes
+Execute Disable Bit ‡
+Yes
+Intel® Boot Guard
+Yes
+Mode-based Execute Control (MBEC)
+Yes
+Intel® Stable IT Platform Program (SIPP)
+Yes
+Intel® Virtualization Technology with Redirect Protection (VT-rp) ‡
+Yes
+Intel® Virtualization Technology (VT-x) ‡
+Yes
+Intel® Virtualization Technology for Directed I/O (VT-d) ‡
+Yes
+Intel® VT-x with Extended Page Tables (EPT) ‡
+Yes
+
+
+
+Title: Intel Core i5-12400 Processor
+Stock: In stock "not sold separately"
+Price: LKR 62,500
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+Total Cores 6
+# of Performance-cores6
+# of Efficient-cores0
+Total Threads 12
+Max Turbo Frequency 4.40 GHz
+Performance-core Max Turbo Frequency 4.40 GHz
+Performance-core Base Frequency2.50 GHz
+Cache 18 MB Intel® Smart Cache
+Total L2 Cache7.5 MB
+Processor Base Power 65 W
+Maximum Turbo Power 117 W
+Supplemental Information
+Embedded Options Available No
+Memory Specifications
+Max Memory Size (dependent on memory type) 128 GB
+Memory Types Up to DDR5 4800 MT/s
+Up to DDR4 3200 MT/s
+Max # of Memory Channels 2
+Max Memory Bandwidth 76.8 GB/s
+Processor Graphics
+Processor Graphics ‡ Intel® UHD Graphics 730
+Graphics Base Frequency 300 MHz
+Graphics Max Dynamic Frequency 1.45 GHz
+Graphics Output eDP 1.4b, DP 1.4a, HDMI 2.1
+Execution Units 24
+Max Resolution (HDMI)‡ 4096 x 2160 @ 60Hz
+Max Resolution (DP)‡ 7680 x 4320 @ 60Hz
+Max Resolution (eDP - Integrated Flat Panel)‡ 5120 x 3200 @ 120Hz
+DirectX* Support 12
+OpenGL* Support 4.5
+Multi-Format Codec Engines 1
+Intel® Quick Sync Video Yes
+Intel® Clear Video HD Technology Yes
+# of Displays Supported ‡4
+Device ID0x4692 / 0x4682
+OpenCL* Support 2.1
+Expansion Options
+Direct Media Interface (DMI) Revision4.0
+Max # of DMI Lanes8
+Scalability1S Only
+PCI Express Revision 5.0 and 4.0
+PCI Express Configurations ‡ Up to 1x16+4, 2x8+4
+Max # of PCI Express Lanes 20
+Package Specifications
+Max CPU Configuration1
+Thermal Solution Specification PCG 2020C
+TJUNCTION 100°C
+Package Size45.0 mm x 37.5 mm
+Advanced Technologies
+Intel® Gaussian & Neural Accelerator 3.0
+Intel® Thread DirectorNo
+Intel® Deep Learning Boost (Intel® DL Boost) Yes
+Intel® Optane™ Memory Supported ‡ Yes
+Intel® Speed Shift Technology Yes
+Intel® Turbo Boost Max Technology 3.0 ‡ No
+Intel® Turbo Boost Technology ‡ 2.0
+Intel® Hyper-Threading Technology ‡ Yes
+Intel® Virtualization Technology (VT-x) ‡ Yes
+Intel® Virtualization Technology for Directed I/O (VT-d) ‡ Yes
+Intel® VT-x with Extended Page Tables (EPT) ‡ Yes
+Intel® 64 ‡ Yes
+Instruction Set 64-bit
+Instruction Set Extensions Intel® SSE4.1, Intel® SSE4.2, Intel® AVX2
+Idle States Yes
+Enhanced Intel SpeedStep® Technology Yes
+Thermal Monitoring Technologies Yes
+Intel® Volume Management Device (VMD) Yes
+Security & Reliability
+Intel® AES New Instructions Yes
+Secure Key Yes
+Intel® OS GuardYes
+Execute Disable Bit ‡ Yes
+Intel® Boot Guard Yes
+Mode-based Execute Control (MBE) Yes
+Intel® Control-Flow Enforcement Technology Yes
+
+
+
+Title: Intel Core i3-10100 Processor
+Stock: out of stock
+Price: LKR 38,000
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+CPU Specifications
+Total Cores 4
+Total Threads 8
+Max Turbo Frequency 4.30 GHz
+Intel® Turbo Boost Technology 2.0 Frequency‡ 4.30 GHz
+Processor Base Frequency 3.60 GHz
+Cache 6 MB Intel® Smart Cache
+Bus Speed 8 GT/s
+TDP 65 W
+Supplemental Information
+Marketing StatusLaunched
+Launch Date Q2'20
+Embedded Options Available No
+DatasheetView now
+Memory Specifications
+Max Memory Size (dependent on memory type) 128 GB
+Memory Types DDR4-2666
+Max # of Memory Channels 2
+Max Memory Bandwidth 41.6 GB/s
+ECC Memory Supported ‡ No
+Processor Graphics
+Processor Graphics ‡ Intel® UHD Graphics 630
+Graphics Base Frequency 350 MHz
+Graphics Max Dynamic Frequency 1.10 GHz
+Graphics Video Max Memory 64 GB
+4K Support Yes, at 60Hz
+Max Resolution (HDMI)‡ 4096 x 2160@30Hz
+Max Resolution (DP)‡ 4096 x 2304@60Hz
+Max Resolution (eDP - Integrated Flat Panel)‡ 4096 x 2304@60Hz
+DirectX* Support 12
+OpenGL* Support 4.5
+Intel® Quick Sync Video Yes
+Intel® InTru™ 3D Technology Yes
+Intel® Clear Video HD Technology Yes
+Intel® Clear Video Technology Yes
+# of Displays Supported ‡3
+Device ID0x9BC8
+Expansion Options
+Scalability1S Only
+PCI Express Revision 3.0
+PCI Express Configurations ‡ Up to 1x16, 2x8, 1x8+2x4
+Max # of PCI Express Lanes 16
+Package Specifications
+Sockets Supported FCLGA1200
+Max CPU Configuration1
+Thermal Solution Specification PCG 2015C
+TJUNCTION 100°C
+Package Size37.5mm x 37.5mm
+Advanced Technologies
+Intel® Optane™ Memory Supported ‡ Yes
+Intel® Thermal Velocity Boost No
+Intel® Turbo Boost Max Technology 3.0 ‡ No
+Intel® Turbo Boost Technology ‡ 2.0
+Intel® Hyper-Threading Technology ‡ Yes
+Intel® Transactional Synchronization Extensions No
+Intel® 64 ‡ Yes
+Instruction Set 64-bit
+Instruction Set Extensions Intel® SSE4.1, Intel® SSE4.2, Intel® AVX2
+Idle States Yes
+Enhanced Intel SpeedStep® Technology Yes
+Thermal Monitoring Technologies Yes
+Intel® Identity Protection Technology ‡ Yes
+Security & Reliability
+Intel® AES New Instructions Yes
+Secure Key Yes
+Intel® Software Guard Extensions (Intel® SGX) Yes with Intel® ME
+Intel® OS GuardYes
+Intel® Trusted Execution Technology ‡ No
+Execute Disable Bit ‡ Yes
+Intel® Boot Guard Yes
+Intel® Stable IT Platform Program (SIPP) No
+Intel® Virtualization Technology (VT-x) ‡ Yes
+Intel® Virtualization Technology for Directed I/O (VT-d) ‡ Yes
+Intel® VT-x with Extended Page Tables (EPT) ‡ Yes
+
+
+
+Title: AMD  Ryzen 9 5950X
+Stock: In Stock - Not Sold Separately
+Price: LKR 105,000
+
+Category: Processors
+
+Product Info:
+2 Years Warranty
+Specifications
+# of CPU Cores
+16
+# of Threads
+32
+Base Clock
+3.4GHz
+Max Boost Clock
+Up to 4.9GHz
+Total L2 Cache
+8MB
+Total L3 Cache
+64MB
+Unlocked
+Yes
+CMOS
+TSMC 7nm FinFET
+Package
+AM4
+PCI Express® Version
+PCIe 4.0
+Thermal Solution (PIB)
+Not included
+Default TDP / TDP
+105W
+Max Temps
+90°C
+System Memory
+System Memory Specification
+Up to 3200MHz
+System Memory Type
+DDR4
+Key Features
+Supported Technologies
+AMD "Zen 3" Core Architecture
+AMD StoreMI Technology
+AMD Ryzen™ Master Utility
+AMD Ryzen™ VR-Ready Premium
+
+
+
+Title: AMD  Ryzen™ 7 5700X
+Stock: In Stock - Not Sold Separately
+Price: LKR 64,000
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+Product Line
+AMD Ryzen™ 7 Desktop Processors
+Consumer Use
+Yes
+Regional Availability
+Global, China, NA, EMEA, APJ, LATAM
+Former Codename
+"Vermeer"
+Architecture
+"Zen 3"
+# of CPU Cores
+8
+Multithreading (SMT)
+Yes
+# of Threads
+16
+Max. Boost Clock
+Up to 4.6GHz
+Base Clock
+3.4GHz
+L1 Cache
+512KB
+L2 Cache
+4MB
+L3 Cache
+32MB
+Default TDP
+65W
+Processor Technology for CPU Cores
+TSMC 7nm FinFET
+Processor Technology for I/O Die
+12nm (Globalfoundries)
+CPU Compute Die (CCD) Size
+74mm²
+I/O Die (IOD) Size
+125mm²
+Package Die Count
+2
+Unlocked for Overclocking
+Yes
+CPU Socket
+AM4
+Socket Count
+1P
+Supporting Chipsets
+X570
+X470
+X370
+B550
+B450
+B350
+A520
+CPU Boost Technology
+Precision Boost 2
+Instruction Set
+x86-64
+Supported Extensions
+AES, AMD-V, AVX, AVX2, FMA3, MMX(+), SHA, SSE, SSE2, SSE3, SSE4.1, SSE4.2, SSE4A, SSSE3, x86-64
+Thermal Solution (PIB)
+Not included
+Max. Operating Temperature (Tjmax)
+90°C
+Launch Date
+4/4/2022
+*OS Support
+Windows 11 - 64-Bit Edition
+Windows 10 - 64-Bit Edition
+RHEL x86 64-Bit
+Ubuntu x86 64-Bit
+*Operating System (OS) support will vary by manufacturer.
+Connectivity
+USB Type-C® Support
+Yes
+Native USB 3.2 Gen 2 (10Gbps) Ports
+4
+Native USB 3.2 Gen 1 (5Gbps) Ports
+0
+Native USB 2.0 (480Mbps) Ports
+0
+Native SATA Ports
+2
+PCI Express® Version
+PCIe 4.0
+Native PCIe® Lanes (Total/Usable)
+24/20
+Additional Usable PCIe Lanes from Motherboard
+AMD X570
+16x Gen 4
+AMD X470
+2x Gen 3
+AMD X470
+8x Gen 2
+NVMe Support
+Boot, RAID0, RAID1, RAID10
+System Memory Type
+DDR4
+Memory Channels
+2
+Max. Memory
+128GB
+System Memory Subtype
+UDIMM
+System Memory Specification
+Up to 3200MHz
+
+
+
+Title: AMD Ryzen™ 9 7900X (up to 5.6Ghz 12-cores 24-threads) 76M Cache
+Stock: In Stock - Not Sold Separately
+Price: LKR 155,000
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+General Specifications
+Platform
+Desktop
+Product Family
+AMD Ryzen™ Processors
+Product Line
+AMD Ryzen™ 9 Desktop Processors
+# of CPU Cores
+12
+# of Threads
+24
+Max. Boost Clock
+Up to 5.6GHz
+Base Clock
+4.7GHz
+L1 Cache
+768KB
+L2 Cache
+12MB
+L3 Cache
+64MB
+Default TDP
+170W
+Processor Technology for CPU Cores
+TSMC 5nm FinFET
+Unlocked for Overclocking
+Yes
+CPU Socket
+AM5
+Thermal Solution (PIB)
+Not included
+Max. Operating Temperature (Tjmax)
+95°C
+Launch Date
+9/27/2022
+*OS Support
+Windows 11 - 64-Bit Edition
+Windows 10 - 64-Bit Edition
+RHEL x86 64-Bit
+Ubuntu x86 64-Bit
+*Operating System (OS) support will vary by manufacturer.
+Connectivity
+System Memory Type
+DDR5
+Memory Channels
+2
+Max Memory Speed
+2x1R
+DDR5-5200
+2x2R
+DDR5-5200
+4x1R
+DDR5-3600
+4x2R
+DDR5-3600
+Graphics Capabilities
+Graphics Model
+AMD Radeon™ Graphics
+Graphics Core Count
+2
+Graphics Frequency
+2200 MHz
+GPU Base
+400 MHz
+Product IDs
+Product ID Boxed
+100-100000589WOF
+Product ID Tray
+100-000000589
+Key Features
+Supported Technologies
+AMD EXPO™ Technology
+AMD Ryzen™ Technologies
+
+
+
+Title: AMD Ryzen™ 9 7950X (up to 5.7Ghz 16-cores 32-threads) 80M Cache
+Stock: In Stock - Not Sold Separately
+Price: LKR 199,000
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+General Specifications
+Platform
+Desktop
+Product Family
+AMD Ryzen™ Processors
+Product Line
+AMD Ryzen™ 9 Desktop Processors
+# of CPU Cores
+16
+# of Threads
+32
+Max. Boost Clock
+Up to 5.7GHz
+Base Clock
+4.5GHz
+L1 Cache
+1MB
+L2 Cache
+16MB
+L3 Cache
+64MB
+Default TDP
+170W
+Processor Technology for CPU Cores
+TSMC 5nm FinFET
+Unlocked for Overclocking
+Yes
+CPU Socket
+AM5
+Thermal Solution (PIB)
+Not included
+Max. Operating Temperature (Tjmax)
+95°C
+Launch Date
+9/27/2022
+*OS Support
+Windows 11 - 64-Bit Edition
+Windows 10 - 64-Bit Edition
+RHEL x86 64-Bit
+Ubuntu x86 64-Bit
+*Operating System (OS) support will vary by manufacturer.
+Connectivity
+System Memory Type
+DDR5
+Memory Channels
+2
+Max Memory Speed
+2x1R
+DDR5-5200
+2x2R
+DDR5-5200
+4x1R
+DDR5-3600
+4x2R
+DDR5-3600
+Graphics Capabilities
+Graphics Model
+AMD Radeon™ Graphics
+Graphics Core Count
+2
+Graphics Frequency
+2200 MHz
+GPU Base
+400 MHz
+Product IDs
+Product ID Boxed
+100-100000514WOF
+Product ID Tray
+100-000000514
+Key Features
+Supported Technologies
+AMD EXPO™ Technology
+AMD Ryzen™ Technologies
+
+
+
+Title: Intel Core i7-13700K Processor
+Stock: In Stock - Not Sold Separately
+Price: LKR 145,500
+
+Category: Processors
+
+Product Info:
+3 Years Warranty
+CPU Specifications
+Total Cores 16
+# of Performance-cores8
+# of Efficient-cores8
+Total Threads 24
+Max Turbo Frequency 5.40 GHz
+Intel® Turbo Boost Max Technology 3.0 Frequency ‡ 5.40 GHz
+Performance-core Max Turbo Frequency 5.30 GHz
+Efficient-core Max Turbo Frequency 4.20 GHz
+Performance-core Base Frequency3.40 GHz
+Efficient-core Base Frequency2.50 GHz
+Cache 30 MB Intel® Smart Cache
+Total L2 Cache24 MB
+Processor Base Power 125 W
+Maximum Turbo Power 253 W
+Supplemental Information
+Embedded Options Available No
+Memory Specifications
+Max Memory Size (dependent on memory type) 128 GB
+Memory Types Up to DDR5 5600 MT/s
+Up to DDR4 3200 MT/s
+Max # of Memory Channels 2
+Max Memory Bandwidth 89.6 GB/s
+ECC Memory Supported ‡ Yes
+Processor Graphics
+Processor Graphics ‡ Intel® UHD Graphics 770
+Graphics Base Frequency 300 MHz
+Graphics Max Dynamic Frequency 1.60 GHz
+Graphics Output eDP 1.4b, DP 1.4a, HDMI 2.1
+Execution Units 32
+Max Resolution (HDMI)‡ 4096 x 2160 @ 60Hz
+Max Resolution (DP)‡ 7680 x 4320 @ 60Hz
+Max Resolution (eDP - Integrated Flat Panel)‡ 5120 x 3200 @ 120Hz
+DirectX* Support 12
+OpenGL* Support 4.5
+OpenCL* Support 3.0
+Multi-Format Codec Engines 2
+Intel® Quick Sync Video Yes
+Intel® Clear Video HD Technology Yes
+# of Displays Supported ‡4
+Device ID0xA780
+Expansion Options
+Direct Media Interface (DMI) Revision4.0
+Max # of DMI Lanes8
+Scalability1S Only
+PCI Express Revision 5.0 and 4.0
+PCI Express Configurations ‡ Up to 1x16+4, 2x8+4
+Max # of PCI Express Lanes 20
+Package Specifications
+Sockets Supported FCLGA1700
+Max CPU Configuration1
+TJUNCTION 100°C
+Advanced Technologies
+Intel® Gaussian & Neural Accelerator 3.0
+Intel® Thread DirectorYes
+Intel® Deep Learning Boost (Intel® DL Boost) Yes
+Intel® Speed Shift Technology Yes
+Intel® Turbo Boost Max Technology 3.0 ‡ Yes
+Intel® Turbo Boost Technology ‡ 2.0
+Intel® Hyper-Threading Technology ‡ Yes
+Intel® 64 ‡ Yes
+Instruction Set 64-bit
+Instruction Set Extensions Intel® SSE4.1, Intel® SSE4.2, Intel® AVX2
+Idle States Yes
+Enhanced Intel SpeedStep® Technology Yes
+Thermal Monitoring Technologies Yes
+Intel® Volume Management Device (VMD) Yes
+Security & Reliability
+Intel® Standard Manageability (ISM) ‡ Yes
+Intel® Control-Flow Enforcement Technology Yes
+Intel® AES New Instructions Yes
+Secure Key Yes
+Intel® OS GuardYes
+Intel® Trusted Execution Technology ‡ Yes
+Execute Disable Bit ‡ Yes
+Intel® Boot Guard Yes
+Mode-based Execute Control (MBEC) Yes
+Intel® Virtualization Technology (VT-x) ‡ Yes
+Intel® Virtualization Technology for Directed I/O (VT-d) ‡ Yes
+Intel® VT-x with Extended Page Tables (EPT) ‡ Yes
+

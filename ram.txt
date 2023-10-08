@@ -1,0 +1,314 @@
+
+
+Title: CORSAIR VENGEANCE 32GB (2x16GB) DDR5 5200MHz Kit
+Stock: In Stock
+Price: LKR 36,000
+
+Category: Memory (RAM)
+
+Product Info:
+3 Years Warranty
+CORSAIR VENGEANCE DDR5, optimized for Intel® motherboards, delivers higher frequencies and greater capacities of DDR5 technology in a high-quality, compact module that suits your system.
+Fan Included No
+Memory Series VENGEANCE DDR5
+Memory Type DDR5
+PMIC Type Overclock PMIC
+Memory Size 32GB (2 x 16GB)
+Tested Latency 38-38-38-84
+Tested Voltage 1.25
+Tested Speed 5200
+Memory Color BLACK
+SPD Latency 40-40-40-77
+SPD Speed 4800MHz
+SPD Voltage 1.1V
+Speed Rating PC5-41600 (DDR5-5200)
+Compatibility Intel 600 Series
+Heat Spreader Aluminum
+Package Memory Format DIMM
+Performance Profile XMP 3.0
+Package Memory Pin 288
+
+
+
+Title: CORSAIR VENGEANCE 16GB DDR5 5200MHz
+Stock: In Stock
+Price: LKR 17,500
+
+Category: Memory (RAM)
+
+Product Info:
+3 Years Warranty
+Memory Series VENGEANCE DDR5
+Memory Type DDR5
+PMIC Type Overclock PMIC
+Memory Size 16GB (1 x 16GB)
+Tested Latency 40-40-40-77
+Tested Voltage 1.25V
+Tested Speed 5200
+Memory Color BLACK
+SPD Latency 40-40-40-77
+SPD Speed 4800MHz
+SPD Voltage 1.1V
+Speed Rating PC5-41600 (DDR5-5200)
+Compatibility Intel 600 Series
+Heat Spreader Aluminum
+Package Memory Format DIMM
+Performance Profile XMP 3.0
+Package Memory Pin 288
+
+
+
+Title: Adata 8GB DDR4 3200MHZ Laptop RAM
+Stock: In Stock
+Price: LKR 8,500
+
+Category: Memory (RAM)
+
+Product Info:
+2 Years Warranty
+Memory Type
+DDR4
+Form Factor
+SO-DIMM
+Capacity
+8GB
+Speeds
+3200MHz
+Operating Voltage
+DDR4 STD 1.2V
+Operating temperature
+0°C to 85°C
+
+
+
+Title: CORSAIR VENGEANCE 32GB (1x32GB) DDR5 DRAM 5200MHz
+Stock: In Stock
+Price: LKR 30,500
+
+Category: Memory (RAM)
+
+Product Info:
+3 Years Warranty
+Fan Included No
+Memory Series VENGEANCE DDR5
+Memory Type DDR5
+PMIC Type Overclock PMIC
+Memory Size 32GB (1 x 32GB)
+Tested Latency 40-40-40-77
+Tested Voltage 1.25V
+Tested Speed 5200
+Memory Color BLACK
+SPD Latency 32-32-32-64
+SPD Speed 4000MHz
+SPD Voltage 1.1V
+Speed Rating PC5-41600 (DDR5-5200)
+Compatibility Intel 600 Series
+Heat Spreader Aluminum
+Package Memory Format DIMM
+Performance Profile XMP 3.0
+Package Memory Pin 288
+
+
+
+Title: ADATA 16GB DDR5 4800MHZ LAPTOP RAM
+Stock: In Stock
+Price: LKR 16,500
+
+Category: Memory (RAM)
+
+Product Info:
+2 Years Warranty
+Memory Type	DDR5
+Form Factor	SO-DIMM
+Capacity	16GB
+Speeds	4800MT/s
+CAS Latencies	40
+Operating Voltage	1.1V
+Operating temperature	0°C to 85°C
+
+
+
+Title: ADATA 32GB DDR5 4800MHZ LAPTOP RAM
+Stock: In Stock
+Price: LKR 35,000
+
+Category: Memory (RAM)
+
+Product Info:
+2 Years Warranty
+Higher Frequencies
+Built-in Power Management IC
+Higher Capacities
+On-Die Error Correcting Code
+Memory Type	DDR5
+Form Factor	SO-DIMM
+Capacity	8GB / 16GB / 32GB
+Speeds	4800MT/s
+CAS Latencies	40
+Operating Voltage	1.1V
+Operating temperature	0°C to 85°C
+
+
+
+Title: Addlink Spider X4 32GB (16X2) DDR4 3200Mhz RGB Gaming Memory
+Stock: Out Of Stock
+Price: LKR 42,000
+
+Category: Memory (RAM)
+
+Product Info:
+3 Years Warranty
+Plug and use. No need for additional power cable required and easily to synchronize with ASUS Aura, Gigabyte RGB Fusion, MSI Mystic Light and ASRock Polychrome Sync integration software.
+Users can manage and change lighting effects according to their personal preferences to crates a unique lighting effects to their brilliant RGB system. For more details, please visit ASUS, GIGABYTE, MSI and ASRock official websites.
+Spider X4 is designed with a 37mm module height compatible with the most PC and smaller form factor chassis.
+Spider X4 Supports Intel XMP 2.0. One-setting and overclocking. Simple setting pre-defined profile in BIOS to enhance the best performance built into PCs. The memory is ready for AMD Ryzen and compatible with both Intel and AMD series platforms.
+
+
+
+Title: Adata 16GB DDR4 3200MHZ Laptop RAM
+Stock: Out of Stock
+Price: LKR 15,000
+
+Category: Memory (RAM)
+
+Product Info:
+2 Years Warranty
+Memory Type
+DDR4
+Form Factor
+SO-DIMM
+Capacity
+16GB
+Speeds
+3200MHz
+Operating Voltage
+DDR4 STD 1.2V
+Operating temperature
+0°C to 85°C
+
+
+
+Title: Crucial 32GB DDR5 4800MHZ LAPTOP RAM
+Stock: out of stock
+Price: LKR 35,000
+
+Category: Memory (RAM)
+
+Product Info:
+2 Years Warranty
+Product Specifications
+Technology - DDR5
+Speed - DDR5-4800
+PC speed - PC5-38400
+Density - 32GB
+Module type - SODIMM
+DIMM type - Unbuffered
+CAS latency - 40
+Extended timings - 40-39-39
+Voltage - 1.1V
+Kit Qty - 1
+
+
+
+Title: Addlink Spider S5 16GB DDR5 4800MHZ RAM
+Stock: Out of Stock
+Price: LKR 19,500
+
+Category: Memory (RAM)
+
+Product Info:
+3 Years Warranty
+Memory 	DDR5
+Module Type 	288 pin UDIMM for DDR5 Motherboard
+Speeds (MHZ) 	4800MHZ
+Latency 	CL36, CL38, CL40
+Voltages 	1.1V, 1.25V, 1.3V
+Module Capacitie 	16GB
+Package 	Single
+Heatsink 	Superior Aluminum heat spreader
+Overclock Feature 	Intel XMP 3.0 Ready
+On-die ECC 	Yes
+Compatibility 	Intel 600 Series
+Dimensions 	133.7(L) *41.0(H) *7.7(W)mm
+
+
+
+Title: CORSAIR VENGEANCE 16GB DDR5 5600MHz
+Stock: In Stock
+Price: LKR 18,500
+
+Category: Memory (RAM)
+
+Product Info:
+3 Years Warranty
+Fan Included
+No
+Memory Color
+BLACK
+Memory Compatibility
+Intel 600 Series,Intel 700 Series
+Memory Detail Compatibility
+Intel 600 Series,Intel 700 Series
+Heat Spreader
+Aluminum
+Memory Series
+VENGEANCE DDR5
+Memory Size
+16GB
+Memory Type
+DDR5
+Package Memory Format
+DIMM
+Package Memory Pin
+288
+Performance Profile
+XMP 3.0
+SPD Latency
+40-40-40-77
+SPD Speed
+4800MHz
+SPD Voltage
+1.1V
+Speed Rating
+PC5-44800 (DDR5-5600)
+Tested Speed
+5600
+Tested Voltage
+1.25V
+Interface
+DDR5
+Weight
+0.12
+Power Draw
+Overclock PMIC
+
+
+
+Title: CORSAIR VENGEANCE 32GB DDR5 5600MHz
+Stock: In Stock
+Price: LKR 31,500
+
+Category: Memory (RAM)
+
+Product Info:
+3 Years Warranty
+CORSAIR VENGEANCE RGB RS DDR4 memory punches up your PC’s aesthetics with dynamic, individually addressable RGB lighting, while delivering outstanding performance optimized for Intel® and AMD motherboards.
+Memory Series VENGEANCE RGB RS
+Memory Type DDR4
+Memory Size 32GB (2 x 16GB)
+Tested Latency 16-20-20-38
+Tested Voltage 1.35
+Tested Speed 3200
+Memory Color BLACK
+LED Lighting RGB
+Single Zone / Multi-Zone Lighting Dynamic Multi-Zone
+SPD Latency 15-15-15-36
+SPD Speed 2133MHz
+SPD Voltage 1.2V
+Speed Rating PC4-25600 (3200MHz)
+Compatibility Intel 300Series,Intel 400 Series,Intel 500 Series,Intel 600 Series,AMD 300 Series,AMD 400 Series,AMD 500 Series
+Heat Spreader Anodized Aluminum
+Package Memory Format DIMM
+Performance Profile XMP 2.0
+Package Memory Pin 288
+
