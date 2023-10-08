@@ -3,7 +3,7 @@ name: Run Python Script
 on:
   schedule:
     - cron: '0 0 * * *' # Schedule to run daily at midnight UTC
-
+  workflow_dispatch:
 jobs:
   run-script:
     runs-on: ubuntu-latest
