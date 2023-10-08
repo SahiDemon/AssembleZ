@@ -20,7 +20,7 @@ jobs:
 
       - name: Install Dependencies
         run: |
-          pip install scrapy==2.10.1
+          pip install scrapy
 
       - name: Run Python Script
         run: python allfetchprint.py
