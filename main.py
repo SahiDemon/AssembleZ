@@ -1,13 +1,11 @@
 import scrapy
-from scrapy.http import HtmlResponse
 import sqlite3
 
 class ProductSpider(scrapy.Spider):
     name = "product_info"
 
     def start_requests(self):
-        # ... (No changes to the category selection logic)
-          # Ask the user for the category choice
+        # Ask the user for the category choice
         print("Choose a category:")
         print("1. Processors")
         print("2. Motherboards")
@@ -36,8 +34,12 @@ class ProductSpider(scrapy.Spider):
                 print("Invalid category choice.")
                 return
 
-        product_listing_url = category_urls[category_choice]
-        yield scrapy.Request(url=product_listing_url, callback=self.parse_product_listing)
+        category_url = category_urls[category_choice]
+
+        # Manually create requests for the first 10 pages
+        for page_number in range(1, 10):
+            page_url = f"{category_url}?page={page_number}"
+            yield scrapy.Request(url=page_url, callback=self.parse_product_listing, meta={'page_number': page_number})
 
     def parse_product_listing(self, response):
         # Extract product links from the listing page
@@ -46,16 +48,16 @@ class ProductSpider(scrapy.Spider):
         # Visit each product page
         for product_link in product_links:
             yield scrapy.Request(url=product_link, callback=self.parse_product_page)
-        
-    def parse_product_page(self, response: HtmlResponse):
-        # Extract the desired information
+
+    def parse_product_page(self, response):
+        # Extract product details
         title = response.css('.ty-productTitle::text').get()
         stock = response.css('.ty-special-msg::text').get()
         category = response.css('.ty-productCategory::text').get()
         price = response.css('.ty-price.ty-price-now::text').get()
         product_info = response.css('.ty-productPage-info::text').getall()
         product_info_text = "\n".join(product_info).strip()
-        
+
         # Connect to the SQLite database
         conn = sqlite3.connect('scraped_data.db')
         cursor = conn.cursor()
