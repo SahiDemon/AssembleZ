@@ -1,6 +1,6 @@
 import scrapy
 from scrapy.http import HtmlResponse
-import sys
+import sqlite3
 
 class ProductSpider(scrapy.Spider):
     name = "product_info"
@@ -45,7 +45,7 @@ class ProductSpider(scrapy.Spider):
         # Visit each product page
         for product_link in product_links:
             yield scrapy.Request(url=product_link, callback=self.parse_product_page)
-
+        
     def parse_product_page(self, response: HtmlResponse):
         # Extract the desired information
         title = response.css('.ty-productTitle::text').get()
@@ -54,23 +54,44 @@ class ProductSpider(scrapy.Spider):
         price = response.css('.ty-price.ty-price-now::text').get()
         product_info = response.css('.ty-productPage-info::text').getall()
         product_info_text = "\n".join(product_info).strip()
+        
+        # Connect to the SQLite database
+        conn = sqlite3.connect('scraped_data.db')
+        cursor = conn.cursor()
 
-        print()
-        print("Title:", title.strip() if title else "N/A")
+        # Create a table for the current category if it doesn't exist
+        category_table_name = ''.join(e for e in category if e.isalnum())
+       
+        cursor.execute(f'''
+            CREATE TABLE IF NOT EXISTS {category_table_name} (
+                id INTEGER PRIMARY KEY,
+                title TEXT,
+                stock TEXT,
+                price TEXT,
+                product_info TEXT
+            )
+        ''')
 
-        print("Stock:", stock.strip() if stock else "N/A")
-
-        print("Price:", "LKR", price.strip() if price else "N/A")
-        print()
-        print("Category:", category.strip() if category else "N/A")
-
-        print("Product Info:")
-        print()
-        print("\n".join(line.strip() for line in product_info_text.splitlines() if line.strip()))
+        # Insert the scraped data into the database
+        cursor.execute(f'''
+            INSERT INTO {category_table_name} (title, stock, price, product_info)
+            VALUES (?, ?, ?, ?)
+        ''', (title, stock, price, product_info_text))
+        conn.commit()
+        print(f"Data for '{title}' inserted for '{category_table_name}' category")
+        # Close the database connection
+        conn.close()
 
 if __name__ == "__main__":
     from scrapy.crawler import CrawlerProcess
 
-    process = CrawlerProcess()
+    # Configure Scrapy settings to suppress most logging output
+    settings = {
+        'LOG_LEVEL': 'ERROR',  # Suppress most log messages
+    }
+
+    process = CrawlerProcess(settings=settings)
     process.crawl(ProductSpider)
     process.start()
+
+
