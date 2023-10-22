@@ -9,7 +9,7 @@ Unlock the Best Deals: Your One-Stop Shop for Sri Lanka Hardware Price Insights!
 
 ## Installation
 
-Install my-project with npm
+Install dependencies
 
 ```bash
 pip install -r requirements.txt
