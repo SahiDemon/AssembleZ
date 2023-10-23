@@ -4,22 +4,42 @@ import sqlite3
 class ProductSpider(scrapy.Spider):
     name = "product_info"
 
-    # Define a list of category URLs
-    category_urls = [
-        "https://www.nanotek.lk/category/processors",
-        "https://www.nanotek.lk/category/motherboards",
-        "https://www.nanotek.lk/category/memory-ram",
-        "https://www.nanotek.lk/category/graphic-cards",
-        "https://www.nanotek.lk/category/casings",
-        # You can add more category URLs here
-    ]
-
     def start_requests(self):
-        # Manually create requests for the first 10 pages of each category
-        for category_url in self.category_urls:
-            for page_number in range(1, 10):
-                page_url = f"{category_url}?page={page_number}"
-                yield scrapy.Request(url=page_url, callback=self.parse_product_listing, meta={'category_url': category_url, 'page_number': page_number})
+        # Ask the user for the category choice
+        print("Choose a category:")
+        print("1. Processors")
+        print("2. Motherboards")
+        print("3. RAM")
+        print("4. Graphic Cards")
+        print("5. Casings")
+        print("6. Custom")
+
+        category_choice = input("Enter the number of the category you want to scrape from nanotek.lk: ")
+
+        # Map category choices to URLs
+        category_urls = {
+            '1': "https://www.nanotek.lk/category/processors",
+            '2': "https://www.nanotek.lk/category/motherboards",
+            '3': "https://www.nanotek.lk/category/memory-ram",
+            '4': "https://www.nanotek.lk/category/graphic-cards",
+            '5': "https://www.nanotek.lk/category/casings",
+        }
+
+        # Validate category choice
+        if category_choice not in category_urls:
+            if category_choice == '6':
+                custom_category_url = input("Enter the custom category URL: ")
+                category_urls['6'] = custom_category_url
+            else:
+                print("Invalid category choice.")
+                return
+
+        category_url = category_urls[category_choice]
+
+        # Manually create requests for the first 10 pages
+        for page_number in range(1, 10):
+            page_url = f"{category_url}?page={page_number}"
+            yield scrapy.Request(url=page_url, callback=self.parse_product_listing, meta={'page_number': page_number})
 
     def parse_product_listing(self, response):
         # Extract product links from the listing page
@@ -27,7 +47,7 @@ class ProductSpider(scrapy.Spider):
 
         # Visit each product page
         for product_link in product_links:
-            yield scrapy.Request(url=product_link, callback=self.parse_product_page, meta={'category_url': response.meta['category_url']})
+            yield scrapy.Request(url=product_link, callback=self.parse_product_page)
 
     def parse_product_page(self, response):
         # Extract product details
