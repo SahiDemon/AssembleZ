@@ -1,5 +1,5 @@
 
-# AssembleZ / PC Radar
+# AssembleZ
 
 Unlock the Best Deals: Your One-Stop Shop for Sri Lanka Hardware Price Insights!
 

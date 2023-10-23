@@ -1,0 +1,27 @@
+name: Webserver AssembleZ
+
+on:
+  workflow_dispatch:  # This triggers the workflow manually
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.x
+
+      - name: Install Flask
+        run: pip install flask
+
+      - name: Install Gunicorn
+        run: pip install gunicorn
+
+      - name: Deploy Application
+        run: |
+          gunicorn -b 0.0.0.0:${{ secrets.PORT }} webapp:app

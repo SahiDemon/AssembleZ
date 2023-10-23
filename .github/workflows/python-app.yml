@@ -1,4 +1,4 @@
-name: Run Python Script
+name: Scheduled Webscarpe
 
 on:
   schedule:
@@ -23,4 +23,4 @@ jobs:
           pip install scrapy
 
       - name: Run Python Script
-        run: python allfetchprint.py
+        run: python main.py
