@@ -7,7 +7,7 @@ app = Flask(__name__)
 def get_product_data(category):
     conn = sqlite3.connect('scraped_data.db')
     cursor = conn.cursor()
-    cursor.execute(f"SELECT title, price, stock FROM {category}")
+    cursor.execute(f"SELECT title, price, stock, image_url FROM {category}")
     products = cursor.fetchall()
     conn.close()
     return products

@@ -11,7 +11,7 @@ class ProductSpider(scrapy.Spider):
         "https://www.nanotek.lk/category/memory-ram",
         "https://www.nanotek.lk/category/graphic-cards",
         "https://www.nanotek.lk/category/casings",
-        # You can add more category URLs here
+        
     ]
 
     def start_requests(self):
@@ -38,6 +38,9 @@ class ProductSpider(scrapy.Spider):
         product_info = response.css('.ty-productPage-info::text').getall()
         product_info_text = "\n".join(product_info).strip()
 
+        # Extract image URL
+        image_url = response.css('.ty-slideContent img::attr(src)').get()
+
         # Connect to the SQLite database
         conn = sqlite3.connect('scraped_data.db')
         cursor = conn.cursor()
@@ -51,7 +54,8 @@ class ProductSpider(scrapy.Spider):
                 title TEXT,
                 stock TEXT,
                 price TEXT,
-                product_info TEXT
+                product_info TEXT,
+                image_url TEXT
             )
         ''')
 
@@ -67,9 +71,9 @@ class ProductSpider(scrapy.Spider):
                 # Update stock and price
                 cursor.execute(f'''
                     UPDATE {category_table_name}
-                    SET stock = ?, price = ?
+                    SET stock = ?, price = ?, image_url = ?
                     WHERE title = ?
-                ''', (stock, price, title))
+                ''', (stock, price, image_url, title))
                 conn.commit()
                 print(f"Data for '{title}' updated in '{category_table_name}' category.")
             else:
@@ -77,9 +81,9 @@ class ProductSpider(scrapy.Spider):
         else:
             # Insert the scraped data into the database
             cursor.execute(f'''
-                INSERT INTO {category_table_name} (title, stock, price, product_info)
-                VALUES (?, ?, ?, ?)
-            ''', (title, stock, price, product_info_text))
+                INSERT INTO {category_table_name} (title, stock, price, product_info, image_url)
+                VALUES (?, ?, ?, ?, ?)
+            ''', (title, stock, price, product_info_text, image_url))
             conn.commit()
             print(f"Data for '{title}' inserted into '{category_table_name}' category.")
 
