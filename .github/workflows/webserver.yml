@@ -1,4 +1,4 @@
-name: Manual Flask Application Deployment
+name: Webserver AssembleZ
 
 on:
   workflow_dispatch:  # This triggers the workflow manually
