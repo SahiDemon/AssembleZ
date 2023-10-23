@@ -1,4 +1,4 @@
-name: Run Python Script
+name: Scheduled Webscarpe
 
 on:
   schedule:
