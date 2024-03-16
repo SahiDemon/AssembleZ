@@ -1,11 +1,11 @@
 from flask import Flask, render_template
-import sqlite3
+import psycopg2
 
 app = Flask(__name__)
 
 # Function to fetch data from the database based on category
 def get_product_data(category):
-    conn = sqlite3.connect('scraped_data.db')
+    conn = psycopg2.connect(user="postgres.cgojfztufkrckindwkuf", password="Sahiya_448866", host="aws-0-us-west-1.pooler.supabase.com", port="5432", dbname="postgres")
     cursor = conn.cursor()
     cursor.execute(f"SELECT title, price, stock, image_url FROM {category}")
     products = cursor.fetchall()
