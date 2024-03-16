@@ -5,7 +5,7 @@ class ProcessorSpider(scrapy.Spider):
     start_urls = ['https://www.nanotek.lk/category/processors?page=4']
 
     def parse(self, response):
-        # Extract text within the <h3> element
+        # Extract text within the <h3> element.
         no_products_msg = response.css('.ty-catPage-noProducts-msg h3::text').get()
         
         if no_products_msg:
@@ -13,4 +13,4 @@ class ProcessorSpider(scrapy.Spider):
         else:
             self.log("No Products message not found")
 
-        # Your scraping logic here
+        # your logic is here 
