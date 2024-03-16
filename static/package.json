@@ -1,0 +1,16 @@
+{
+  "name": "togthr-template",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "parcel-bundler": "^1.6.1"
+  },
+  "scripts": {
+    "tailwind": "tailwindcss -o style.css -c ./tailwind.config.js"
+  },
+  "devDependencies": {
+    "tailwindcss": "^3.0.24",
+    "autoprefixer": "^10.4.7",
+    "postcss": "^8.4.14"
+  }
+}

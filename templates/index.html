@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>AssembleZ</title>
+    <meta property="og:title" content="AssembleZ" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <!--This is the head section-->
+    <!-- <style> ... </style> -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/blaze-slider@latest/dist/blaze.css"
+    />
+    <style>
+      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
+          display: flex;
+        }
+
+        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
+          transform: rotate(90deg);
+        }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylemore.css') }}">
+    <div>
+      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+
+      <div class="home-container">
+        <section class="home-hero">
+          <video
+            src="https://raw.githubusercontent.com/SahiDemon/videoloops/main/1028(4).mp4"
+            loop="true"
+            muted="true"
+            poster="https://pbblogassets.s3.amazonaws.com/uploads/2020/07/13110748/Build-an-editing-PC.jpg"
+            preload="auto"
+            autoplay=""
+            playsinline=""
+            class="home-video"
+          ></video>
+          <header data-thq="thq-navbar" class="home-navbar">
+            <div data-thq="thq-burger-menu" class="home-burger-menu"></div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div
+                data-thq="thq-mobile-menu-nav"
+                data-role="Nav"
+                class="home-nav"
+              >
+                <div class="home-container1">
+                  <img
+                    alt="image"
+                    src="{{ url_for('static', filename='public/logo-200h.png') }}"
+                    class="home-image"
+                  />
+                  <div data-thq="thq-close-menu" class="home-menu-close">
+                    <svg viewBox="0 0 1024 1024" class="home-icon">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav
+                  data-thq="thq-mobile-menu-nav-links"
+                  data-role="Nav"
+                  class="home-nav1"
+                >
+                  <a
+                    href="https://7c17c07f-6472-4af5-aa76-ff49f856c05c-00-21xlv4oiwn3f9.picard.replit.dev/products"
+                    target="_blank"
+                    rel="noreferrer noopener"
+                    class="home-link"
+                  >
+                    Products
+                  </a>
+                  <span class="home-text">Categories</span>
+                  <span class="home-text01">Shops</span>
+                  <span class="home-text02">Contact Us</span>
+                  <span class="home-text03">About Us</span>
+                </nav>
+                <div class="home-container2">
+                  <button class="home-login button">Login</button>
+                  <button class="button">Register</button>
+                </div>
+              </div>
+              <div class="home-icon-group">
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon02">
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon04">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon06">
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+            <header data-thq="thq-navbar" class="home-navbar-interactive">
+              <img
+                alt="image"
+                src="{{ url_for('static', filename='public/logo-200h.png') }}"
+                
+                class="home-branding"
+              />
+              <div data-thq="thq-navbar-nav" class="home-desktop-menu">
+                <nav class="home-links">
+                  <div
+                    data-thq="thq-dropdown"
+                    class="home-thq-dropdown list-item"
+                  >
+                    <div
+                      data-thq="thq-dropdown-toggle"
+                      class="home-dropdown-toggle"
+                    >
+                      <span class="home-text04">Categories</span>
+                      <div
+                        data-thq="thq-dropdown-arrow"
+                        class="home-dropdown-arrow"
+                      >
+                        <svg viewBox="0 0 1024 1024" class="home-icon08">
+                          <path d="M426 726v-428l214 214z"></path>
+                        </svg>
+                      </div>
+                    </div>
+                    <ul data-thq="thq-dropdown-list" class="home-dropdown-list">
+                      <li
+                        data-thq="thq-dropdown"
+                        class="home-dropdown list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          class="home-dropdown-toggle1"
+                        >
+                          <a
+                            href="https://7c17c07f-6472-4af5-aa76-ff49f856c05c-00-21xlv4oiwn3f9.picard.replit.dev/products/GraphicCards"
+                            class="home-link1"
+                          >
+                            Graphics Cards
+                          </a>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="home-dropdown1 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          class="home-dropdown-toggle2"
+                        >
+                          <a
+                            href="https://7c17c07f-6472-4af5-aa76-ff49f856c05c-00-21xlv4oiwn3f9.picard.replit.dev/products/Processors"
+                            class="home-link2"
+                          >
+                            Processors
+                          </a>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="home-dropdown2 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          class="home-dropdown-toggle3"
+                        >
+                          <a
+                            href="https://7c17c07f-6472-4af5-aa76-ff49f856c05c-00-21xlv4oiwn3f9.picard.replit.dev/products/MotherBoards"
+                            class="home-link3"
+                          >
+                            MotherBoards
+                          </a>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="home-dropdown3 list-item"
+                      >
+                        <div
+                          data-thq="thq-dropdown-toggle"
+                          class="home-dropdown-toggle4"
+                        >
+                          <a
+                            href="https://7c17c07f-6472-4af5-aa76-ff49f856c05c-00-21xlv4oiwn3f9.picard.replit.dev/products/MemoryRAM"
+                            class="home-link4"
+                          >
+                            Casing
+                          </a>
+                        </div>
+                      </li>
+                      <li
+                        data-thq="thq-dropdown"
+                        class="home-dropdown4 list-item"
+                      ></li>
+                    </ul>
+                  </div>
+                  <span class="home-text05">Products</span>
+                  <span class="home-text06">Shops</span>
+                  <span class="home-text07">Contact</span>
+                  <span class="home-text08">About</span>
+                </nav>
+                <div class="home-buttons">
+                  <button class="home-login1 button">Login</button>
+                  <button class="button">Register</button>
+                </div>
+              </div>
+              <div data-thq="thq-burger-menu" class="home-burger-menu1">
+                <img
+                  alt="image"
+                  src="{{ url_for('static', filename='public/hamburger.svg') }}"
+                  
+                  class="home-icon10"
+                />
+              </div>
+              <div data-thq="thq-mobile-menu" class="home-mobile-menu1">
+                <div class="home-nav2">
+                  <div class="home-top">
+                    <img
+                      alt="image"
+                      src="{{ url_for('static', filename='public/assembezlogo-1500h.png') }}"
+                      
+                      class="home-image1"
+                    />
+                    <div data-thq="thq-close-menu" class="home-close-menu">
+                      <svg viewBox="0 0 1024 1024" class="home-icon11">
+                        <path
+                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                        ></path>
+                      </svg>
+                    </div>
+                  </div>
+                  <nav class="home-links1">
+                    <span class="home-text09">About</span>
+                    <span class="home-text10">Products</span>
+                    <span class="home-text11">Categories</span>
+                    <span class="home-text12">About</span>
+                    <span class="home-text13">Contact</span>
+                  </nav>
+                  <div class="home-buttons1">
+                    <button class="home-login2 button">Login</button>
+                    <button class="button">Register</button>
+                  </div>
+                </div>
+                <div>
+                  <svg viewBox="0 0 950.8571428571428 1024" class="home-icon13">
+                    <path
+                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 877.7142857142857 1024"
+                    class="home-icon15"
+                  >
+                    <path
+                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                    ></path></svg
+                  ><svg
+                    viewBox="0 0 602.2582857142856 1024"
+                    class="home-icon17"
+                  >
+                    <path
+                      d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                    ></path>
+                  </svg>
+                </div>
+              </div>
+            </header>
+          </header>
+          <div class="home-hero-content">
+            <h1 class="home-heading">
+              <span>Assemble with</span>
+              <span class="home-text15">imagination</span>
+              <br />
+            </h1>
+            <div class="home-header-container">
+              <div class="home-header"></div>
+              <p class="home-caption">No hassle, just AssembleZ!</p>
+            </div>
+            <a
+              href="https://assemblez.sahindugayanuka.repl.co/products"
+              class="home-link5 button"
+            >
+              <span>
+                <span>DISCOVER</span>
+                <br />
+              </span>
+            </a>
+          </div>
+        </section>
+        <section class="home-slides">
+          <div class="home-slider slider blaze-slider">
+            <div class="home-slider-container blaze-container">
+              <div class="home-slider-track-container blaze-track-container">
+                <div class="home-slider-track blaze-track">
+                  <div data-role="current-banner" class="home-slide banner">
+                    <img
+                      alt="image"
+                      src="{{ url_for('static', filename='public/2057-20221020165137-13900-400h.png') }}"
+                      class="home-image2"
+                    />
+                    <div class="home-content">
+                      <div class="home-header1">
+                        <h3 class="home-heading1">
+                          INTEL CORE I9-13900K PROCESSOR
+                        </h3>
+                        <p class="home-caption1">
+                          <span>NEW ARRIVAL</span>
+                          <br />
+                          <span>In Stock</span>
+                          <br />
+                          <span></span>
+                        </p>
+                      </div>
+                      <div class="home-more">
+                        <span class="home-caption2">Read More</span>
+                        <svg viewBox="0 0 1024 1024" class="home-icon19">
+                          <path
+                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="current-banner" class="home-slide1 banner">
+                    <img
+                      alt="image"
+                      src="{{ url_for('static', filename='public/2057-20221020165137-13900-400h.png') }}"
+                      
+                      class="home-image3"
+                    />
+                    <div class="home-content1">
+                      <div class="home-header2">
+                        <h3 class="home-heading2">
+                          INTEL CORE I9-13900K PROCESSOR
+                        </h3>
+                        <p class="home-caption3">
+                          <span>NEW ARRIVAL</span>
+                          <br />
+                          <span>In Stock</span>
+                          <br />
+                          <span></span>
+                        </p>
+                      </div>
+                      <div class="home-more1">
+                        <span class="home-caption4">Read More</span>
+                        <svg viewBox="0 0 1024 1024" class="home-icon21">
+                          <path
+                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                  <div data-role="current-banner" class="banner">
+                    <img
+                      alt="image"
+                      src="{{ url_for('static', filename='public/2263-20220514120956-product_16412869646176c6e905cf8b379a75ebd2c77cfa1e-400h.png') }}"
+                      class="home-image4"
+                    />
+                    <div class="home-content2">
+                      <div class="home-header3">
+                        <h3 class="home-heading3">MSI PRO B660M-E DDR4</h3>
+                        <p class="home-caption5">
+                          <span>NEW ARRIVAL</span>
+                          <br />
+                          <span>In Stock</span>
+                        </p>
+                      </div>
+                      <div class="home-more2">
+                        <span class="home-caption6">Read More</span>
+                        <svg viewBox="0 0 1024 1024" class="home-icon23">
+                          <path
+                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                          ></path>
+                        </svg>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="home-controls">
+                <button
+                  data-role="previous-banner-button"
+                  class="home-previous blaze-prev button"
+                >
+                  <svg viewBox="0 0 1024 1024" class="home-icon25">
+                    <path
+                      d="M542.165 780.501l-225.835-225.835h494.336c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-494.336l225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-298.667 298.667c-4.096 4.096-7.168 8.789-9.259 13.824-2.176 5.205-3.243 10.795-3.243 16.341 0 10.923 4.181 21.845 12.501 30.165l298.667 298.667c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
+                    ></path>
+                  </svg>
+                </button>
+                <button
+                  data-role="next-banner-button"
+                  class="home-next blaze-next button"
+                >
+                  <svg viewBox="0 0 1024 1024" class="home-icon27">
+                    <path
+                      d="M481.835 243.499l225.835 225.835h-494.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h494.336l-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l298.667-298.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-298.667-298.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                    ></path>
+                  </svg>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="home-div">
+            <script>
+              const el = document.querySelector('.blaze-slider')
+
+              new BlazeSlider(el, {
+                all: {
+                  slidesToShow: 3,
+                  slideGap: '80px',
+                  loop: true,
+                  enableAutoplay: true,
+                },
+              })
+            </script>
+          </div>
+        </section>
+        <section class="home-customer">
+          <h1 class="home-text33">Popular Shops</h1>
+          <div class="home-blog">
+            <div class="home-container3">
+              <div
+                class="blog-post-card1-blog-post-card blog-post-card1-root-class-name3"
+              >
+                <img
+                  alt="image"
+                  src="{{ url_for('static', filename='public/channels4_profile-1500w.jpg') }}"
+                  
+                  class="blog-post-card1-image"
+                />
+                <div class="blog-post-card1-container">
+                  <span class="blog-post-card1-text">COMPONENTS</span>
+                  <span class="blog-post-card1-text1">Nanotek</span>
+                  <span class="blog-post-card1-text2">
+                    PC enthusiast store to serve the high-end gaming market in
+                    Sri Lanka by offering custom-built computers and selling
+                    only premium computer hardware.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="home-container4">
+              <div
+                class="blog-post-card1-blog-post-card blog-post-card1-root-class-name2"
+              >
+                <img
+                  alt="image"
+                  src="{{ url_for('static', filename='public/channels4_profile-1500w.jpg') }}"
+                  
+                  class="blog-post-card1-image"
+                />
+                <div class="blog-post-card1-container">
+                  <span class="blog-post-card1-text">COMPONENTS</span>
+                  <span class="blog-post-card1-text1">Nanotek</span>
+                  <span class="blog-post-card1-text2">
+                    PC enthusiast store to serve the high-end gaming market in
+                    Sri Lanka by offering custom-built computers and selling
+                    only premium computer hardware.
+                  </span>
+                </div>
+              </div>
+            </div>
+            <div class="home-container5">
+              <div
+                class="blog-post-card1-blog-post-card blog-post-card1-root-class-name1"
+              >
+                <img
+                  alt="image"
+                  src="{{ url_for('static', filename='public/channels4_profile-1500w.jpg') }}"
+                  class="blog-post-card1-image"
+                />
+                <div class="blog-post-card1-container">
+                  <span class="blog-post-card1-text">COMPONENTS</span>
+                  <span class="blog-post-card1-text1">Nanotek</span>
+                  <span class="blog-post-card1-text2">
+                    PC enthusiast store to serve the high-end gaming market in
+                    Sri Lanka by offering custom-built computers and selling
+                    only premium computer hardware.
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="home-controls1">
+            <button class="home-previous1 button">
+              <svg viewBox="0 0 1024 1024" class="home-icon29">
+                <path
+                  d="M542.165 780.501l-225.835-225.835h494.336c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-494.336l225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-298.667 298.667c-4.096 4.096-7.168 8.789-9.259 13.824-2.176 5.205-3.243 10.795-3.243 16.341 0 10.923 4.181 21.845 12.501 30.165l298.667 298.667c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
+                ></path>
+              </svg>
+            </button>
+            <button class="home-next1 button">
+              <svg viewBox="0 0 1024 1024" class="home-icon31">
+                <path
+                  d="M481.835 243.499l225.835 225.835h-494.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h494.336l-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l298.667-298.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-298.667-298.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
+                ></path>
+              </svg>
+            </button>
+            <button class="home-button button">
+              <span>View all Shops</span>
+            </button>
+          </div>
+        </section>
+        <div class="home-footer">
+          <div class="home-content3">
+            <div class="home-main">
+              <div class="home-branding1">
+                <img
+                  alt="image"
+                  src="{{ url_for('static', filename='public/assembezlogo-1500h.png') }}"
+                
+                  class="home-image5"
+                />
+                <span class="home-text35">
+                  Whether you are a gamer, a creator, or a professional, we help
+                  you find the best prices for your PC parts and make your PC
+                  building experience easy and fun.
+                </span>
+              </div>
+              <div class="home-links2">
+                <div class="home-column">
+                  <span class="home-header4">Assemble now!</span>
+                  <div class="home-list">
+                    <a href="index.html" class="home-navlink">Categories</a>
+                    <a href="index.html" class="home-navlink1">ABout Us</a>
+                    <a href="index.html" class="home-navlink2">Contact US</a>
+                    <a href="index.html" class="home-navlink3">
+                      <span class="home-text36">Why</span>
+                      <br />
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="home-bottom">
+              <span class="home-text38">
+                © 2023 AssembleZ - All rights reserved
+              </span>
+              <button data-role="scroll-top" class="home-button1 button">
+                <img alt="image"
+                  src="{{ url_for('static', filename='public/arrow.svg') }}"
+                  
+                  class="home-image6" />
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="home-scroll-to-top">
+          <script>
+            document.addEventListener('DOMContentLoaded', function() {
+              // get the element with the 'scroll-top' data-role
+              const scrollTopBtn = document.querySelector('[data-role='scroll-top']');
+
+              // when the element is clicked
+              scrollTopBtn.addEventListener('click', function() {
+                // smoothly scroll to the top of the page
+                window.scrollTo({
+                  top: 0,
+                  behavior: 'smooth'
+                });
+              });
+            });
+          </script>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+    <script src="https://unpkg.com/blaze-slider@latest/dist/blaze-slider.min.js"></script>
+  </body>
+</html>
