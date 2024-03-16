@@ -21,6 +21,7 @@ jobs:
       - name: Install Dependencies
         run: |
           pip install scrapy
+          pip install psycopg2
 
       - name: Run Python Script
         run: python main.py
