@@ -1,5 +1,5 @@
 import scrapy
-import sqlite3
+import psycopg2
 
 class ProductSpider(scrapy.Spider):
     name = "product_info"
@@ -41,8 +41,8 @@ class ProductSpider(scrapy.Spider):
         # Extract image URL
         image_url = response.css('.ty-slideContent img::attr(src)').get()
 
-        # Connect to the SQLite database
-        conn = sqlite3.connect('scraped_data.db')
+        # Connect to the Supabase database
+        conn = psycopg2.connect(user="postgres.cgojfztufkrckindwkuf", password="Sahiya_448866", host="aws-0-us-west-1.pooler.supabase.com", port="5432", dbname="postgres")
         cursor = conn.cursor()
 
         # Create a table for the current category if it doesn't exist
@@ -50,7 +50,7 @@ class ProductSpider(scrapy.Spider):
 
         cursor.execute(f'''
             CREATE TABLE IF NOT EXISTS {category_table_name} (
-                id INTEGER PRIMARY KEY,
+                id SERIAL PRIMARY KEY,
                 title TEXT,
                 stock TEXT,
                 price TEXT,
@@ -60,7 +60,7 @@ class ProductSpider(scrapy.Spider):
         ''')
 
         # Check if a product with the same title exists
-        cursor.execute(f'SELECT * FROM {category_table_name} WHERE title = ?', (title,))
+        cursor.execute(f'SELECT * FROM {category_table_name} WHERE title = %s', (title,))
         existing_product = cursor.fetchone()
 
         if existing_product:
@@ -71,8 +71,8 @@ class ProductSpider(scrapy.Spider):
                 # Update stock and price
                 cursor.execute(f'''
                     UPDATE {category_table_name}
-                    SET stock = ?, price = ?, image_url = ?
-                    WHERE title = ?
+                    SET stock = %s, price = %s, image_url = %s
+                    WHERE title = %s
                 ''', (stock, price, image_url, title))
                 conn.commit()
                 print(f"Data for '{title}' updated in '{category_table_name}' category.")
@@ -82,7 +82,7 @@ class ProductSpider(scrapy.Spider):
             # Insert the scraped data into the database
             cursor.execute(f'''
                 INSERT INTO {category_table_name} (title, stock, price, product_info, image_url)
-                VALUES (?, ?, ?, ?, ?)
+                VALUES (%s, %s, %s, %s, %s)
             ''', (title, stock, price, product_info_text, image_url))
             conn.commit()
             print(f"Data for '{title}' inserted into '{category_table_name}' category.")
