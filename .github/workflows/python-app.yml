@@ -1,0 +1,26 @@
+name: Scheduled Webscarpe
+
+on:
+  schedule:
+    - cron: '0 0 * * *' # Schedule to run daily at midnight UTC
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+
+      - name: Set up Python
+        uses: actions/setup-python@v2
+        with:
+          python-version: 3.12 # Specify your desired Python version
+
+      - name: Install Dependencies
+        run: |
+          pip install scrapy
+
+      - name: Run Python Script
+        run: python main.py
