@@ -1,3 +1,4 @@
 scrapy
 flask
 psycopg2
+gunicorn
