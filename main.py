@@ -45,9 +45,15 @@ class ProductSpider(scrapy.Spider):
         conn = psycopg2.connect(user="postgres.cgojfztufkrckindwkuf", password="Sahiya_448866", host="aws-0-us-west-1.pooler.supabase.com", port="5432", dbname="postgres")
         cursor = conn.cursor()
 
-        # Create a table for the current category if it doesn't exist
-        category_table_name = ''.join(e for e in category if e.isalnum())
+        # Ensure the schema exists; create it if it doesn't
+        schema_name = "nanotek"  # You might want this to be dynamic based on the site you're scraping
+        cursor.execute(f'CREATE SCHEMA IF NOT EXISTS {schema_name};')
+        conn.commit()
 
+        # Now specify the schema in your table name
+        category_table_name = f"{schema_name}.{''.join(e for e in category if e.isalnum())}"
+
+        # Create a table for the current category if it doesn't exist
         cursor.execute(f'''
             CREATE TABLE IF NOT EXISTS {category_table_name} (
                 id SERIAL PRIMARY KEY,

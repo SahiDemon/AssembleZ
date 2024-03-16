@@ -3,15 +3,19 @@ import psycopg2
 
 app = Flask(__name__)
 
+
+SCHEMA_NAME = "nanotek"
+
 # Function to fetch data from the database based on category
 def get_product_data(category):
     conn = psycopg2.connect(user="postgres.cgojfztufkrckindwkuf", password="Sahiya_448866", host="aws-0-us-west-1.pooler.supabase.com", port="5432", dbname="postgres")
     cursor = conn.cursor()
-    cursor.execute(f"SELECT title, price, stock, image_url FROM {category}")
+    # Update the SQL query to include the schema name
+    query = f"SELECT title, price, stock, image_url FROM {SCHEMA_NAME}.{category}"
+    cursor.execute(query)
     products = cursor.fetchall()
     conn.close()
     return products
-
 
 # Define a route for the homepage
 @app.route('/')
