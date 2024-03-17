@@ -69,32 +69,32 @@ class ProductSpider(scrapy.Spider):
         cursor.execute(f'SELECT * FROM {category_table_name} WHERE title = %s', (title,))
         existing_product = cursor.fetchone()
 
-        if existing_product:
-            # If the product exists, check if stock or price has changed
-            existing_stock = existing_product[2]
-            existing_price = existing_product[3]
-            if stock != existing_stock or price != existing_price:
-                # Update stock and price
-                cursor.execute(f'''
-                    UPDATE {category_table_name}
-                    SET stock = %s, price = %s, image_url = %s
-                    WHERE title = %s
-                ''', (stock, price, image_url, title))
-                conn.commit()
-                print(f"Data for '{title}' updated in '{category_table_name}' category.")
-            else:
-                print(f"Data for '{title}' in '{category_table_name}' category is up to date.")
-        else:
-            # Insert the scraped data into the database
-            cursor.execute(f'''
-                INSERT INTO {category_table_name} (title, stock, price, product_info, image_url)
-                VALUES (%s, %s, %s, %s, %s)
-            ''', (title, stock, price, product_info_text, image_url))
-            conn.commit()
-            print(f"Data for '{title}' inserted into '{category_table_name}' category.")
+        # if existing_product:
+        #     # If the product exists, check if stock or price has changed
+        #     existing_stock = existing_product[2]
+        #     existing_price = existing_product[3]
+        #     if stock != existing_stock or price != existing_price:
+        #         # Update stock and price
+        #         cursor.execute(f'''
+        #             UPDATE {category_table_name}
+        #             SET stock = %s, price = %s, image_url = %s
+        #             WHERE title = %s
+        #         ''', (stock, price, image_url, title))
+        #         conn.commit()
+        #         print(f"Data for '{title}' updated in '{category_table_name}' category.")
+        #     else:
+        #         print(f"Data for '{title}' in '{category_table_name}' category is up to date.")
+        # else:
+        #     # Insert the scraped data into the database
+        #     cursor.execute(f'''
+        #         INSERT INTO {category_table_name} (title, stock, price, product_info, image_url)
+        #         VALUES (%s, %s, %s, %s, %s)
+        #     ''', (title, stock, price, product_info_text, image_url))
+        #     conn.commit()
+        #     print(f"Data for '{title}' inserted into '{category_table_name}' category.")
 
-        # Close the database connection
-        conn.close()
+        # # Close the database connection
+        # conn.close()
 
 if __name__ == "__main__":
     from scrapy.crawler import CrawlerProcess
