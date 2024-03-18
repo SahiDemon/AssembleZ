@@ -9,10 +9,6 @@ class ProductSpider(scrapy.Spider):
         yield scrapy.Request(url=product_link, callback=self.parse)
 
     def parse(self, response: HtmlResponse):
-        title = response.css('.ty-special-msg::text').get()
-        stock = response.css('.ty-productTitle::text').get()
-        category = response.css('.ty-productCategory::text').get()
-        product_info = response.css('.ty-productPage-info::text').getall()
         title = response.css('.product_title::text').get()
         price = response.css('woocommerce-Price-currencySymbol bdi::text').get()
 
