@@ -1,0 +1,14 @@
+{
+  "name": "assemblez",
+  "version": "1.0.0",
+  "description": "Unlock the Best Deals: Your One-Stop Shop for Sri Lanka Hardware Price Insights!",
+  "main": "index.js",
+  "scripts": {},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.42.1",
+    "@types/node": "^20.11.28"
+  }
+}

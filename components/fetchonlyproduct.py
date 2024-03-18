@@ -12,11 +12,11 @@ class ProductSpider(scrapy.Spider):
 
     def parse(self, response: HtmlResponse):
         # Extract the desired information
-        title = response.css('.ty-special-msg::text').get()
-        stock = response.css('.ty-productTitle::text').get()
-        category = response.css('.ty-productCategory::text').get()
-        price = response.css('.ty-price.ty-price-now::text').get()
-        product_info = response.css('.ty-productPage-info::text').getall()
+        title = response.css('h1.chamaweb-productTitle::text').get()
+        stock = response.css('span.in-stock-div::text').get()
+        category = response.css('h3.chamaweb-productCategory::text').get()
+        price = response.css('span.price-div::text').get()
+        product_info = response.css('div.product-desc::text').getall()
         product_info_text = "\n".join(product_info).strip()
 
         # Display the information
