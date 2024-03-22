@@ -11,27 +11,39 @@ class ProductSpider(scrapy.Spider):
         yield scrapy.Request(url=product_link, callback=self.parse)
 
     def parse(self, response: HtmlResponse):
-        # Extract the desired information
-        title = response.css('.ty-special-msg::text').get()
-        stock = response.css('.ty-productTitle::text').get()
-        category = response.css('.ty-productCategory::text').get()
-        price = response.css('.ty-price.ty-price-now::text').get()
-        product_info = response.css('.ty-productPage-info::text').getall()
-        product_info_text = "\n".join(product_info).strip()
+        title = response.css('.product-title::text').get()
+        stock = response.xpath('//dt[contains(text(), "Stock Availability")]/following-sibling::span/following-sibling::dd/text()').get()
+        price = response.css('.price span::text').get()
 
-        # Display the information
+        # Initialize an empty list to hold product specifications
+        product_specs = []
+        # Target the table rows within the product description table
+        table_rows = response.xpath('//p[contains(b/text(), "Description")]/following-sibling::table[1]/tbody/tr')
+        for tr in table_rows:
+            # Attempt to extract a pair of non-empty and meaningful data from each row
+            # Adjusted to consider the actual text content, ignoring purely whitespace or placeholders
+            specs = tr.xpath('td/text()[normalize-space() and not(.="&nbsp;")]').getall()
+            specs = [spec.strip() for spec in specs if spec.strip()]
+            # Pairing logic adjusted to account for possible variations in table structure
+            if specs:
+                # Concatenate all specs within a single row for simplicity
+                concatenated_specs = ' | '.join(specs)
+                product_specs.append(concatenated_specs)
+
+        product_info_text = "\n".join(product_specs).strip()
+        image_url = response.css('.tab-pane.active img::attr(src)').get()
+        base_url = "https://www.gamestreet.lk/"
+        full_image_url = base_url + image_url.strip() if image_url else "N/A"
+        print("Image URL:", full_image_url)
+
+
+        # Display the extracted information
         print("Title:", title.strip() if title else "N/A")
-        print()  
         print("Stock:", stock.strip() if stock else "N/A")
-        print()  
-        print("Category:", category.strip() if category else "N/A")
-        print() 
         print("Price:", "LKR", price.strip() if price else "N/A")
-        
-        print("Product Info:")
-        print()  
-        print("\n".join(line.strip() for line in product_info_text.splitlines() if line.strip()))  # Remove spaces between lines
-       
+        print("Product Specs:")
+        print(product_info_text)
+
 
 
 # Run the spider
