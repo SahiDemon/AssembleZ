@@ -1,0 +1,714 @@
+Choose a category:
+1. Processors
+2. Motherboards
+3. RAM
+4. Graphic Cards
+5. Casings
+6. Custom
+Enter the number of the category you want to scrape from nanotek.lk: Title: NZXT H5 (2023) Flow RGB Edition ATX Mid Tower White Case
+Stock: In stock
+Price: LKR 44,000.00
+Product Specs:
+
+Title: MSI MAG Forge 320R Mid-Tower Case
+Stock: In stock
+Price: LKR 25,500.00
+Product Specs:
+PRODUCT NAME | MAG FORGE 320R AIRFLOW
+CASE FORM FACTOR
+MOTHERBOARD FORM FACTOR SUPPORT
+I/O PORTS | 2 x USB 3.2 Gen 1 Type-A
+1 x Audio-out
+1 x Mic-in
+1 x LED Switch
+DRIVE MOUNT SUPPORT | 1 x 2.5"
+2 x 2.5" / 3.5
+EXPANSION SLOTS
+MAXIMUM GPU LENGTH
+MAXIMUM GPU HEIGHT
+MAXIMUM CPU COOLER HEIGHT
+POWER SUPPLY SUPPORT
+MAXIMUM PSU LENGTH
+FAN SIZE SUPPORT | Front: 3 x 120 mm / 2 x 140 mm
+Top: 3 x 120 mm / 2 x 140 mm
+Rear: 1 x 120 mm
+Side: 2 x 120 mm
+PSU Shroud: 2 x 120 mm
+PRE-INSTALLED FAN SIZE | Front: 3 x 120 mm
+Rear: 1 x 120 mm
+PRE-INSTALLED FAN TYPE | Front: 3 x ARGB Fan
+Rear: 1 x ARGB Fan
+RADIATOR SIZE SUPPORT | Front: 120 / 140 / 240 mm
+Top: 120 / 240 / 280 / 360 mm
+Rear: 120 mm
+DIMENSIONS (DXWXH)
+NET WEIGHT
+GROSS WEIGHT
+Title: GAMDIAS TALOS M1 RGB Mid-TOWER CASE
+Stock: In stock
+Price: LKR 26,500.00
+Product Specs:
+
+Title: MSI MAG Forge 100R Mid-Tower Case
+Stock: In stock
+Price: LKR 20,500.00
+Product Specs:
+SUPPORT MB FORM FACTOR | ATX / mATX / Mini-ITX
+PRODUCT NAME | MAG Forge 100R
+CASE FORM FACTOR | Mid-Tower
+DIMENSION | 421(D) x 210(W) x 499(H) mm
+17.05(D) x 8.27(W) x 19.65(H) inch
+WEIGHT | 5.64 kg
+I/O PORTS | 2 x USB 3.2 Gen1 Type-A / 1 x HD Audio / 1 x Mic
+DRIVER BAYS | 2 x 3.5” (compatible with 2.5”) + 3 x 2.5”
+CASE EXPANSION SLOTS | 7
+PRE-INSTALL FAN | Front: 2 x 120 mm addressable RGB LED Fan included
+Rear: 1 x 120 mm System Fan included
+MAXIMUM GPU LENGTH | 330 mm
+MAXIMUM CPU COOLER LENGTH | 160 mm
+RADIATOR LAYOUT | Front: Up to 240 mm
+Top: Up to 240 mm
+Rear: Up to 120 mm
+POWER SUPPLY | Standard ATX 160 mm, max to 200 mm
+(without 3.5” HDD case installed)
+COOLING LAYOUT | Front: Up to 3 x 120 mm / 2 x 140 mm
+Top: Up to 2 x 120 mm / 2 x 140 mm
+Rear: Up to 1 x 120 mm
+Title: Gamdias Talos E3 ARGB Gaming Case
+Stock: In stock
+Price: LKR 18,500.00
+Product Specs:
+
+Title: NZXT H5 (2023) Flow Edition ATX Mid Tower White Case
+Stock: In stock
+Price: LKR 30,500.00
+Product Specs:
+
+Title: MSI MAG SHIELD M301 Mid-Tower Case
+Stock: In stock
+Price: LKR 12,500.00
+Product Specs:
+PRODUCT NAME
+CASE FORM FACTOR
+MOTHERBOARD FORM FACTOR SUPPORT
+I/O PORTS
+1x USB 3.2 Gen 1 Type-A
+1x Audio
+1x Mic
+DRIVE MOUNT SUPPORT
+1x 3.5”
+EXPANSION SLOTS
+MAXIMUM GPU LENGTH
+MAXIMUM CPU COOLER HEIGHT
+POWER SUPPLY SUPPORT
+MAXIMUM PSU LENGTH
+FAN SIZE SUPPORT
+Rear: 1x 120 mm
+PRE-INSTALLED FAN SIZE
+PRE-INSTALLED FAN TYPE
+RADIATOR SIZE SUPPORT
+DIMENSIONS (DXWXH)
+NET WEIGHT
+GROSS WEIGHT
+Title: MSI MAG Forge M100R Mid-Tower Case
+Stock: In stock
+Price: LKR 19,500.00
+Product Specs:
+PRODUCT NAME
+CASE FORM FACTOR
+MOTHERBOARD FORM FACTOR SUPPORT
+I/O PORTS | 2x USB 2.0 Type-A
+1x USB 3.2 Gen 1 Type-A
+1x Audio
+1x Mic
+DRIVE MOUNT SUPPORT | 2x 2.5"
+1x 2.5" / 3.5"
+1x 3.5"
+EXPANSION SLOTS
+MAXIMUM GPU LENGTH
+MAXIMUM CPU COOLER HEIGHT
+POWER SUPPLY SUPPORT
+MAXIMUM PSU LENGTH | 300 mm / 11.81 inches (without 3.5" HDD tray installed)
+FAN SIZE SUPPORT | Front: 3 x 120 mm
+Top: 2 x 120 mm
+Rear:1 x 120 mm
+PRE-INSTALLED FAN SIZE | Front: 3 x 120mm
+Rear: 1 x 120mm
+PRE-INSTALLED FAN TYPE | Front: 3 x ARGB Fan
+Rear: 1 x ARGB Fan
+RADIATOR SIZE SUPPORT | Front: 120 / 240 mm
+Top: 120 / 240 mm
+Rear: 120 mm
+DIMENSIONS (DXWXH) | 388 x 200 x 423mm / 15.28 x 7.87 x 16.65 inches
+NET WEIGHT | 4.14 kg / 9.13 lbs
+GROSS WEIGHT | 5.03 kg / 11.09 lbs
+Title: Gamdias Talos E3 Mesh ARGB Gaming Case
+Stock: In stock
+Price: LKR 18,500.00
+Product Specs:
+
+Title: Gamdias Aura GC1 ELITE RGB Mid-Tower Case
+Stock: In stock
+Price: LKR 16,500.00
+Product Specs:
+SPECIFICATIONS
+CASE
+Case Type | MID Tower
+MB Support | ATX?Micro-ATX?Mini-ITX
+Synchronization | No
+CASE Color | Black
+Expansion Slots | 7
+Material | SPCC & ABS & Tempered glass
+Window | Left
+Radiator Support | Front:360mm / Rear:120mm
+Fan Support | Top: 2 x 120mm / Front: 3 x 120mm? 2 x 140mm / Rear: 1 x 120mm
+Pre-installed Fans | Front: 3 x 120mm Fixed RGB Fans / Rear: 1 x 120mm Fixed RGB Fan
+Drive Bays | 2 x 3.5" or 1 x 2.5"+1 x 3.5"(HDD Cage) / 2 x 2.5"
+I/O Port | USB 3.0 x1, USB 2.0 x2, HD Audio x1, Reset x1
+Clearance | CPU cooler height limitation: 160mm
+VGA length limitation: 340mm
+PSU length limitation: 160mm
+Dimension (L x W x H) | 395 x 195 x 450 mm
+15.5 x 7.7 x 17.8 inch
+Net Weight | 4.9kg
+Pre-installed Control BOX | NO
+Title: MSI MAG Forge M100A Mid-Tower Case
+Stock: In stock
+Price: LKR 15,500.00
+Product Specs:
+PRODUCT NAME
+CASE FORM FACTOR
+MOTHERBOARD FORM FACTOR SUPPORT
+I/O PORTS | 2x USB 2.0 Type-A
+1x USB 3.2 Gen 1 Type-A
+1x Audio
+1x Mic
+DRIVE MOUNT SUPPORT | 2x 2.5”
+1x 2.5” / 3.5”
+1x 3.5”
+EXPANSION SLOTS
+MAXIMUM GPU LENGTH
+MAXIMUM CPU COOLER HEIGHT
+POWER SUPPLY SUPPORT
+FAN SIZE SUPPORT | Front: 3 x 120 mm
+Top: 2 x 120 mm
+Rear:1 x 120 mm
+PRE-INSTALLED FAN SIZE | Front: 3 x 120mm
+Rear: 1 x 120mm
+PRE-INSTALLED FAN TYPE | Front: 3 x ARGB Fan
+Rear: 1 x ARGB Fan
+RADIATOR SIZE SUPPORT | Front: 120 / 240 mm
+Top: 120 / 240 mm
+Rear: 120 mm
+DIMENSIONS (DXWXH) | 388 x 200 x 423mm / 15.28 x 7.87 x 16.65 inches
+NET WEIGHT | 3.36 kg / 7.41 lbs
+GROSS WEIGHT | 4.25 kg / 9.37 lbs
+Title: Corsair Obsidian 1000D Super-Tower Gaming Case
+Stock: In stock
+Price: LKR 207,500.00
+Product Specs:
+Case Length | 698
+Case Width | 307
+Lighting | RGB
+Case Form Factor | FULL TOWER
+Case Motherboard Support | Mini-ITX | MicroATX | ATX | E-ATX | SSI-EEB
+Weight | 37.5
+Radiator Compatibility | 120mm, 140mm, 240mm, 280mm, 360mm, 420mm
+Maximum GPU Length | 400mm
+Maximum CPU Cooler Height | 180mm
+Compatible Liquid Coolers | H55, H60, H100, H115, H150, H170
+Case Size | NA
+Case Material | Steel, Aluminum, Tempered Glass
+Case Dimensions | 800mm x 505mm x 800mm
+Case Power Supply | ATX (not included)
+Case Expansion Slots | 8 Vertical + 2 Horizontal
+Case Drive Bays | (x6) 2.5 (x5) 3.5
+Case Front IO | (2x) USB 3.2 Gen 2 Type-C, (4x) USB 3.2 Gen 1 Type-A, (1x) Microphone, (1x) Headphone
+Case Window | Tempered Glass
+Title: MSI MAG Pano M100R PZ Mid-Tower Case
+Stock: In stock
+Price: LKR 37,000.00
+Product Specs:
+PRODUCT NAME
+CASE FORM FACTOR
+MOTHERBOARD FORM FACTOR SUPPORT
+I/O PORTS
+1 x USB 3.2 Gen 2x2 Type-C
+1 x Audio-Out / Mic-in
+1 x LED Switch Button
+1 x Power Button
+DRIVE MOUNT SUPPORT | 1 x 2.5”
+1 x 2.5”/3.5” combo
+(up to 2 x 2.5” or 1 x 2.5”+ 1 x 3.5”)
+EXPANSION SLOTS | 5
+MAXIMUM GPU LENGTH | 390 mm / 15.35 inches
+*Support horizontal installation only.
+MAXIMUM CPU COOLER HEIGHT | 175 mm / 6.9 inches
+POWER SUPPLY SUPPORT | ATX
+MAXIMUM PSU LENGTH | 200 mm / 7.87 inches
+FAN SIZE SUPPORT | Top: 3 x 120 mm / 2 x 140 mm
+Front: NA
+Rear: 1 x 120 mm / 1 x 140 mm
+Side: 3 x 120 mm
+Bottom: 1 x 120 mm
+PSU Shroud: 2 x 120 mm
+PRE-INSTALLED FAN SIZE | Side: 3 x 120 mm
+Rear: 1 x 120 mm
+PRE-INSTALLED FAN TYPE | Side: 3 x ARGB Fan (Reverse-blade)
+Rear: 1 x ARGB Fan
+RADIATOR SIZE SUPPORT | Top: 120 / 240 / 360 mm
+Front: NA
+Rear: 120 / 140 mm
+Side: NA
+Bottom: NA
+DIMENSIONS (DXWXH) | 440 x 235 x 405 mm / 17.32 x 9.25 x 15.94 inches
+8.66 kg
+NET WEIGHT
+GROSS WEIGHT | 11.29 kg
+Title: Raidmax Meshian X922 ARGB Mid-Tower Gaming Case
+Stock: In stock
+Price: LKR 20,000.00
+Product Specs:
+
+Title: Corsair ICUE 5000X RGB Tempered Glass Mid-Tower ATX Case – White
+Stock: In stock
+Price: LKR 78,000.00
+Product Specs:
+
+Title: Raidmax Infinita i801 ARGB Mid-Tower Gaming Case
+Stock: In stock
+Price: LKR 25,000.00
+Product Specs:
+2/2
+M/B Tray : 120mm | Top : 120mm x 3 / 140mm x 2 | Rear : 120mm x 1 | PSU Chamber : 120mm x 3
+M/B Tray : 240mm | Top : 360mm | Rear : 120mm
+Title: Corsair ICUE 7000X RGB Tempered Glass Full-Tower ATX Case – White
+Stock: In stock
+Price: LKR 127,500.00
+Product Specs:
+
+Title: Corsair ICUE 5000X RGB Tempered Glass Mid-Tower ATX Case – Black
+Stock: In stock
+Price: LKR 78,000.00
+Product Specs:
+
+Title: NZXT H9 Flow Edition ATX Mid Tower Premium White Case
+Stock: In stock
+Price: LKR 57,500.00
+Product Specs:
+
+Title: NZXT H9 Elite Edition RGB ATX Mid Tower Premium White Case
+Stock: In stock
+Price: LKR 85,500.00
+Product Specs:
+
+Title: NZXT H7 (2023) Elite Edition ATX Mid Tower White Case
+Stock: In stock
+Price: LKR 64,000.00
+Product Specs:
+KEY SPECS
+Motherboard Support : Mini-ITX, Micro-ATX, ATX
+Enclosure Type : Mid-Tower
+Case Material : SGCC Steel, Ultra-clear Tempered Glass, Dark Tinted Tempered Glass (Black only)
+FAN SUPPORT
+Front : 3 x 120mm / 3 x 140mm
+Top : 3 x 120mm / 2 x 140mm
+Rear : 1 x 120mm / 1 x 140mm
+Filters : All Air Intakes
+DIMENSIONS
+Height : 505mm (With Feet)
+Width : 230mm
+Depth : 480mm
+Weight : 11.36 kg
+RADIATOR SUPPORT
+Front : Up to 360mm with Push/Pull
+Top : Up to 360mm
+Rear : Up to 140mm
+COMPATIBILITY & CLEARANCE
+Max CPU Cooler Clearance : Up to 185mm
+Max GPU Clearance : Up to 400mm
+Front Radiator Clearance : 60mm
+Top Radiator Clearance : 30mm
+Cable Management : 18-22mm
+FAN SPECS
+Model : F140Q (Case Version)
+Speed : 1200 ± 240RPM
+Airflow : 99.56 CFM
+Static Pressure : 1.14 mm-H2O
+Noise : 24.18 dBA
+Fan Connector : 3-pin
+FRONT I/O PORTS
+USB 3.2 Gen 1 Type-A : 2
+USB 3.2 Gen 2 Type-C : 1
+Headset Audio Jack : 1
+FAN SPECS
+Model : F140 RGB
+Speed : 500 - 1800 RPM
+Airflow : 24.85 - 89.48 CFM
+Static Pressure : 0.94 - 3.39 mm-H2O
+Noise : 20 - 32.5 dBA
+Fan Connector : 4-pin
+RGB AND FAN CONTROLLER
+Fan Channels : 3
+NZXT RGB Connector : 6 (Support up to 120 LEDs)
+EXPANSION SLOTS
+Standard : 7
+Vertical : 0
+DRIVE BAYS
+2.5" : 4+2
+3.5" : 2
+GENERAL
+Title: NZXT H7 (2023) Flow RGB Edition ATX Mid Tower White Case
+Stock: In stock
+Price: LKR 57,500.00
+Product Specs:
+
+Title: NZXT H9 Elite Edition RGB ATX Mid Tower Premium Black Case
+Stock: In stock
+Price: LKR 85,500.00
+Product Specs:
+
+Title: Corsair ICUE 5000T RGB Tempered Glass Mid-Tower ATX Case – White
+Stock: In stock
+Price: LKR 148,000.00
+Product Specs:
+
+Title: NZXT H5 Elite Edition RGB ATX Mid Tower White Case
+Stock: In stock
+Price: LKR 51,500.00
+Product Specs:
+Height : 464 mm (With Feet)
+Width : 227 mm
+Depth : 446 mm
+Weight : 8.1 kg
+Max CPU Cooler Clearance : Up to 165mm
+Max GPU Clearance : Up to 365mm
+Front Radiator Clearance : 45mm
+Cable Management : Up to 23mm
+USB 3.2 Gen 1 Type-A : 1
+USB 3.2 Gen 2 Type-C : 1
+Headset Audio Jack : 1
+Installation screws : 1
+Cable ties : 10
+RGB Lighting Controller:NZXT RGB Connector : 3 (Support up to 120 LEDs)
+Standard : 7
+2.5" : 1+1
+3.5" : 1
+Front : 2 x F Series RGB 140mm (Case Version) included
+Top : 2 x 120mm
+Rear : 1 x 120mm
+Bottom : 1 x F Series Quiet 120mm (Case Version) included
+Filters : All Air Intakes
+Front : Up to 280mm
+Top : Up to 240mm
+Rear : Up to 120mm
+Model : F140 RGB Fan
+Speed : 500 - 1800 RPM
+Airflow : 24.85 - 89.48 CFM
+Static Pressure : 0.94 - 3.39 mm-H2O
+Noise : 20 - 32.5 dBA
+Fan Connector : 4-pin
+Model : F120Q Airflow Fan (Case Version)
+Speed : 1200 ± 240 RPM
+Airflow : 62.18 CFM
+Static Pressure : 1.05 mm-H2O
+Noise : 25.1 dBA
+Fan Connector : 3-pin
+Title: NZXT H5 Elite Edition RGB ATX Mid Tower Black Case
+Stock: In stock
+Price: LKR 51,500.00
+Product Specs:
+Height : 464 mm (With Feet)
+Width : 227 mm
+Depth : 446 mm
+Weight : 8.1 kg
+Max CPU Cooler Clearance : Up to 165mm
+Max GPU Clearance : Up to 365mm
+Front Radiator Clearance : 45mm
+Cable Management : Up to 23mm
+USB 3.2 Gen 1 Type-A : 1
+USB 3.2 Gen 2 Type-C : 1
+Headset Audio Jack : 1
+Installation screws : 1
+Cable ties : 10
+RGB Lighting Controller:NZXT RGB Connector : 3 (Support up to 120 LEDs)
+Standard : 7
+2.5" : 1+1
+3.5" : 1
+Front : 2 x F Series RGB 140mm (Case Version) included
+Top : 2 x 120mm
+Rear : 1 x 120mm
+Bottom : 1 x F Series Quiet 120mm (Case Version) included
+Filters : All Air Intakes
+Front : Up to 280mm
+Top : Up to 240mm
+Rear : Up to 120mm
+Model : F140 RGB Fan
+Speed : 500 - 1800 RPM
+Airflow : 24.85 - 89.48 CFM
+Static Pressure : 0.94 - 3.39 mm-H2O
+Noise : 20 - 32.5 dBA
+Fan Connector : 4-pin
+Model : F120Q Airflow Fan (Case Version)
+Speed : 1200 ± 240 RPM
+Airflow : 62.18 CFM
+Static Pressure : 1.05 mm-H2O
+Noise : 25.1 dBA
+Fan Connector : 3-pin
+Title: NZXT H6 Flow RGB Edition ATX Mid Tower White Case
+Stock: In stock
+Price: LKR 49,000.00
+Product Specs:
+Tech Specs
+KEY SPECS
+Motherboard Support:ATX, Micro-ATX, Mini-ITX
+Enclosure Type:Mid-Tower
+Case Material:SGCC Steel, Ultra-Clear Tempered Glass, Dark Tinted Tempered Glass (Black SKU only)
+DIMENSIONS
+Height (with feet):435 mm / 17.13 in
+Width:287 mm / 11.3 in
+Depth:415 mm / 16.34 in
+Weight:9.4 kg
+COMPATIBILITY & CLEARANCE
+CPU Cooler Height:163 mm / 6.42 in
+GPU Length:365 mm / 14.37 in
+PSU Length:200 mm / 7.87 in
+Cable Management:91 mm / 3.58 in
+Top Radiator:30 mm / 1.18 in
+FRONT I/O PORTS
+USB 3.2 Gen 1 Type-A:2
+USB 3.2 Gen 2 Type-C:1
+Headset Audio Jack:1
+EXPANSION SLOTS
+Standard:7
+Vertical:0
+DRIVE BAYS
+2.5":2
+3.5":1
+FAN SUPPORT
+Front-Right:3 x 120 mm (3 x F120 RGB Core included)
+Top:3 x 120 mm / 2 x 140 mm
+Bottom:2 x 140 mm
+Rear:1 x 120 mm
+Filters:High-Performance Mesh
+RADIATOR SUPPORT
+Top:Up to 360 mm
+Rear:Up to 120 mm
+FAN SPECS
+Model:F120 RGB Core Fan (Case Version)
+Speed:1300 ± 130 RPM
+Airflow:55.17 CFM
+Static:1.27 mm - H?O
+Noise:26.1 dBA
+Fan Connector:3-pin
+GENERAL
+Model Number:CC-H61FW-R1 (White) / CC-H61FB-R1 (Black)
+UPC:810074844154 (White) / 810074844161 (Black)
+EAN:5056547204062 (White) / 5056547204079 (Black)
+Title: Corsair 5000D Tempered Glass Mid-Tower ATX Case – Black
+Stock: In stock
+Price: LKR 60,000.00
+Product Specs:
+
+Title: Corsair Crystal Series 680X RGB ATX High Airflow Tempered Glass Smart Case – White
+Stock: In stock
+Price: LKR 114,000.00
+Product Specs:
+
+Title: Corsair ICUE 4000X RGB Tempered Glass Mid-Tower ATX Case - Black
+Stock: In stock
+Price: LKR 51,500.00
+Product Specs:
+
+Title: Corsair 3000D RGB Airflow Mid-Tower ATX Case
+Stock: In stock
+Price: LKR 45,500.00
+Product Specs:
+Case Height | 466
+Case Length | 462
+Case Width | 230
+Color | BLACK
+Weight | 8.6
+Radiator Compatibility | 120mm, 140mm, 240mm, 280mm, 360mm
+Maximum GPU Length | 360
+Maximum CPU Cooler Height | 170
+Maximum PSU Length | 220
+Compatible Liquid Coolers | H55, H60, H100, H115, H150
+Case Size | Mid-Tower
+Case Power Supply | ATX
+Case Expansion Slots | 7 vertical
+Case Drive Bays | (x2) 3.5in or (x2) 2.5in
+Case Front IO | 2x USB 3.2 Gen 1 Type-A, Headphone/Mic Combo Jack
+Case Window | Tempered Glass
+Case Warranty | 2 Year
+Internal 3.5" Drive Bays | 2
+Internal 2.5" Drive Bays | 2
+Title: Corsair 5000D Tempered Glass Mid-Tower ATX Case – White
+Stock: In stock
+Price: LKR 60,000.00
+Product Specs:
+
+Title: Cooler Master CMP510 RGB Mid-Tower Case
+Stock: In stock
+Price: LKR 23,000.00
+Product Specs:
+Model Number | CP510-KGNN-S00, CP510-KGNN-S01
+Exterior Color | Black
+Materials | Steel, Plastic, Tempered Glass
+Dimensions (L x W x H) | 445 x 204 x 463mm (incl. Protrusions), 436 x 204 x 448mm (excl. Protrusions)
+Volume | 39.85L (exlc. Protrusions)
+Motherboard Support | Mini ITX, Micro ATX, ATX
+Expansion Slots | 7
+2.5" / 3.5" Drive Bays (Combo) | 2
+2.5" Drive Bays | 2
+I/O Panel | 1x USB 3.2 Gen 1 Type-A, 1x USB 2.0, 1x 3.5mm Headset Jack (Audio+Mic), 1x ARGB Controller
+Pre-installed Fans - Front | 3 x 120mm ARGB Fan (CP510-KGNN-S00)
+Pre-installed Fans - Rear | N/A
+Fan Support - Top | 2x 120mm, 2x 140mm
+Fan Support - Front | 3x 120mm, 2x 140mm
+Fan Support - Rear | 1x 120mm
+Radiator Support - Top | 120 / 240mm (Memory bar height limit 35mm, First assemble the memory and then assemble the Radiator)
+Radiator Support - Front | 120mm, 140mm, 240mm, 280mm
+Radiator Support - Rear | 120mm
+Clearance - CPU Cooler | 161mm
+Clearance - PSU | 160mm
+Clearance - GFX | 350mm (w/o front fans & radiator)
+Cable Routing | 18.5mm
+Dust Filters | Top, Bottom
+Power Supply Support | Bottom Mount, ATX
+Series | CMP Series
+Size | Mid Tower
+Title: ASUS TUF GT502 WHITE Mid-Tower ATX Gaming Case
+Stock: In stock
+Price: LKR 63,500.00
+Product Specs:
+
+Title: Corsair 3000D Airflow Mid-Tower ATX Case
+Stock: In stock
+Price: LKR 31,500.00
+Product Specs:
+Case Height | 466
+Case Length | 462
+Case Width | 230
+Color | BLACK
+Weight | 8.6
+Radiator Compatibility | 120mm, 140mm, 240mm, 280mm, 360mm
+Maximum GPU Length | 360
+Maximum CPU Cooler Height | 170
+Maximum PSU Length | 220
+Compatible Liquid Coolers | H55, H60, H100, H115, H150
+Case Size | Mid-Tower
+Case Power Supply | ATX
+Case Expansion Slots | 7 vertical
+Case Drive Bays | (x2) 3.5in or (x2) 2.5in
+Case Front IO | 2x USB 3.2 Gen 1 Type-A, Headphone/Mic Combo Jack
+Case Window | Tempered Glass
+Internal 3.5" Drive Bays | 2
+Internal 2.5" Drive Bays | 2
+Title: ASUS TUF GT501 White RGB Mid-Tower Gaming Case
+Stock: In stock
+Price: LKR 56,000.00
+Product Specs:
+
+Title: ASUS TUF GT502 BLACK Mid-Tower ATX Gaming Case
+Stock: In stock
+Price: LKR 61,500.00
+Product Specs:
+
+Title: Cooler Master MasterBox K501L Mid-Tower Case
+Stock: In stock
+Price: LKR 24,500.00
+Product Specs:
+
+Title: MSI MPG Velox 100R Tempered Glass Mid-Tower ATX Case
+Stock: In stock
+Price: LKR 38,000.00
+Product Specs:
+PRODUCT NAME
+CASE FORM FACTOR
+MOTHERBOARD FORM FACTOR SUPPORT
+I/O PORTS
+1 x USB 3.2 Gen 2x2 Type C (20Gbps)
+1 x Audio-out
+1 x Mic-in
+DRIVE MOUNT SUPPORT
+EXPANSION SLOTS
+MAXIMUM GPU LENGTH
+MAXIMUM CPU COOLER HEIGHT
+POWER SUPPLY SUPPORT
+MAXIMUM PSU LENGTH
+FAN SIZE SUPPORT
+Top: 3 x 120 mm / 2 x 140 mm
+Rear: 1 x 120 mm
+Side: 2 x 120 mm
+PRE-INSTALLED FAN SIZE | Front: 3 x 120 mm
+Rear: 1 x 120 mm
+PRE-INSTALLED FAN TYPE | Front: 3 x ARGB Fan
+Rear: 1 x ARGB Fan
+RADIATOR SIZE SUPPORT | Front: 120 / 140 / 240 / 280 / 360 mm
+Top: 120 / 140 / 240 / 280 / 360 mm
+Rear: 120 mm
+Side: 120 / 240 mm
+DIMENSIONS (DXWXH)
+NET WEIGHT
+GROSS WEIGHT
+Title: Asus STRIX HELIOS GX601 RGB Mid-Tower Gaming Case
+Stock: In stock
+Price: LKR 110,000.00
+Product Specs:
+
+Title: ASUS ROG HYPERION GR701 FULL-Tower ATX Gaming Case
+Stock: In stock
+Price: LKR 170,000.00
+Product Specs:
+
+Title: NZXT H6 Flow Edition ATX Mid Tower White Case
+Stock: In stock
+Price: LKR 39,500.00
+Product Specs:
+Tech Specs
+KEY SPECS
+Motherboard Support:ATX, Micro-ATX, Mini-ITX
+Enclosure Type:Mid-Tower
+Case Material:SGCC Steel, Ultra-Clear Tempered Glass, Dark Tinted Tempered Glass (Black SKU only)
+DIMENSIONS
+Height (with feet):435 mm / 17.13 in
+Width:287 mm / 11.3 in
+Depth:415 mm / 16.34 in
+Weight:9.4 kg
+COMPATIBILITY & CLEARANCE
+CPU Cooler Height:163 mm / 6.42 in
+GPU Length:365 mm / 14.37 in
+PSU Length:200 mm / 7.87 in
+Cable Management:91 mm / 3.58 in
+Top Radiator:30 mm / 1.18 in
+FRONT I/O PORTS
+USB 3.2 Gen 1 Type-A:2
+USB 3.2 Gen 2 Type-C:1
+Headset Audio Jack:1
+EXPANSION SLOTS
+Standard:7
+Vertical:0
+DRIVE BAYS
+2.5":2
+3.5":1
+FAN SUPPORT
+Front-Right:3 x 120 mm (3 x F120Q included)
+Top:3 x 120 mm / 2 x 140 mm
+Bottom:2 x 140 mm
+Rear:1 x 120 mm
+Filters:High-Performance Mesh
+RADIATOR SUPPORT
+Top:Up to 360 mm
+Rear:Up to 120 mm
+FAN SPECS
+Model:F120Q Airflow Fan (Case Version)
+Speed:1200 ± 240RPM
+Airflow:62.18 CFM
+Static:1.05 mm - H2O
+Noise:25.1 dBA
+Fan Connector:3-pin
+GENERAL
+Model Number:CC-H61FW-01 (White) / CC-H61FB-01 (Black)
+UPC:810074844130 (White) / 810074844147 (Black)
+EAN:5056547204048 (White) / 5056547204055 (Black)
