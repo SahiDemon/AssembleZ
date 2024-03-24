@@ -40,11 +40,11 @@ class ProductSpider(scrapy.Spider):
 
         # Map category choices to URLs
         category_urls = {
-            '1': "https://www.nanotek.lk/category/processors",
-            '2': "https://www.nanotek.lk/category/motherboards",
-            '3': "https://www.nanotek.lk/category/memory-ram",
-            '4': "https://www.nanotek.lk/category/graphic-cards",
-            '5': "https://www.nanotek.lk/category/casings",
+            '1': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=Mg==",
+            '2': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=Mg==",
+            '3': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=Mw==",
+            '4': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=Ng==",
+            '5': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=NA==",
         }
 
         # Validate category choice
@@ -61,34 +61,41 @@ class ProductSpider(scrapy.Spider):
 
     def parse_product_listing(self, response):
         # Extract product links from the listing page
-        product_links = response.css('.ty-catPage-productListItem a::attr(href)').getall()
+        product_links = response.css('.product_img a::attr(href)').getall()
 
         # Visit each product page
         for product_link in product_links:
-            yield scrapy.Request(url=product_link, callback=self.parse_product_page)
+            yield scrapy.Request(url="https://www.gamestreet.lk/"+product_link, callback=self.parse_product_page)
 
     def parse_product_page(self, response: HtmlResponse):
         # Extract the desired information
-        title = response.css('.ty-productTitle::text').get()
-        stock = response.css('.ty-special-msg::text').get()
-        category = response.css('.ty-productCategory::text').get()
-        price = response.css('.ty-price.ty-price-now::text').get()
-        product_info = response.css('.ty-productPage-info::text').getall()
-        product_info_text = "\n".join(product_info).strip()
+        title = response.css('.product-title::text').get()
+        stock = response.xpath('//dt[contains(text(), "Stock Availability")]/following-sibling::span/following-sibling::dd/text()').get()
+        price = response.css('.price span::text').get()
 
-        
-        print()
+        # Initialize an empty list to hold product specifications
+        product_specs = []
+        # Target the table rows within the product description table
+        table_rows = response.xpath('//p[contains(b/text(), "Description")]/following-sibling::table[1]/tbody/tr')
+        for tr in table_rows:
+            # Attempt to extract a pair of non-empty and meaningful data from each row
+            # Adjusted to consider the actual text content, ignoring purely whitespace or placeholders
+            specs = tr.xpath('td/text()[normalize-space() and not(.="&nbsp;")]').getall()
+            specs = [spec.strip() for spec in specs if spec.strip()]
+            # Pairing logic adjusted to account for possible variations in table structure
+            if specs:
+                # Concatenate all specs within a single row for simplicity
+                concatenated_specs = ' | '.join(specs)
+                product_specs.append(concatenated_specs)
+
+        product_info_text = "\n".join(product_specs).strip()
+
+        # Display the extracted information
         print("Title:", title.strip() if title else "N/A")
-
         print("Stock:", stock.strip() if stock else "N/A")
-
         print("Price:", "LKR", price.strip() if price else "N/A")
-        print()
-        print("Category:", category.strip() if category else "N/A")
-
-        print("Product Info:")
-        print()
-        print("\n".join(line.strip() for line in product_info_text.splitlines() if line.strip()))
+        print("Product Specs:")
+        print(product_info_text)
 
 if __name__ == "__main__":
     from scrapy.crawler import CrawlerProcess
