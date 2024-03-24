@@ -63,17 +63,18 @@
   /*
   spinner3 
   */
-
 #spinner3 {
     border-radius: 50%;
-    position: fixed;
-    top: 40%;
-    left: 50%;
-    animation: rotate 2s linear infinite;
+    position: absolute;
+    top: 44%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    /* animation: rotate 2s linear infinite; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
 
 #spinner3::before {
     content: "";
@@ -87,48 +88,7 @@
     animation: shadow 2s linear infinite;
 }
 
-@media (max-width: 768px) {
-    #spinner3 {
-        top: 38%;
-        left: 45%;
-    }
-}
 
-
-@media (max-width: 425px) {
-    #spinner3 {
-        top: 37%;
-        left: 40%;
-    }
-}
-
-
-@media (max-width: 1024px) {
-    #spinner3 {
-        top: 41%;
-        left: 47%;
-    }
-}
-
-@media (max-width: 1440px) {
-    #spinner3 {
-        top: 42%;
-        left: 49%;
-    }
-}
-
-@media (max-width: 2560px) {
-    #spinner3 {
-        top: 47%;
-        left: 50%;
-    }
-}
-@media (max-width: 1920px) {
-    #spinner3 {
-        top: 39%;
-        left: 50%;
-    }
-}
 
 @keyframes shadow {
     0% {

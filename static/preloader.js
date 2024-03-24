@@ -11,4 +11,3 @@ window.addEventListener('load', function() {
         }, 1000); // Matches the CSS transition duration
     }, 2000); // Adjust this delay as needed
 });
-
