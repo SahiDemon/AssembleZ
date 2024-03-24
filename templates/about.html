@@ -16,7 +16,7 @@
 	<meta name="description" content="No hassle, just AssembleZ!">
 
 
-	<title>About</title>
+	<title>ASSEMBLEZ | ABOUT</title>
 	<link rel="stylesheet" href="{{ url_for('static', filename='web/assets/mobirise-icons2/mobirise2.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap-grid.min.css') }}">
@@ -26,6 +26,7 @@
 	<link rel="stylesheet" href="{{ url_for('static', filename='dropdown/css/style.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='socicon/css/styles.css') }}">
 	<link rel="stylesheet" href="{{ url_for('static', filename='theme/css/style.css') }}">
+	<link rel="stylesheet" href="{{ url_for('static', filename='preloader.css') }}" type="text/css">
 	<link rel="preload"
 		href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
 		as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -43,6 +44,10 @@
 </head>
 
 <body>
+	<div class="preloader">
+		<div id="spinner3" class="spinner"></div>
+		<div class="loadingText">ASSEMBLING...</div>
+	  </div>
 
 	<section data-bs-version="5.1" class="menu menu2 cid-u7SQrekzH9" once="menu" id="menu02-p">
 
@@ -476,6 +481,7 @@
 	<script src="{{ url_for('static', filename='dropdown/js/navbar-dropdown.js') }}"></script>
 	<script src="{{ url_for('static', filename='mbr-switch-arrow/mbr-switch-arrow.js') }}"></script>
 	<script src="{{ url_for('static', filename='theme/js/script.js') }}"></script>
+	<script src="{{ url_for('static', filename='preloader.js') }}"></script>
 
 
 	<input name="animation" type="hidden">

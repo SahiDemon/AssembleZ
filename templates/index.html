@@ -4,17 +4,24 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.9.17, mobirise.com">
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image:src" content="{{ url_for('static', filename='images/index-meta.png') }}">
-  <meta property="og:image" content="{{ url_for('static', filename='images/index-meta.png') }}">
-  <meta name="twitter:title" content="Home">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="{{ url_for('static', filename='images/assemblezlogo-96x97.png') }}"
-    type="image/x-icon">
-  <meta name="description" content="No hassle, just AssembleZ!">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/assemblezlogo-96x97.png') }}" type="image/x-icon">
+  <meta name="description" content="Compare and find the best prices for computer parts in Sri Lanka with AssembleZ. Your one-stop shop for PC component price comparisons.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.assemblez.com">
+  <meta property="og:title" content="AssembleZ - Compare Computer Part Prices in Sri Lanka">
+  <meta property="og:description" content="Compare and find the best prices for computer parts in Sri Lanka with AssembleZ. Your one-stop shop for PC component price comparisons.">
+  <meta property="og:image" content="{{ url_for('static', filename='images/index-meta.png') }}">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.assemblez.com">
+  <meta name="twitter:title" content="AssembleZ - Compare Computer Part Prices in Sri Lanka">
+  <meta name="twitter:description" content="Compare and find the best prices for computer parts in Sri Lanka with AssembleZ. Your one-stop shop for PC component price comparisons.">
+  <meta name="twitter:image" content="{{ url_for('static', filename='images/index-meta.png') }}">
+  
 
-  <title>Home</title>
+  <title>ASSEMBLEZ | HOME</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='web/assets/mobirise-icons2/mobirise2.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='mobirise-icons2/mobirise2.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
@@ -24,6 +31,7 @@
   <link rel="stylesheet" href="{{ url_for('static', filename='dropdown/css/style.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='socicon/css/styles.css') }}">
   <link rel="stylesheet" href="{{ url_for('static', filename='theme/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='preloader.css') }}" type="text/css">
   <link rel="preload"
     href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
     as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -40,6 +48,10 @@
 </head>
 
 <body>
+  <div class="preloader">
+    <div id="spinner3" class="spinner"></div>
+    <div class="loadingText">ASSEMBLING...</div>
+  </div>
 
   <section data-bs-version="5.1" class="menu menu2 cid-u7RWDVZvRT" once="menu" id="menu02-d">
 
@@ -695,6 +707,7 @@
   <script src="{{ url_for('static', filename='countdown/countdown.js') }}"></script>
   <script src="{{ url_for('static', filename='theme/js/script.js') }}"></script>
   <script src="{{ url_for('static', filename='formoid/formoid.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='preloader.js') }}"></script>
 
 
   <input name="animation" type="hidden">
