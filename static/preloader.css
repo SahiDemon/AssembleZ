@@ -49,7 +49,7 @@
   .spinner {
     width: 100px;
     height: 100px;
-    background: linear-gradient(90deg, #009fff, #ec2f4b);
+    background: linear-gradient(90deg, #2929ff, #ec2f4b);
   }
   
   @keyframes rotate {
@@ -136,7 +136,7 @@
     align-items: center;
     justify-content: center;
     animation: fadeInOut 3s linear infinite, gradientSlide 6s linear infinite; /* Adjusted time for gradientSlide */
-    background: linear-gradient(90deg, #009fff, #ec2f4b);
+    background: linear-gradient(90deg, #2929ff, #ffffff , #940b1d);
     background-size: 200% 200%; /* Important for a smooth gradient slide */
     -webkit-background-clip: text;
     background-clip: text;
