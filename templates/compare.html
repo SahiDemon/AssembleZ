@@ -99,7 +99,7 @@
       <div class="row">
         <div class="content-wrap col-12 col-md-12">
           <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
-            <strong><br>{{ product[1] }}</strong>
+            <strong><br>{{ product.nanotek[1] }}</strong>
           </h1>
 
 
@@ -110,74 +110,90 @@
   </section>
 
 
-  <!-- <section data-bs-version="5.1" class="news06 cid-u7WSmWNgbM" id="productDetail">
-    <div class="container">
-        <div class="row justify-content-center align-items-center item features-image active">
-            <div class="col-12 col-md-6">
-                <div class="item-wrapper">
-                    <div class="row">
-                        <div class="col-12 image-wrapper">
-                            <img class="w-100" src="{{ product[4] }}" alt="{{ product[0] }}">
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-6">
-                <div class="item-wrapper">
-                    <div class="row">
-                        <div class="col-12">
-                            <div class="text-wrapper align-left">
-                                <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Store - Nanotek</strong><br><strong>{{ product[0] }}</strong></h5>
-                                <p class="price mbr-fonts-style mb-3 display-7">{{ product[1] }}</p>
-                                <p class="mbr-text mbr-fonts-style mb-3 display-7">{{ product[2] }}</p>
-                                <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-white display-7" href="{{ product[4] }}">Visit</a></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section> -->
 
-  <section data-bs-version="5.1" class="news06 cid-u7WSmWNgbM" id="news06-1t">
-    <div class="container">
-      <div class="row justify-content-center align-items-center item features-image active">
-        <div class="col-12 col-md-6">
-          <div class="item-wrapper"></div>
-          <div class="row">
-            <div class="col-12 image-wrapper">
-              <img class="w-100"
-                src="{{ product[4] }}"
-                alt="">
-            </div>
+  
+<section data-bs-version="5.1" class="news06 cid-u7WSmWNgbM" id="news06-1t">
+  <div class="container">
+    <div class="row justify-content-center align-items-center">
+
+      {% if product.nanotek %}
+      <div class="col-12">
+        <img class="imagescr" src="{{ product.nanotek[4] }}" alt="">
+      </div>
+      {% else %}
+      {% if product.gamestreet %}
+      <div class="col-12">
+        <img class="imagescr" src="{{ product.gamestreet[4] }}" alt="">
+      </div>
+      {% endif %}
+      {% endif %}
+
+
+      {% if product.nanotek %}
+      <div class="col-12 col-md-6">
+        <div class="item-wrapper">
+
+
+          <div class="text-wrapper align-left">
+            <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5">
+              <strong>Nanotek - {{ product.nanotek[1] }}</strong>
+            </h5>
+            <p class="price mbr-fonts-style mb-3 display-7">LKR {{ product.nanotek[2] }}</p>
+            <p class="mbr-text mbr-fonts-style mb-3 display-7">{{ product.nanotek[3] }}</p>
+            <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-white display-7" href="https://www.nanotek.lk/">Visit</a></div>
           </div>
         </div>
       </div>
-      <br><br>
-        <div class="col-12 col-md-6">
-          <div class="item-wrapper">
-            <div class="row">
-              <div class="col-12">
-                <div class="text-wrapper align-left">
-                  <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Store -
-                      Nanotek</strong><br><strong>{{ product[1] }}</strong></h5>
-                  <p class="price mbr-fonts-style mb-3 display-7">{{ product[2] }}</p>
-                  <p class="mbr-text mbr-fonts-style mb-3 display-7">{{ product[3] }}</p>
-                  <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-white display-7" href="">Visit</a></div>
-                </div>
-              </div>
-            </div>
+      {% endif %}
+
+
+      {% if product.gamestreet %}
+      <div class="col-12 col-md-6">
+        <div class="item-wrapper">
+          <div class="text-wrapper align-left">
+            <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5">
+              <strong>GameStreet - {{ product.gamestreet[1] }}</strong>
+            </h5>
+            <p class="price mbr-fonts-style display-7">LKR {{ product.gamestreet[2] }}</p>
+            <p class="mbr-text mbr-fonts-style display-7">{{ product.gamestreet[3] }}</p>
+            <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-white display-7" href="https://www.gamestreet.lk/">Visit</a></div>
           </div>
         </div>
+      </div>
+      {% endif %}
+
     </div>
+  </div>
+</section>
+
+
+
+
+
+<section data-bs-version="5.1" class="news06 cid-u7WSmWNgbM" id="news06-1t">
+  {% if product.nanotek %}
+  <div class="container">
+      <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Product Details</strong></h5>
+      {{ product.nanotek[5] | format_description | safe }}
     </div>
+   
+    {% else %}
+    {% if product.gamestreet %}
+    <div class="container">
+        <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Product Details</strong></h5>
+        {{ product.gamestreet[5] | format_description | safe }}
+      </div>
+      {% endif %} 
+      {% endif %}
   </section>
 
+
+
+
+
+  
+
   <section data-bs-version="5.1" class="cid-u7WPKb3kXK" id="design-block-1k">
-
-
-
     <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
       viewBox="0 0 3510.8 349.9">
       <path class="wave1"
