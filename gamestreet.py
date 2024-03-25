@@ -9,7 +9,7 @@ class ProductSpider(scrapy.Spider):
         category_urls = {
             'Processors': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=MQ==",
             'Motherboards': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=Mg==",
-            'RAM': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=Mw==",
+            'memoryram': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=Mw==",
             'Graphic Cards': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=Ng==",
             'Casings': "https://www.gamestreet.lk/products.php?cat=Mg==&scat=NA==",
         }
