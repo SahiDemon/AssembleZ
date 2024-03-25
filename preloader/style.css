@@ -8,23 +8,13 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background: rgb(0, 0, 0);
-    z-index: 9999;
-    transition: transform 1s ease-in-out; 
+    background: black; /* Background of the preloader itself */
+    z-index: 1000; /* Above other content */
+    transition: transform 1s ease-in-out; /* Smooth transition for sliding up */
 }
 
 .preloader.slide-up {
-    transform: translateY(100%);
-    animation: fadeOut 2s ease-in-out forwards; 
-}
-
-@keyframes fadeOut {
-    0% {
-        opacity: 1;
-    }
-    100% {
-        opacity: 0;
-    }
+    transform: translateY(-100%); /* Moves the preloader up, out of view */
 }
 
 
@@ -59,7 +49,7 @@
   .spinner {
     width: 100px;
     height: 100px;
-    background: linear-gradient(90deg, #2929ff, #ec2f4b);
+    background: linear-gradient(90deg, #009fff, #ec2f4b);
   }
   
   @keyframes rotate {
@@ -73,18 +63,17 @@
   /*
   spinner3 
   */
+
 #spinner3 {
     border-radius: 50%;
-    position: absolute;
-    top: 44%;
-    left: 52%;
-    transform: translate(-50%, -50%);
-    /* animation: rotate 2s linear infinite; */
+    position: fixed;
+    top: 40%;
+    left: 50%;
+    animation: rotate 2s linear infinite;
     display: flex;
     align-items: center;
     justify-content: center;
 }
-
 
 #spinner3::before {
     content: "";
@@ -97,8 +86,6 @@
     border-radius: 50%;
     animation: shadow 2s linear infinite;
 }
-
-
 
 @keyframes shadow {
     0% {
@@ -140,13 +127,13 @@
     text-align: center;
     transform: translate(-50%, -50%);
     position: absolute;
-    top: 53%; /* Adjusted to 60% for moving it below the spinner */
-    left: 52.5%; /* Adjusted to 50% for centering */
+    top: 53%; /* Adjusted to 50% for centering */
+    left: 53%; /* Adjusted to 50% for centering */
     display: flex;
     align-items: center;
     justify-content: center;
     animation: fadeInOut 3s linear infinite, gradientSlide 6s linear infinite; /* Adjusted time for gradientSlide */
-    background: linear-gradient(90deg, #2929ff, #ffffff , #940b1d);
+    background: linear-gradient(90deg, #009fff, #ec2f4b);
     background-size: 200% 200%; /* Important for a smooth gradient slide */
     -webkit-background-clip: text;
     background-clip: text;

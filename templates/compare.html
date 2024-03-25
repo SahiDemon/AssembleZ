@@ -4,26 +4,28 @@
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="generator" content="Mobirise v5.9.17, mobirise.com">
+  <meta name="generator" content="">
   <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:image:src" content="assets/images/campare-meta.png">
-  <meta property="og:image" content="assets/images/campare-meta.png">
+  <meta name="twitter:image:src" content="{{ url_for('static', filename='images/campare-meta.png') }}">
+  <meta property="og:image" content="{{ url_for('static', filename='images/campare-meta.png') }}">
   <meta name="twitter:title" content="Comparison">
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
-  <link rel="shortcut icon" href="assets/images/assemblezlogo-96x97.png" type="image/x-icon">
-  <meta name="description" content="No hassle, just AssembleZ!">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/assemblezlogo-96x97.png') }}"
+    type="image/x-icon">
+  <meta name="description" content="No hassle, just AssembleZ">
 
 
   <title>Comparison</title>
-  <link rel="stylesheet" href="assets/web/assets/mobirise-icons2/mobirise2.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-grid.min.css">
-  <link rel="stylesheet" href="assets/bootstrap/css/bootstrap-reboot.min.css">
-  <link rel="stylesheet" href="assets/parallax/jarallax.css">
-  <link rel="stylesheet" href="assets/animatecss/animate.css">
-  <link rel="stylesheet" href="assets/dropdown/css/style.css">
-  <link rel="stylesheet" href="assets/socicon/css/styles.css">
-  <link rel="stylesheet" href="assets/theme/css/style.css">
+  <link rel="stylesheet" href="{{ url_for('static', filename='web/assets/mobirise-icons2/mobirise2.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap-grid.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap-reboot.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='parallax/jarallax.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='animatecss/animate.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='dropdown/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='socicon/css/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='theme/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='preloader.css') }}" type="text/css">
   <link rel="preload"
     href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
     as="style" onload="this.onload=null;this.rel='stylesheet'">
@@ -31,29 +33,28 @@
     <link rel="stylesheet"
       href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
   </noscript>
-  <link rel="preload" as="style" href="assets/mobirise/css/mbr-additional.css?v=oVSfWe">
-  <link rel="stylesheet" href="assets/mobirise/css/mbr-additional.css?v=oVSfWe" type="text/css">
-
-
-
-
+  <link rel="preload" as="style" href="{{ url_for('static', filename='assets/mobirise/css/mbr-additional.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='mobirise/css/mbr-additional.css') }}" type="text/css">
 </head>
 
 <body>
+  <div class="preloader">
+
+    <div id="spinner3" class="spinner"></div>
+  <div class="loadingText">ASSEMBLING...</div>
+</div>
 
   <section data-bs-version="5.1" class="menu menu2 cid-u7WPKa0Qns" once="menu" id="menu02-1h">
-
-
     <nav class="navbar navbar-dropdown navbar-expand-lg">
       <div class="container">
         <div class="navbar-brand">
           <span class="navbar-logo">
-            <a href="https://mobiri.se">
-              <img src="assets/images/assemblezlogo-96x97.png" alt="Mobirise Website Builder" style="height: 3.6rem;">
+            <a href="">
+              <img src="{{ url_for('static', filename='images/assemblezlogo-96x97.png') }}" alt=""
+                style="height: 3.6rem;">
             </a>
           </span>
-          <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4"
-              href="https://mobiri.se">AssembleZ</a></span>
+          <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="">AssembleZ</a></span>
         </div>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
           data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
@@ -71,24 +72,21 @@
               <a class="nav-link link text-white text-primary display-4" href="index.html">Home</a>
             </li>
             <li class="nav-item dropdown">
-              <a class="nav-link link dropdown-toggle text-white show display-4" href="https://mobiri.se"
-                aria-expanded="true" data-toggle="dropdown-submenu" data-bs-toggle="dropdown"
-                data-bs-auto-close="outside">Products</a>
-              <div class="dropdown-menu show" aria-labelledby="dropdown-182" data-bs-popper="none"><a
-                  class="dropdown-item text-white display-4" href="https://mobiri.se">Graphics Cards<br></a><a
-                  class="dropdown-item text-white display-4" href="https://mobiri.se">Processors</a><a
-                  class="dropdown-item text-white display-4" href="https://mobiri.se">Motherboard</a><a
-                  class="dropdown-item text-white display-4" href="https://mobiri.se">Casing</a></div>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link link text-white display-4" href="https://mobiri.se">Shop</a>
+              <a class="nav-link link dropdown-toggle text-white show display-4" href="" aria-expanded="true"
+                data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+                <div class="dropdown-menu" aria-labelledby="dropdown-182">
+                  <a class="dropdown-item text-white display-4" href="/products/GraphicCards">Graphics Cards<br></a>
+                  <a class="dropdown-item text-white display-4" href="/products/Processors">Processors</a>
+                  <a class="dropdown-item text-white display-4" href="/products/MotherBoards">Motherboard</a>
+                  <a class="dropdown-item text-white display-4" href="/products/MemoryRAM">Memory Cards</a>
+                  <a class="dropdown-item text-white display-4" href="/products/Casings">Casing</a>
+                </div>
             </li>
             <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="about.html">About</a>
             </li>
           </ul>
 
-          <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4"
-              href="https://mobiri.se">Contact Us</a></div>
+          <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="">Contact Us</a></div>
         </div>
       </div>
     </nav>
@@ -101,7 +99,7 @@
       <div class="row">
         <div class="content-wrap col-12 col-md-12">
           <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1">
-            <strong><br>ASUS PRIME H510M-E</strong>
+            <strong><br>{{ product[1] }}</strong>
           </h1>
 
 
@@ -111,6 +109,37 @@
     </div>
   </section>
 
+
+  <!-- <section data-bs-version="5.1" class="news06 cid-u7WSmWNgbM" id="productDetail">
+    <div class="container">
+        <div class="row justify-content-center align-items-center item features-image active">
+            <div class="col-12 col-md-6">
+                <div class="item-wrapper">
+                    <div class="row">
+                        <div class="col-12 image-wrapper">
+                            <img class="w-100" src="{{ product[4] }}" alt="{{ product[0] }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-12 col-md-6">
+                <div class="item-wrapper">
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="text-wrapper align-left">
+                                <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Store - Nanotek</strong><br><strong>{{ product[0] }}</strong></h5>
+                                <p class="price mbr-fonts-style mb-3 display-7">{{ product[1] }}</p>
+                                <p class="mbr-text mbr-fonts-style mb-3 display-7">{{ product[2] }}</p>
+                                <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-white display-7" href="{{ product[4] }}">Visit</a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+
   <section data-bs-version="5.1" class="news06 cid-u7WSmWNgbM" id="news06-1t">
     <div class="container">
       <div class="row justify-content-center align-items-center item features-image active">
@@ -119,43 +148,28 @@
           <div class="row">
             <div class="col-12 image-wrapper">
               <img class="w-100"
-                src="assets/images/1931-20231007062551-d98cc0bd-df92-4c95-bfd5-b34590d043b9-600x600.png"
-                alt="Mobirise Website Builder">
+                src="{{ product[4] }}"
+                alt="">
             </div>
           </div>
         </div>
       </div>
       <br><br>
-      <div class="row">
         <div class="col-12 col-md-6">
           <div class="item-wrapper">
             <div class="row">
               <div class="col-12">
                 <div class="text-wrapper align-left">
-                  <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Store - Nanotek</strong><br><strong>ASUS PRIME H510M-E</strong></h5>
-                  <p class="price mbr-fonts-style mb-3 display-7">LKR 29,500</p>
-                  <p class="mbr-text mbr-fonts-style mb-3 display-7">Description</p>
-                  <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-white display-7" href="https://mobiri.se">Visit</a></div>
+                  <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Store -
+                      Nanotek</strong><br><strong>{{ product[1] }}</strong></h5>
+                  <p class="price mbr-fonts-style mb-3 display-7">{{ product[2] }}</p>
+                  <p class="mbr-text mbr-fonts-style mb-3 display-7">{{ product[3] }}</p>
+                  <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-white display-7" href="">Visit</a></div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col-12 col-md-6">
-          <div class="item-wrapper">
-            <div class="row">
-              <div class="col-12">
-                <div class="text-wrapper align-left">
-                  <h5 class="mbr-section-title mbr-fonts-style mb-3 display-5"><strong>Store - Nanotek</strong><br><strong>ASUS PRIME H510M-E</strong></h5>
-                  <p class="price mbr-fonts-style mb-3 display-7">LKR 29,500</p>
-                  <p class="mbr-text mbr-fonts-style mb-3 display-7">Description</p>
-                  <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-white display-7" href="https://mobiri.se">Visit</a></div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
     </div>
     </div>
   </section>
@@ -293,20 +307,13 @@
       </div>
     </div>
   </section>
-  <section class="display-7"
-    style="padding: 0;align-items: center;justify-content: center;flex-wrap: wrap;    align-content: center;display: flex;position: relative;height: 4rem;">
-    <a href="https://mobiri.se/2927432" style="flex: 1 1;height: 4rem;position: absolute;width: 100%;z-index: 1;"><img
-        alt="" style="height: 4rem;"
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="></a>
-    <p style="margin: 0;text-align: center;" class="display-7">&#8204;</p><a style="z-index:1"
-      href="https://mobirise.com/builder/ai-website-generator.html">AI Website Generator</a>
-  </section>
-  <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
-  <script src="assets/parallax/jarallax.js"></script>
-  <script src="assets/smoothscroll/smooth-scroll.js"></script>
-  <script src="assets/ytplayer/index.js"></script>
-  <script src="assets/dropdown/js/navbar-dropdown.js"></script>
-  <script src="assets/theme/js/script.js"></script>
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='parallax/jarallax.js') }}"></script>
+  <script src="{{ url_for('static', filename='smoothscroll/smooth-scroll.js') }}"></script>
+  <script src="{{ url_for('static', filename='ytplayer/index.js') }}"></script>
+  <script src="{{ url_for('static', filename='dropdown/js/navbar-dropdown.js') }}"></script>
+  <script src="{{ url_for('static', filename='theme/js/script.js') }}"></script>
+  <script src="{{ url_for('static', filename='preloader.js') }}"></script>
 
 
   <input name="animation" type="hidden">
