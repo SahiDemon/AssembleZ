@@ -120,38 +120,66 @@
       </div>
     </div>
   </section>
+<section data-bs-version="5.1" class="cid-u7VOxV7HoE" id="pricing02-1f">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h4 class="filter-title">Filter Products</h4>
+        <input type="text" id="searchBox" onkeyup="filterProducts()" placeholder="Search for products..">
+
+
+        <div class="price-slider">
+          <input type="range" id="priceSlider" min="0" max="100" step="1" value="0" oninput="updatePriceLabel()">
+          <label id="priceLabel" for="priceSlider">Price Range: LKR 5000 - LKR 999999</label>
+      </div>
+
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
 
   <section data-bs-version="5.1" class="pricing02 cid-u7VOxV7HoE" id="pricing02-1f">
     <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-12 content-head">
-          <div class="mbr-section-head mb-5">
-            <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2"><strong>{{ category_title }}
-                Products</strong></h4>
-          </div>
-        </div>
-      </div>
-      <div class="row">
-        {% for product in products %}
-        <div class="item features-image col-12 col-md-6 col-lg-3">
-          <div class="item-wrapper">
-            <div class="item-img">
-              <img src="{{ product[4] }}" alt="" data-slide-to="0" data-bs-slide-to="0"
-                style="max-width: 100%;">
+        <div class="row justify-content-center">
+            <div class="col-12 content-head">
+                <div class="mbr-section-head mb-5">
+                    <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                        <strong>{{ category_title }} Products</strong>
+                    </h4>
+                </div>
             </div>
-            <div class="item-content">
-              <h5 class="item-title mbr-fonts-style display-5"><strong>{{ product[1] }}</strong></h5>
-              <h6 class="item-subtitle mbr-fonts-style display-7">LKR {{ product[2] }}</h6>
-              <p class="mbr-text mbr-fonts-style display-7">{{ 'In Stock' if product[3] else 'Out of Stock' }}</p>
-              <div class="mbr-section-btn item-footer"><a href="/product/{{ category }}/{{ product[0] }}" class="btn item-btn btn-primary display-7">Visit</a>
-              </div>
-            </div>
-          </div>
         </div>
-        {% endfor %}
-      </div>
+        <div id="productList" class="row">
+            {% for product in combined_products %}
+                {% set product_data = product.nanotek if product.nanotek else product.gamestreet %}
+                <div class="item features-image col-12 col-md-6 col-lg-3">
+                    <div class="item-wrapper">
+                        <div class="item-img">
+                            <img src="{{ product_data[4] }}" alt="" data-slide-to="0" data-bs-slide-to="0" style="max-width: 100%;">
+                        </div>
+                        <div class="item-content">
+                            <a href="/product/{{ category }}/{{ product_data[0] }}" class="item-link">
+                              <h5 class="item-title mbr-fonts-style display-5">
+                                <strong>{{ product_data[1] }}</strong>
+                              </h5>
+                            </a>
+                            <h6 class="item-subtitle mbr-fonts-style display-7">
+                                LKR {{ product_data[2] }}
+                            </h6>
+                            <p class="mbr-text mbr-fonts-style display-7">
+                                {{ 'In Stock' if product_data[3] else 'Out of Stock' }}
+                            </p>
+                            <div class="mbr-section-btn item-footer">
+                                <a href="/product/{{ category }}/{{ product_data[0] }}" class="btn item-btn btn-primary display-7">Visit</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
     </div>
-  </section>
+</section>
 
 
   <section data-bs-version="5.1" class="cid-u7VOihaBNu" id="design-block-1c">

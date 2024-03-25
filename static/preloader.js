@@ -57,3 +57,37 @@ document.getElementById('contactForm').addEventListener('submit', function(event
         console.error('Form submission error:', error);
     });
 });
+
+
+
+function filterProducts() {
+    var input, filter, products, i, txtValue;
+    input = document.getElementById('searchBox');
+    filter = input.value.toUpperCase();
+    products = document.getElementById("productList");
+    product = products.getElementsByTagName('div');
+  
+    // Loop through all product divs, and hide those who don't match the search query
+    for (i = 0; i < product.length; i++) {
+      txtValue = product[i].textContent || product[i].innerText;
+      if (txtValue.toUpperCase().indexOf(filter) > -1) {
+        product[i].style.display = "";
+      } else {
+        product[i].style.display = "none";
+      }
+    }
+  }
+
+
+function updatePriceLabel() {
+    var slider = document.getElementById('priceSlider');
+    var label = document.getElementById('priceLabel');
+
+    // Calculate the actual price based on the slider value. Replace this with your own calculation.
+    var minPrice = 5000;
+    var maxPrice = 999999;
+    var price = minPrice + (slider.value / 100) * (maxPrice - minPrice);
+
+    label.textContent = 'Price Range: LKR ' + Math.floor(price);
+}
+

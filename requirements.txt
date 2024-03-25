@@ -2,3 +2,5 @@ scrapy
 flask
 psycopg2
 gunicorn
+jinja2
+rapidfuzz

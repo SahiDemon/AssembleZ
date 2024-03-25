@@ -14,7 +14,7 @@
 }
 
 .preloader.slide-up {
-    transform: translateY(100%);
+    transform: translateY(-100%);
     animation: fadeOut 2s ease-in-out forwards; 
 }
 

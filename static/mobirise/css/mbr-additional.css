@@ -4478,6 +4478,7 @@ a {
   padding-top: 6rem;
   padding-bottom: 6rem;
   background-color: #000429;
+  
 }
 .cid-u7WSmWNgbM .mbr-fallback-image.disabled {
   display: none;
@@ -4761,3 +4762,79 @@ a {
 
 
 
+.product-description {
+  background-color: #000429;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  font-size: 1rem;  /* Increase the font size */
+  color: #ffffff;  /* Change the font color to white */
+}
+
+.product-description div {
+  margin-bottom: 5px;
+}
+
+.product-description strong {
+  margin-right: 5px;
+}
+
+.imagescr{
+  width: 50%;
+  height: 50%;
+  padding: 4rem;
+  margin: auto;
+}
+
+.filter-title{
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.filter-title span{
+  color: #ffffff;
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+#searchBox {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  
+}
+/* Filter Section Styling */
+.filter-options {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px; /* Adds space between filter options */
+  justify-content: space-between; /* Evenly spaces the filter options */
+  margin-bottom: 20px;
+}
+
+
+
+/* Price Range Styling */
+.price-range {
+  display: flex;
+  align-items: center;
+}
+
+.price-range input[type="radio"] {
+  margin-right: 5px;
+}
+.price-slider {
+  margin-bottom: 20px;
+}
+
+.price-slider input[type="range"] {
+  width: 20%;
+}
+
+.price-slider label {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+  color: #ffffff;
+}
