@@ -22,6 +22,9 @@ def get_product_data(category):
 def home():
     return render_template('index.html')
 
+@app.route('/about')
+def about():
+    return render_template('about.html')
 # Define a route to display the product information for a specific category
 @app.route('/products/<category>')
 def display_products(category):

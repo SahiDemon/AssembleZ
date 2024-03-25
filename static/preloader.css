@@ -1,0 +1,146 @@
+.preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: black; /* Background of the preloader itself */
+    z-index: 9999; /* Above other content */
+    transition: transform 1s ease-in-out; /* Smooth transition for sliding up */
+}
+
+.preloader.slide-up {
+    transform: translateY(-100%); /* Moves the preloader up, out of view */
+}
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  body {
+    background: rgb(255, 255, 255);
+  }
+  
+  .spinner-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    padding: 10px;
+  }
+  
+  .spinner-container > div {
+    width: 100%;
+    aspect-ratio: 1/1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .spinner {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(90deg, #2929ff, #ec2f4b);
+  }
+  
+  @keyframes rotate {
+    to {
+      transform: rotate(360deg);
+    }
+  }
+  
+ 
+  
+  /*
+  spinner3 
+  */
+#spinner3 {
+    border-radius: 50%;
+    position: absolute;
+    top: 44%;
+    left: 52%;
+    transform: translate(-50%, -50%);
+    /* animation: rotate 2s linear infinite; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#spinner3::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    animation: shadow 2s linear infinite;
+}
+
+
+
+@keyframes shadow {
+    0% {
+        box-shadow: inset 0 0 15px 15px black, 0 0 25px 25px black;
+    }
+
+    50% {
+        box-shadow: inset 0 0 25px 25px black;
+    }
+
+    100% {
+        box-shadow: inset 0 0 15px 15px black, 0 0 25px 25px black;
+    }
+}
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    70% {
+        opacity: 1;
+    }
+}
+
+@keyframes gradientSlide {
+    0% {
+        background-position: 0% 0%;
+    }
+    50% {
+        background-position: 100% 100%;
+    }
+    100% {
+        background-position: 0% 0%;
+    }
+}
+
+.loadingText {
+    color: white;
+    font-size: 24px;
+    text-align: center;
+    transform: translate(-50%, -50%);
+    position: absolute;
+    top: 53%; /* Adjusted to 60% for moving it below the spinner */
+    left: 52.5%; /* Adjusted to 50% for centering */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    animation: fadeInOut 3s linear infinite, gradientSlide 6s linear infinite; /* Adjusted time for gradientSlide */
+    background: linear-gradient(90deg, #2929ff, #ffffff , #940b1d);
+    background-size: 200% 200%; /* Important for a smooth gradient slide */
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Cool Font", sans-serif;
+    font-weight: bold;
+}

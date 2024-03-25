@@ -1,611 +1,718 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
-    <title>AssembleZ</title>
-    <meta property="og:title" content="AssembleZ" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta charset="utf-8" />
-    <meta property="twitter:card" content="summary_large_image" />
-    <link rel="icon" href="{{ url_for('static', filename='favicon.ico') }}" type="image/x-icon">
+<html lang="en" </html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+  <link rel="shortcut icon" href="{{ url_for('static', filename='images/assemblezlogo-96x97.png') }}" type="image/x-icon">
+  <meta name="description" content="Compare and find the best prices for computer parts in Sri Lanka with AssembleZ. Your one-stop shop for PC component price comparisons.">
+  
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://www.assemblez.com">
+  <meta property="og:title" content="AssembleZ - Compare Computer Part Prices in Sri Lanka">
+  <meta property="og:description" content="Compare and find the best prices for computer parts in Sri Lanka with AssembleZ. Your one-stop shop for PC component price comparisons.">
+  <meta property="og:image" content="{{ url_for('static', filename='images/index-meta.png') }}">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:url" content="https://www.assemblez.com">
+  <meta name="twitter:title" content="AssembleZ - Compare Computer Part Prices in Sri Lanka">
+  <meta name="twitter:description" content="Compare and find the best prices for computer parts in Sri Lanka with AssembleZ. Your one-stop shop for PC component price comparisons.">
+  <meta name="twitter:image" content="{{ url_for('static', filename='images/index-meta.png') }}">
+  
+
+  <title>ASSEMBLEZ | HOME</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='web/assets/mobirise-icons2/mobirise2.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='mobirise-icons2/mobirise2.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap-grid.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='bootstrap/css/bootstrap-reboot.min.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='animatecss/animate.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='dropdown/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='socicon/css/styles.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='theme/css/style.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='preloader.css') }}" type="text/css">
+  <link rel="preload"
+    href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Inter+Tight:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i&display=swap">
+  </noscript>
+  <link rel="preload" as="style" href="{{ url_for('static', filename='mobirise/css/mbr-additional.css') }}">
+  <link rel="stylesheet" href="{{ url_for('static', filename='mobirise/css/mbr-additional.css') }}" type="text/css">
 
 
-    <style data-tag="reset-style-sheet">
-      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
-    </style>
-    <style data-tag="default-style-sheet">
-      html {
-        font-family: Inter;
-        font-size: 16px;
-      }
 
-      body {
-        font-weight: 400;
-        font-style:normal;
-        text-decoration: none;
-        text-transform: none;
-        letter-spacing: normal;
-        line-height: 1.15;
-        color: var(--dl-color-gray-black);
-        background-color: var(--dl-color-gray-white);
 
-      }
-    </style>
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
-      data-tag="font"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
-      data-tag="font"
-    />
-    <!--This is the head section-->
-    <!-- <style> ... </style> -->
-    <link
-      rel="stylesheet"
-      href="https://unpkg.com/blaze-slider@latest/dist/blaze.css"
-    />
-    <style>
-      [data-thq="thq-dropdown"]:hover > [data-thq="thq-dropdown-list"] {
-          display: flex;
-        }
+</head>
 
-        [data-thq="thq-dropdown"]:hover > div [data-thq="thq-dropdown-arrow"] {
-          transform: rotate(90deg);
-        }
-    </style>
-  </head>
-  <body>
-    <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='stylemore.css') }}">
-    <div>
-      <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='index.css') }}">
+<body>
+  <div class="preloader">
 
-      <div class="home-container">
-        <section class="home-hero">
-          <video
-            src="https://raw.githubusercontent.com/SahiDemon/videoloops/main/1028(4).mp4"
-            loop="true"
-            muted="true"
-            poster="https://pbblogassets.s3.amazonaws.com/uploads/2020/07/13110748/Build-an-editing-PC.jpg"
-            preload="auto"
-            autoplay=""
-            playsinline=""
-            class="home-video"
-          ></video>
-          <header data-thq="thq-navbar" class="home-navbar">
-            <div data-thq="thq-burger-menu" class="home-burger-menu"></div>
-            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
-              <div
-                data-thq="thq-mobile-menu-nav"
-                data-role="Nav"
-                class="home-nav"
-              >
-                <div class="home-container1">
-                  <img
-                    alt="image"
-                    src="{{ url_for('static', filename='public/logo-200h.png') }}"
-                    class="home-image"
-                  />
-                  <div data-thq="thq-close-menu" class="home-menu-close">
-                    <svg viewBox="0 0 1024 1024" class="home-icon">
-                      <path
-                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                      ></path>
-                    </svg>
-                  </div>
-                </div>
-                <nav
-                  data-thq="thq-mobile-menu-nav-links"
-                  data-role="Nav"
-                  class="home-nav1"
-                >
-                  <a
-                    href="/products"
-                    target="_blank"
-                    rel="noreferrer noopener"
-                    class="home-link"
-                  >
-                    Products
-                  </a>
-                  <span class="home-text">Categories</span>
-                  <span class="home-text01">Shops</span>
-                  <span class="home-text02">Contact Us</span>
-                  <span class="home-text03">About Us</span>
-                </nav>
-                <div class="home-container2">
-                  <button class="home-login button">Login</button>
-                  <button class="button">Register</button>
-                </div>
-              </div>
-              <div class="home-icon-group">
-                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon02">
-                  <path
-                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                  ></path></svg
-                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon04">
-                  <path
-                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                  ></path></svg
-                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon06">
-                  <path
-                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                  ></path>
-                </svg>
-              </div>
-            </div>
-            <header data-thq="thq-navbar" class="home-navbar-interactive">
-              <img
-                alt="image"
-                src="{{ url_for('static', filename='public/logo-200h.png') }}"
-                
-                class="home-branding"
-              />
-              <div data-thq="thq-navbar-nav" class="home-desktop-menu">
-                <nav class="home-links">
-                  <div
-                    data-thq="thq-dropdown"
-                    class="home-thq-dropdown list-item"
-                  >
-                    <div
-                      data-thq="thq-dropdown-toggle"
-                      class="home-dropdown-toggle"
-                    >
-                      <span class="home-text04">Categories</span>
-                      <div
-                        data-thq="thq-dropdown-arrow"
-                        class="home-dropdown-arrow"
-                      >
-                        <svg viewBox="0 0 1024 1024" class="home-icon08">
-                          <path d="M426 726v-428l214 214z"></path>
-                        </svg>
-                      </div>
-                    </div>
-                    <ul data-thq="thq-dropdown-list" class="home-dropdown-list">
-                      <li
-                        data-thq="thq-dropdown"
-                        class="home-dropdown list-item"
-                      >
-                        <div
-                          data-thq="thq-dropdown-toggle"
-                          class="home-dropdown-toggle1"
-                        >
-                          <a
-                            href="/products/GraphicCards"
-                            class="home-link1"
-                          >
-                            Graphics Cards
-                          </a>
-                        </div>
-                      </li>
-                      <li
-                        data-thq="thq-dropdown"
-                        class="home-dropdown1 list-item"
-                      >
-                        <div
-                          data-thq="thq-dropdown-toggle"
-                          class="home-dropdown-toggle2"
-                        >
-                          <a
-                            href="/products/Processors"
-                            class="home-link2"
-                          >
-                            Processors
-                          </a>
-                        </div>
-                      </li>
-                      <li
-                        data-thq="thq-dropdown"
-                        class="home-dropdown2 list-item"
-                      >
-                        <div
-                          data-thq="thq-dropdown-toggle"
-                          class="home-dropdown-toggle3"
-                        >
-                          <a
-                            href="/products/MotherBoards"
-                            class="home-link3"
-                          >
-                            MotherBoards
-                          </a>
-                        </div>
-                      </li>
-                      <li
-                        data-thq="thq-dropdown"
-                        class="home-dropdown3 list-item"
-                      >
-                        <div
-                          data-thq="thq-dropdown-toggle"
-                          class="home-dropdown-toggle4"
-                        >
-                          <a
-                            href="/products/MemoryRAM"
-                            class="home-link4"
-                          >
-                            Casing
-                          </a>
-                        </div>
-                      </li>
-                      <li
-                        data-thq="thq-dropdown"
-                        class="home-dropdown4 list-item"
-                      ></li>
-                    </ul>
-                  </div>
-                  <span class="home-text05">Products</span>
-                  <span class="home-text06">Shops</span>
-                  <span class="home-text07">Contact</span>
-                  <span class="home-text08">About</span>
-                </nav>
-                <div class="home-buttons">
-                  <button class="home-login1 button">Login</button>
-                  <button class="button">Register</button>
-                </div>
-              </div>
-              <div data-thq="thq-burger-menu" class="home-burger-menu1">
-                <img
-                  alt="image"
-                  src="{{ url_for('static', filename='public/hamburger.svg') }}"
-                  
-                  class="home-icon10"
-                />
-              </div>
-              <div data-thq="thq-mobile-menu" class="home-mobile-menu1">
-                <div class="home-nav2">
-                  <div class="home-top">
-                    <img
-                      alt="image"
-                      src="{{ url_for('static', filename='public/assembezlogo-1500h.png') }}"
-                      
-                      class="home-image1"
-                    />
-                    <div data-thq="thq-close-menu" class="home-close-menu">
-                      <svg viewBox="0 0 1024 1024" class="home-icon11">
-                        <path
-                          d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
-                        ></path>
-                      </svg>
-                    </div>
-                  </div>
-                  <nav class="home-links1">
-                    <span class="home-text09">About</span>
-                    <span class="home-text10">Products</span>
-                    <span class="home-text11">Categories</span>
-                    <span class="home-text12">About</span>
-                    <span class="home-text13">Contact</span>
-                  </nav>
-                  <div class="home-buttons1">
-                    <button class="home-login2 button">Login</button>
-                    <button class="button">Register</button>
-                  </div>
-                </div>
-                <div>
-                  <svg viewBox="0 0 950.8571428571428 1024" class="home-icon13">
-                    <path
-                      d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
-                    ></path></svg
-                  ><svg
-                    viewBox="0 0 877.7142857142857 1024"
-                    class="home-icon15"
-                  >
-                    <path
-                      d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
-                    ></path></svg
-                  ><svg
-                    viewBox="0 0 602.2582857142856 1024"
-                    class="home-icon17"
-                  >
-                    <path
-                      d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
-                    ></path>
-                  </svg>
-                </div>
-              </div>
-            </header>
-          </header>
-          <div class="home-hero-content">
-            <h1 class="home-heading">
-              <span>Assemble with</span>
-              <span class="home-text15">imagination</span>
-              <br />
-            </h1>
-            <div class="home-header-container">
-              <p class="home-caption">No hassle, just AssembleZ!</p>
-            </div>
-            <a
-              href=""
-              class="home-link5 button"
-            >
-              <span>
-                <span>DISCOVER</span>
-                <br />
-              </span>
+      <div id="spinner3" class="spinner"></div>
+
+    <div class="loadingText">ASSEMBLING...</div>
+  </div>
+
+  <section data-bs-version="5.1" class="menu menu2 cid-u7RWDVZvRT" once="menu" id="menu02-d">
+
+
+    <nav class="navbar navbar-dropdown navbar-expand-lg">
+      <div class="container">
+        <div class="navbar-brand">
+          <span class="navbar-logo">
+            <a href="/">
+              <img src="{{ url_for('static', filename='images/assemblezlogo-96x97.png') }}" alt=" "
+                style="height: 3.6rem;">
             </a>
+          </span>
+          <span class="navbar-caption-wrap"><a class="navbar-caption text-white display-4" href="/">AssembleZ</a></span>
+        </div>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-bs-toggle="collapse"
+          data-target="#navbarSupportedContent" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <div class="hamburger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
           </div>
-        </section>
-        <section class="home-slides">
-          <div class="home-slider slider blaze-slider">
-            <div class="home-slider-container blaze-container">
-              <div class="home-slider-track-container blaze-track-container">
-                <div class="home-slider-track blaze-track">
-                  <div data-role="current-banner" class="home-slide banner">
-                    <img
-                      alt="image"
-                      src="{{ url_for('static', filename='public/2057-20221020165137-13900-400h.png') }}"
-                      class="home-image2"
-                    />
-                    <div class="home-content">
-                      <div class="home-header1">
-                        <h3 class="home-heading1">
-                          INTEL CORE I9-13900K PROCESSOR
-                        </h3>
-                        <p class="home-caption1">
-                          <span>NEW ARRIVAL</span>
-                          <br />
-                          <span>In Stock</span>
-                          <br />
-                          <span></span>
-                        </p>
-                      </div>
-                      <div class="home-more">
-                        <span class="home-caption2">Read More</span>
-                        <svg viewBox="0 0 1024 1024" class="home-icon19">
-                          <path
-                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-role="current-banner" class="home-slide1 banner">
-                    <img
-                      alt="image"
-                      src="{{ url_for('static', filename='public/2057-20221020165137-13900-400h.png') }}"
-                      
-                      class="home-image3"
-                    />
-                    <div class="home-content1">
-                      <div class="home-header2">
-                        <h3 class="home-heading2">
-                          INTEL CORE I9-13900K PROCESSOR
-                        </h3>
-                        <p class="home-caption3">
-                          <span>NEW ARRIVAL</span>
-                          <br />
-                          <span>In Stock</span>
-                          <br />
-                          <span></span>
-                        </p>
-                      </div>
-                      <div class="home-more1">
-                        <span class="home-caption4">Read More</span>
-                        <svg viewBox="0 0 1024 1024" class="home-icon21">
-                          <path
-                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                  <div data-role="current-banner" class="banner">
-                    <img
-                      alt="image"
-                      src="{{ url_for('static', filename='public/2263-20220514120956-product_16412869646176c6e905cf8b379a75ebd2c77cfa1e-400h.png') }}"
-                      class="home-image4"
-                    />
-                    <div class="home-content2">
-                      <div class="home-header3">
-                        <h3 class="home-heading3">MSI PRO B660M-E DDR4</h3>
-                        <p class="home-caption5">
-                          <span>NEW ARRIVAL</span>
-                          <br />
-                          <span>In Stock</span>
-                        </p>
-                      </div>
-                      <div class="home-more2">
-                        <span class="home-caption6">Read More</span>
-                        <svg viewBox="0 0 1024 1024" class="home-icon23">
-                          <path
-                            d="M298.667 341.333h323.669l-353.835 353.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l353.835-353.835v323.669c0 23.552 19.115 42.667 42.667 42.667s42.667-19.115 42.667-42.667v-426.667c0-5.803-1.152-11.307-3.243-16.341s-5.163-9.728-9.216-13.781c-0.043-0.043-0.043-0.043-0.085-0.085-3.925-3.925-8.619-7.083-13.781-9.216-5.035-2.091-10.539-3.243-16.341-3.243h-426.667c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
-                          ></path>
-                        </svg>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="home-controls">
-                <button
-                  data-role="previous-banner-button"
-                  class="home-previous blaze-prev button"
-                >
-                  <svg viewBox="0 0 1024 1024" class="home-icon25">
-                    <path
-                      d="M542.165 780.501l-225.835-225.835h494.336c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-494.336l225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-298.667 298.667c-4.096 4.096-7.168 8.789-9.259 13.824-2.176 5.205-3.243 10.795-3.243 16.341 0 10.923 4.181 21.845 12.501 30.165l298.667 298.667c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
-                    ></path>
-                  </svg>
-                </button>
-                <button
-                  data-role="next-banner-button"
-                  class="home-next blaze-next button"
-                >
-                  <svg viewBox="0 0 1024 1024" class="home-icon27">
-                    <path
-                      d="M481.835 243.499l225.835 225.835h-494.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h494.336l-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l298.667-298.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-298.667-298.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
-          </div>
-          <div class="home-div">
-            <script>
-              const el = document.querySelector('.blaze-slider')
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav nav-dropdown" data-app-modern-menu="true">
+            <li class="nav-item">
+              <a class="nav-link link text-white text-primary display-4" href="/">Home</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link link dropdown-toggle text-white display-4" href=" " aria-expanded="false"
+                data-toggle="dropdown-submenu" data-bs-toggle="dropdown" data-bs-auto-close="outside">Products</a>
+              <div class="dropdown-menu" aria-labelledby="dropdown-182"><a class="dropdown-item text-white display-4"
+                  href="products/GraphicCards">Graphics Cards<br></a><a class="dropdown-item text-white display-4"
+                  href="products/Processors">Processors</a><a class="dropdown-item text-white display-4"
+                  href="products/MotherBoards">Motherboard</a><a class="dropdown-item text-white display-4"
+                  href="products/MemoryRAM">Memory Cards</a><a class="dropdown-item text-white display-4"
+                  href="products/Casings">Casing</a></div>
+            </li>
 
-              new BlazeSlider(el, {
-                all: {
-                  slidesToShow: 3,
-                  slideGap: '80px',
-                  loop: true,
-                  enableAutoplay: true,
-                },
-              })
-            </script>
-          </div>
-        </section>
-        <section class="home-customer">
-          <h1 class="home-text33">Popular Shops</h1>
-          <div class="home-blog">
-            <div class="home-container3">
-              <div
-                class="blog-post-card1-blog-post-card blog-post-card1-root-class-name3"
-              >
-                <img
-                  alt="image"
-                  src="{{ url_for('static', filename='public/channels4_profile-1500w.jpg') }}"
-                  
-                  class="blog-post-card1-image"
-                />
-                <div class="blog-post-card1-container">
-                  <span class="blog-post-card1-text">COMPONENTS</span>
-                  <span class="blog-post-card1-text1">Nanotek</span>
-                  <span class="blog-post-card1-text2">
-                    PC enthusiast store to serve the high-end gaming market in
-                    Sri Lanka by offering custom-built computers and selling
-                    only premium computer hardware.
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="home-container4">
-              <div
-                class="blog-post-card1-blog-post-card blog-post-card1-root-class-name2"
-              >
-                <img
-                  alt="image"
-                  src="{{ url_for('static', filename='public/channels4_profile-1500w.jpg') }}"
-                  
-                  class="blog-post-card1-image"
-                />
-                <div class="blog-post-card1-container">
-                  <span class="blog-post-card1-text">COMPONENTS</span>
-                  <span class="blog-post-card1-text1">Nanotek</span>
-                  <span class="blog-post-card1-text2">
-                    PC enthusiast store to serve the high-end gaming market in
-                    Sri Lanka by offering custom-built computers and selling
-                    only premium computer hardware.
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div class="home-container5">
-              <div
-                class="blog-post-card1-blog-post-card blog-post-card1-root-class-name1"
-              >
-                <img
-                  alt="image"
-                  src="{{ url_for('static', filename='public/channels4_profile-1500w.jpg') }}"
-                  class="blog-post-card1-image"
-                />
-                <div class="blog-post-card1-container">
-                  <span class="blog-post-card1-text">COMPONENTS</span>
-                  <span class="blog-post-card1-text1">Nanotek</span>
-                  <span class="blog-post-card1-text2">
-                    PC enthusiast store to serve the high-end gaming market in
-                    Sri Lanka by offering custom-built computers and selling
-                    only premium computer hardware.
-                  </span>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="home-controls1">
-            <button class="home-previous1 button">
-              <svg viewBox="0 0 1024 1024" class="home-icon29">
-                <path
-                  d="M542.165 780.501l-225.835-225.835h494.336c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-494.336l225.835-225.835c16.683-16.683 16.683-43.691 0-60.331s-43.691-16.683-60.331 0l-298.667 298.667c-4.096 4.096-7.168 8.789-9.259 13.824-2.176 5.205-3.243 10.795-3.243 16.341 0 10.923 4.181 21.845 12.501 30.165l298.667 298.667c16.683 16.683 43.691 16.683 60.331 0s16.683-43.691 0-60.331z"
-                ></path>
-              </svg>
-            </button>
-            <button class="home-next1 button">
-              <svg viewBox="0 0 1024 1024" class="home-icon31">
-                <path
-                  d="M481.835 243.499l225.835 225.835h-494.336c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667h494.336l-225.835 225.835c-16.683 16.683-16.683 43.691 0 60.331s43.691 16.683 60.331 0l298.667-298.667c3.925-3.925 7.083-8.619 9.259-13.824 4.309-10.453 4.309-22.229 0-32.683-2.091-5.035-5.163-9.728-9.259-13.824l-298.667-298.667c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331z"
-                ></path>
-              </svg>
-            </button>
-            <button class="home-button button">
-              <span>View all Shops</span>
-            </button>
-          </div>
-        </section>
-        <div class="home-footer">
-          <div class="home-content3">
-            <div class="home-main">
-              <div class="home-branding1">
-                <img
-                  alt="image"
-                  src="{{ url_for('static', filename='public/assembezlogo-1500h.png') }}"
-                
-                  class="home-image5"
-                />
-                <span class="home-text35">
-                  Whether you are a gamer, a creator, or a professional, we help
-                  you find the best prices for your PC parts and make your PC
-                  building experience easy and fun.
-                </span>
-              </div>
-              <div class="home-links2">
-                <div class="home-column">
-                  <span class="home-header4">Assemble now!</span>
-                  <div class="home-list">
-                    <a href="index.html" class="home-navlink">Categories</a>
-                    <a href="index.html" class="home-navlink1">ABout Us</a>
-                    <a href="index.html" class="home-navlink2">Contact US</a>
-                    <a href="index.html" class="home-navlink3">
-                      <span class="home-text36">Why</span>
-                      <br />
-                    </a>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="home-bottom">
-              <span class="home-text38">
-                © 2023 AssembleZ - All rights reserved
-              </span>
-              <button data-role="scroll-top" class="home-button1 button">
-                <img alt="image"
-                  src="{{ url_for('static', filename='public/arrow.svg') }}"
-                  
-                  class="home-image6" />
-              </button>
-            </div>
+            <li class="nav-item"><a class="nav-link link text-white text-primary display-4" href="/about">About</a>
+            </li>
+          </ul>
+
+          <div class="navbar-buttons mbr-section-btn"><a class="btn btn-primary display-4" href="/about">Contact Us</a>
           </div>
         </div>
-        <div class="home-scroll-to-top">
-          <script>
-            document.addEventListener('DOMContentLoaded', function() {
-              // get the element with the 'scroll-top' data-role
-              const scrollTopBtn = document.querySelector('[data-role='scroll-top']');
+      </div>
+    </nav>
+  </section>
 
-              // when the element is clicked
-              scrollTopBtn.addEventListener('click', function() {
-                // smoothly scroll to the top of the page
-                window.scrollTo({
-                  top: 0,
-                  behavior: 'smooth'
-                });
-              });
-            });
-          </script>
+  <section data-bs-version="5.1" class="header09 startm5 cid-u7RIObRWTT mbr-fullscreen"
+    data-bg-video="https://player.vimeo.com/video/926643049" id="header09-7">
+
+
+    <div class="mbr-fallback-image disabled"></div>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="content-wrap col-12 col-md-12">
+          <h1 class="mbr-section-title mbr-fonts-style mbr-white mb-4 display-1"><strong>Assemble with
+              Imagination</strong></h1>
+
+          <p class="mbr-fonts-style mbr-text mbr-white mb-4 display-7">
+            No hassle, just AssembleZ!
+          </p>
+          <div class="mbr-section-btn">
+            <a class="btn btn-primary display-5" href="index.html#Categories">Discover</a>
+            <a class="btn btn-primary display-5" href="/about">About Us</a>
+          </div>
         </div>
       </div>
     </div>
-    <script
-      data-section-id="navbar"
-      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
-    ></script>
-    <script src="https://unpkg.com/blaze-slider@latest/dist/blaze-slider.min.js"></script>
-  </body>
+  </section>
+
+  <section data-bs-version="5.1" class="clients3 cid-u7SfCgeU1Y" id="clients03-h">
+
+
+
+
+    <div class="container-fluid">
+      <div class="row justify-content-center">
+        <div class="col-12 content-head">
+          <div class="mb-5">
+            <h5 class="mbr-section-title mbr-fonts-style mb-0 display-2">
+              <strong>Our&nbsp;Affiliations</strong>
+            </h5>
+            <div class="col-12">
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+
+        <div class="item features-without-image col-12 col-lg-3 active">
+          <div class="item-wrapper">
+            <div class="img-wrapper">
+              <img src="{{ url_for('static', filename='images/untitled-design-1-400x400.png') }}" alt=" "
+                data-slide-to="1" data-bs-slide-to="2">
+            </div>
+            <div class="card-box align-center">
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="item features-without-image col-12 col-lg-3">
+          <div class="item-wrapper">
+            <div class="img-wrapper">
+              <img src="{{ url_for('static', filename='images/untitled-design-2-400x400.png') }}" alt=" "
+                data-slide-to="1" data-bs-slide-to="2">
+            </div>
+            <div class="card-box align-center">
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="item features-without-image col-12 col-lg-3">
+          <div class="item-wrapper">
+            <div class="img-wrapper">
+              <img src="{{ url_for('static', filename='images/untitled-design-3-400x400.png') }}" alt=" "
+                data-slide-to="2" data-bs-slide-to="3">
+            </div>
+            <div class="card-box align-center">
+
+
+
+
+            </div>
+          </div>
+        </div>
+        <div class="item features-without-image col-12 col-lg-3">
+          <div class="item-wrapper">
+            <div class="img-wrapper">
+              <img src="{{ url_for('static', filename='images/untitled-design-4-400x400.png') }}" alt=" "
+                data-slide-to="3" data-bs-slide-to="4">
+            </div>
+            <div class="card-box align-center">
+
+
+
+
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="cid-gfOAVA6rg4" id="design-block-gfOAVA6rg4">
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1185 248">
+      <circle cx="76" cy="121.1" r="20" class="top"></circle>
+      <circle cx="870" cy="201.1" r="11" class="top"></circle>
+      <circle cx="814.5" cy="165.6" r="24.5" class="top"></circle>
+      <path
+        d="M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z"
+        class="top"></path>
+    </svg>
+
+
+
+  </section>
+
+  <section data-bs-version="5.1" class="gallery4 cid-u7S22RmV8J" id="gallery04-e">
+
+
+    <div class="container-fluid gallery-wrapper">
+      <div class="row justify-content-center">
+        <div class="col-12 content-head">
+
+        </div>
+      </div>
+      <div class="grid-container">
+        <div class="grid-container-1" style="transform: translate3d(-200px, 0px, 0px);">
+          <div class="grid-item">
+            <img src="{{ url_for('static', filename='images/nvidia-5264921-1281-1152x768.jpeg') }}" alt=" ">
+          </div>
+          <div class="grid-item">
+            <img src="{{ url_for('static', filename='images/andras-vas-bd7gnnwjbku-unsplash-2-1152x1440.jpeg') }}"
+              alt=" ">
+          </div>
+          <div class="grid-item">
+            <img src="{{ url_for('static', filename='images/onur-binay-z3mp5ddieme-unsplash-2-1152x1440.jpeg') }}"
+              alt=" ">
+          </div>
+          <div class="grid-item">
+            <img src="{{ url_for('static', filename='images/martin-katler-7wcxlbfgmdk-unsplash-1-1152x2052.jpeg') }}"
+              alt=" ">
+          </div>
+        </div>
+        <div class="grid-container-2" style="transform: translate3d(-70px, 0px, 0px);">
+          <div class="grid-item">
+            <img src="{{ url_for('static', filename='images/martin-katler-7wcxlbfgmdk-unsplash-1-1152x2052.jpeg') }}"
+              alt=" ">
+          </div>
+          <div class="grid-item">
+            <img src="{{ url_for('static', filename='images/redd-f-hppxuyseeei-unsplash-1-1152x1728.jpeg') }}" alt=" ">
+          </div>
+          <div class="grid-item">
+            <img src="{{ url_for('static', filename='images/olivier-collet-jmwce3w7qkk-unsplash-1152x864.jpeg') }}"
+              alt=" ">
+          </div>
+          <div class="grid-item">
+            <img src="{{ url_for('static', filename='images/andrey-matveev-sqtwtnqrt2o-unsplash-1152x864.jpeg') }}"
+              alt=" ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="cid-0XQM4L24xN" id="design-block-0XQM4L24xN">
+
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1185 248">
+      <circle cx="76" cy="121.1" r="20" class="top"></circle>
+      <circle cx="870" cy="201.1" r="11" class="top"></circle>
+      <circle cx="814.5" cy="165.6" r="24.5" class="top"></circle>
+      <path
+        d="M0 0v17.7c22.7 14.8 53 31.9 90.7 51.5 150.8 78 322 116.6 424.8 69.3 102.9-47.4 138-69.3 210.8-69.3s118.3 48.6 219.5 38.3 76.3-59.3 188.7-59.3c18.9 0 35.5 2.6 50.5 6.8V0H0z"
+        class="top"></path>
+    </svg>
+
+
+
+  </section>
+
+  <section data-bs-version="5.1" class="features017 mbr-embla cid-u7SoFYeXWi" id="Categories">
+
+
+    <div class="position-relative">
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 content-head">
+            <div class="mbr-section-head mb-5">
+              <h4 class="mbr-section-title mbr-fonts-style align-center mb-0 display-2">
+                <strong>Categories</strong>
+              </h4>
+
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="embla" data-skip-snaps="true" data-align="center" data-contain-scroll="trimSnaps" data-loop="true"
+        data-auto-play="true" data-auto-play-interval="5" data-draggable="true">
+        <div class="embla__viewport container-fluid">
+          <div class="embla__container">
+            <div class="embla__slide slider-image item active" style="margin-left: 3rem; margin-right: 3rem;">
+              <div class="slide-content">
+                <div class="item-img">
+                  <div class="item-wrapper">
+                    <img src="{{ url_for('static', filename='images/motherboard-885177-1280-600x400.jpg') }}" alt=" "
+                      title="" data-slide-to="0" data-bs-slide-to="0">
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title mbr-fonts-style display-5"><strong>Mother boards</strong><br></h5>
+                  <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">All ATX Types</h6>
+
+                </div>
+
+                <div class="mbr-section-btn item-footer mt-2"><a href="products/MotherBoards"
+                    class="btn item-btn btn-primary display-7" target="_blank">Explore</a></div>
+              </div>
+            </div>
+            <div class="embla__slide slider-image item active" style="margin-left: 3rem; margin-right: 3rem;">
+              <div class="slide-content">
+                <div class="item-img">
+                  <div class="item-wrapper">
+                    <img
+                      src="{{ url_for('static', filename='images/andrey-matveev-sqtwtnqrt2o-unsplash-1-600x450.jpg') }}"
+                      alt=" " title="" data-slide-to="1" data-bs-slide-to="1">
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title mbr-fonts-style display-5"><strong>Memory Cards</strong><br></h5>
+                  <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">All DDR Types</h6>
+
+                </div>
+
+                <div class="mbr-section-btn item-footer mt-2"><a href="products/MemoryRAM"
+                    class="btn item-btn btn-primary display-7" target="_blank">Explore</a></div>
+              </div>
+            </div>
+            <div class="embla__slide slider-image item active" style="margin-left: 3rem; margin-right: 3rem;">
+              <div class="slide-content">
+                <div class="item-img">
+                  <div class="item-wrapper">
+                    <img src="{{ url_for('static', filename='images/luis-gonzalez-jgzdwjwcpdi-unsplash-600x400.jpg') }}"
+                      alt=" " title="" data-slide-to="2" data-bs-slide-to="2">
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title mbr-fonts-style display-5"><strong>Processors</strong><br></h5>
+                  <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">Intel &amp; AMD</h6>
+
+                </div>
+
+                <div class="mbr-section-btn item-footer mt-2"><a href="products/Processors"
+                    class="btn item-btn btn-primary display-7" target="_blank">Explore</a></div>
+              </div>
+            </div>
+            <div class="embla__slide slider-image item active" style="margin-left: 3rem; margin-right: 3rem;">
+              <div class="slide-content">
+                <div class="item-img">
+                  <div class="item-wrapper">
+                    <img src="{{ url_for('static', filename='images/artiom-vallat-1ubclmu5bqa-unsplash-600x400.jpg') }}"
+                      alt=" " title="" data-slide-to="3" data-bs-slide-to="3">
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title mbr-fonts-style display-5"><strong>Graphics Cards</strong><br></h5>
+                  <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">In All Types</h6>
+
+                </div>
+
+                <div class="mbr-section-btn item-footer mt-2"><a href="products/GraphicCards"
+                    class="btn item-btn btn-primary display-7" target="_blank">Explore</a></div>
+              </div>
+            </div>
+            <div class="embla__slide slider-image item active" style="margin-left: 3rem; margin-right: 3rem;">
+              <div class="slide-content">
+                <div class="item-img">
+                  <div class="item-wrapper">
+                    <img src="{{ url_for('static', filename='images/wp5861714-gaming-cpu-wallpapers-600x338.jpg') }}"
+                      alt=" " title="" data-slide-to="4" data-bs-slide-to="4">
+                  </div>
+                </div>
+                <div class="item-content">
+                  <h5 class="item-title mbr-fonts-style display-5"><strong>Casing</strong><br></h5>
+                  <h6 class="item-subtitle mbr-fonts-style mt-1 display-7">In All Types</h6>
+
+                </div>
+
+                <div class="mbr-section-btn item-footer mt-2"><a href="products/Casings"
+                    class="btn item-btn btn-primary display-7" target="_blank">Explore</a></div>
+              </div>
+            </div>
+
+
+
+
+
+
+
+          </div>
+        </div>
+        <button class="embla__button embla__button--prev">
+          <span class="mobi-mbri mobi-mbri-arrow-prev mbr-iconfont" aria-hidden="true"></span>
+          <span class="sr-only visually-hidden visually-hidden visually-hidden">Previous</span>
+        </button>
+        <button class="embla__button embla__button--next">
+          <span class="mobi-mbri mobi-mbri-arrow-next mbr-iconfont" aria-hidden="true"></span>
+          <span class="sr-only visually-hidden visually-hidden visually-hidden">Next</span>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="mbr-section mbr-section--no-padding cid-RvHAaj2o4R"
+    id="design-block-RvHAaj2o4R">
+
+
+
+    <svg width="100%" viewBox="0 0 1280 86" preserveAspectRatio="xMidYMid slice" xmlns="http://www.w3.org/2000/svg">
+      <path class="cloud1"
+        d="M1280 66.1c-3.8 0-7.6.3-11.4.8-18.3-32.6-59.6-44.2-92.2-25.9-3.5 2-6.9 4.3-10 6.9-22.7-41.7-74.9-57.2-116.6-34.5-14.2 7.7-25.9 19.3-33.8 33.3-.2.3-.3.6-.5.8-12.2-1.4-23.7 5.9-27.7 17.5-11.9-6.1-25.9-6.3-37.9-.6-21.7-30.4-64-37.5-94.4-15.7-12.1 8.6-21 21-25.4 35.2-10.8-9.3-24.3-15-38.5-16.2-8.1-24.6-34.6-38-59.2-29.9-14.3 4.7-25.5 16-30 30.3-4.3-1.9-8.9-3.2-13.6-3.8-13.6-45.5-61.5-71.4-107-57.8a86.38 86.38 0 0 0-43.2 29.4c-8.7-3.6-18.7-1.8-25.4 4.8-23.1-24.8-61.9-26.2-86.7-3.1-7.1 6.6-12.5 14.8-15.9 24-26.7-10.1-56.9-.4-72.8 23.3-2.6-2.7-5.6-5.1-8.9-6.9-.4-.2-.8-.4-1.2-.7-.6-25.9-22-46.4-47.9-45.8-11.5.3-22.5 4.7-30.9 12.5-16.5-33.5-57.1-47.3-90.6-30.8-21.9 11-36.3 32.7-37.6 57.1-7-2.3-14.5-2.8-21.8-1.6C84.8 47 55.7 40.7 34 54.8c-5.6 3.6-10.3 8.4-13.9 14-6.6-1.7-13.3-2.6-20.1-2.6-.1 0 0 19.8 0 19.8h1280V66.1z">
+      </path>
+      <path class="cloud2"
+        d="M15.6 86H1280V48.5c-3.6 1.1-7.1 2.5-10.4 4.4-6.3 3.6-11.8 8.5-16 14.5-8.1-1.5-16.4-.9-24.2 1.7-3.2-39-37.3-68.1-76.4-64.9-24.8 2-46.8 16.9-57.9 39.3-19.9-18.5-51-17.3-69.4 2.6-8.2 8.8-12.8 20.3-13.1 32.3-.4.2-.9.4-1.3.7-3.5 1.9-6.6 4.4-9.4 7.2-16.6-24.9-48.2-35-76.2-24.4-12.2-33.4-49.1-50.6-82.5-38.4-9.5 3.5-18.1 9.1-25 16.5-7.1-6.9-17.5-8.8-26.6-5-30.4-39.3-87-46.3-126.2-15.8-14.8 11.5-25.6 27.4-31 45.4-4.9.6-9.7 1.9-14.2 3.9-8.2-25.9-35.8-40.2-61.7-32-15 4.8-26.9 16.5-31.8 31.5-14.9 1.3-29 7.2-40.3 17-11.5-37.4-51.2-58.4-88.7-46.8-14.8 4.6-27.7 13.9-36.7 26.5-12.6-6-27.3-5.7-39.7.6-4.1-12.2-16.2-19.8-29-18.4-.2-.3-.3-.6-.5-.9-24.4-43.3-79.4-58.6-122.7-34.2-13.3 7.5-24.4 18.2-32.4 31.2C99.8 18.5 50 28.5 25.4 65.4c-4.3 6.4-7.5 13.3-9.8 20.6z">
+      </path>
+    </svg>
+
+  </section>
+
+  <section data-bs-version="5.1" class="countdown2 cid-u7Szikc1pz" id="countdown2-m">
+
+
+
+
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <h4 class="mbr-section-title mb-5 align-center mbr-fonts-style display-2"><strong>Build &amp;
+              Compare!</strong></h4>
+          <h4 class="mbr-section-subtitle mb-5 align-center mbr-fonts-style display-7">Seamlessly assemble your dream
+            rig and instantly compare prices across top retailers, all in one place. Dive into a world of smart savings
+            and savvy choices with our intuitive comparison tool. Stay tuned for this game-changing addition to our
+            website!&nbsp;</h4>
+          <div class="countdown-cont align-center mb-5 display-1">
+            <div title="Days" class="daysCountdown col-xs-3 col-sm-3 col-md-3 display-4"></div>
+            <div title="Hours" class="hoursCountdown col-xs-3 col-sm-3 col-md-3 display-4">
+            </div>
+            <div title="Minutes" class="minutesCountdown col-xs-3 col-sm-3 col-md-3 display-4">
+            </div>
+            <div title="Seconds" class="secondsCountdown col-xs-3 col-sm-3 col-md-3 display-4">
+            </div>
+            <div class="countdown" data-due-date="2024/05/01"></div>
+          </div>
+          <p class="mbr-text mb-5 align-center mbr-fonts-style display-7">
+            Subscribe to find out when we launch.
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-8 mx-auto mbr-form" data-form-type="formoid">
+          <form action="https://formspree.io/f/mleqwylp" method="POST" class="mbr-form form-with-styler">
+            <input type="hidden" name="_subject" value="Subscriber From AssembleZ!">
+            <div class="row">
+              <div hidden="hidden" data-form-alert="" class="alert alert-success col-12">Thanks for filling out the form! The Assemble Team will update you soon!</div>
+              <div hidden="hidden" data-form-alert-danger="" class="alert alert-danger col-12">Oops... there was a problem!</div>
+            </div>
+            <div class="dragArea row">
+              <div class="col-lg-6 col-md-6 col-sm-12 form-group">
+                <input type="email" name="email" placeholder="your@email.com" class="form-control display-7" id="email-countdown2-m" required>
+              </div>
+              <div class="col-auto mbr-section-btn">
+                <button type="submit" class="btn btn-white-outline display-7">Submit</button>
+              </div>
+            </div>
+          </form>          
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="mbr-section mbr-section--no-padding cid-59QIYNk3zg"
+    id="design-block-59QIYNk3zg">
+
+
+
+    <svg width="100%" height="50px" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg"
+      xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 75">
+      <path class="wave1"
+        d="M1963,327H-105V65A2647.49,2647.49,0,0,1,431,19c217.7,3.5,239.6,30.8,470,36,297.3,6.7,367.5-36.2,642-28a2511.41,2511.41,0,0,1,420,48">
+      </path>
+      <path class="wave2"
+        d="M-127,404H1963V44c-140.1-28-343.3-46.7-566,22-75.5,23.3-118.5,45.9-162,64-48.6,20.2-404.7,128-784,0C355.2,97.7,341.6,78.3,235,50,86.6,10.6-41.8,6.9-127,10">
+      </path>
+      <path class="wave3"
+        d="M1979,462-155,446V106C251.8,20.2,576.6,15.9,805,30c167.4,10.3,322.3,32.9,680,56,207,13.4,378,20.3,494,24">
+      </path>
+      <path class="wave4"
+        d="M1998,484H-243V100c445.8,26.8,794.2-4.1,1035-39,141-20.4,231.1-40.1,378-45,349.6-11.6,636.7,73.8,828,150">
+      </path>
+    </svg>
+
+  </section>
+
+  <section data-bs-version="5.1" class="start article05 cid-u7T8YTX4p9" id="article05-16">
+
+
+
+
+
+    <div class="container">
+      <div class="row justify-content-center align-items-center">
+        <div class="col-12">
+          <div class="card-wrapper">
+            <div class="row">
+              <div class="col-12 col-md-12 col-lg-5 image-wrapper">
+                <img class="w-100" src="{{ url_for('static', filename='images/tree.webp') }}" alt=" ">
+              </div>
+              <div class="col-12 col-lg col-md-12">
+                <div class="text-wrapper align-left">
+                  <h1 class="mbr-section-title mbr-fonts-style mb-4 display-2"><strong>Got a minute?</strong></h1>
+                  <p class="mbr-text mbr-fonts-style mb-4 display-7">Your insights could light up the galaxy! Take our
+                    quick survey and help us make AssembleZ even more stellar for you and fellow tech enthusiasts.Your
+                    feedback is the rocket fuel we need to soar higher!<br>
+                    <br>
+                    <br>
+                    <br>
+                    <br>
+                  </p>
+                  <div class="mbr-section-btn mt-3"><a class="btn btn-lg btn-black display-7"
+                      href="https://km0kyfzzk3k.typeform.com/to/JfDiDvNO" target="_blank">Get started</a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="cid-LMgbOHufH4" id="design-block-LMgbOHufH4">
+
+
+
+    <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+      viewBox="0 0 3510.8 349.9">
+      <path class="wave1"
+        d="M1538.6,349.9c-8.5-5.8-17-11.5-25.4-17.2c-201.1-134-443.1-203.1-683.1-195.3c-227.5,7.5-446.5,85.8-635.3,212.4H1538.6z">
+      </path>
+      <path class="wave2"
+        d="M3510.8,204.2c-20.4-11.2-41.6-21.2-62.2-29.5c-82.7-33.3-189.3-48.1-283.7-29.4c-145.5,29-226.9,126.3-365.6,165.7c-122,34.6-266.8,18.4-392.2-11.3c-243.9-57.8-476.4-125.1-746.4-111c-148,7.7-291,38.8-421.4,82c-134.5,44.6-293.8,106.7-448.7,58.3c-131.8-41.3-200.4-132.1-322.4-182c-91.2-37.3-207.8-50.7-315.1-36.3C98,118.1,45.7,132.9,0,153.3v197.2h3510.8V204.2z">
+      </path>
+      <path class="wave1"
+        d="M3510.8,282.8c-117.5-97.4-255.6-201.2-413.4-176.4c-111.4,17.5-184.7,114-282.7,161c-127.3,61-227.1-16.9-341-69.3c-153.7-70.6-343.6-51.4-480.7,48.6c-42.4,31-83,70-125.2,103.2h1643V282.8z">
+      </path>
+      <path class="wave1"
+        d="M3510.8,161.9c-21.6-2.7-43-3.1-62.3-1.6c-73,5.5-142.2,33.4-209.5,62.3c-67.3,28.9-134.9,59.4-207.2,70.9c-241.2,38.3-440.7-133.6-663.5-189c-201.9-50.2-415.8-6.8-611.8,62.6c-199.5,70.6-405.5,169.7-612.9,127.5c-146-29.7-268.2-125.9-403.1-189.1C501.4-6.7,247.5-4.2,0,50.1v299.8h3510.8V161.9z">
+      </path>
+    </svg>
+
+  </section>
+
+  <section data-bs-version="5.1" class="footer1 cid-u7SyGYEikh" once="footers" id="footer01-l">
+
+
+
+
+    <div class="container">
+      <div class="row mbr-white">
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
+            <strong>Products</strong>
+          </h5>
+          <ul class="list mbr-fonts-style display-7">
+            <li class="mbr-text item-wrap">Categories</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
+            <strong>Shops</strong>
+          </h5>
+          <ul class="list mbr-fonts-style display-7">
+            <li class="mbr-text item-wrap">Nanotek</li>
+            <li class="mbr-text item-wrap">ChamaComputers</li>
+            <li class="mbr-text item-wrap">Gamestreet</li>
+            <li class="mbr-text item-wrap">Winsoft</li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
+            <strong>Contact</strong>
+          </h5>
+          <ul class="list mbr-fonts-style display-7">
+            <li class="mbr-text item-wrap">Email Us</li>
+            <li class="mbr-text item-wrap"><br></li>
+          </ul>
+        </div>
+        <div class="col-12 col-md-6 col-lg-3">
+          <h5 class="mbr-section-subtitle mbr-fonts-style mb-2 display-5">
+            <strong>About</strong>
+          </h5>
+          <ul class="list mbr-fonts-style display-7">AssembleZ</ul>
+        </div>
+        <div class="col-12 mt-5 footer-col">
+          <div class="mbr-section-btn align-left"><a class="btn btn-primary display-7"
+              href="index.html#Categories">Discover</a> <a class="btn btn-primary display-7"
+              href="https://km0kyfzzk3k.typeform.com/to/JfDiDvNO" target="_blank">Start Survey</a></div>
+
+
+        </div>
+        <div class="col-12 mt-4">
+          <p class="mbr-text mb-0 mbr-fonts-style copyright align-center display-7">
+            © Copyright 2024 AssembleZ- All Rights Reserved
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="_customHTML cid-612Sw7bHkZ" id="design-block-612Sw7bHkZ">
+
+
+
+
+    <div class="progress-container" id="myHeader">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+
+    <script type="text/javascript">
+      window.onscroll = function () { myFunction() };
+      var header = document.getElementById("myHeader");
+      // Get the offset position of the navbar
+      var sticky = header.offsetTop;
+      function myFunction() {
+        var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        var scrolled = (winScroll / height) * 100;
+        document.getElementById("myBar").style.width = scrolled + "%";
+
+        if (window.pageYOffset > sticky) {
+          header.classList.add("sticky2");
+        } else {
+          header.classList.remove("sticky2");
+        }
+
+
+      }
+
+
+    </script>
+
+    <div style="padding:1rem; background-color:#c1c1c1;" class="hidden">
+      <div class="align-center">
+        <h10> <br><br><br><br><br><br>Scroll Indicator - Progress bar<br>
+          Click the "gear" icon to change the layout of the social bar. This text will be removed on
+          preview/publish.<br><br><svg id="svg" version="1.1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="150" viewBox="0, 0, 400,383.33333333333337">
+            <g id="svgg">
+              <path id="path0"
+                d="M37.210 6.152 C 35.603 6.521,34.673 7.586,34.092 9.720 C 33.330 12.516,33.825 95.736,34.612 97.241 C 35.870 99.644,28.382 99.467,134.420 99.600 C 199.138 99.681,231.925 99.852,232.882 100.115 C 235.440 100.816,235.350 101.661,230.295 124.449 C 224.368 151.170,212.070 208.952,209.422 222.521 C 207.800 230.833,207.905 232.790,209.971 232.790 C 211.891 232.790,209.325 235.910,254.122 179.099 C 277.812 149.054,289.953 133.596,295.689 126.174 C 297.890 123.327,306.521 112.368,314.870 101.822 C 367.957 34.759,386.363 11.054,386.765 9.224 C 387.073 7.820,386.446 6.596,385.169 6.111 C 383.972 5.656,39.193 5.697,37.210 6.152 M382.917 8.569 C 384.519 9.741,380.855 14.580,323.489 87.057 C 313.389 99.818,299.260 117.766,292.092 126.942 C 279.051 143.636,265.977 160.258,245.456 186.236 C 239.439 193.853,229.856 206.001,224.162 213.231 C 210.292 230.840,210.188 230.897,212.490 219.587 C 217.028 197.295,227.371 148.754,232.598 125.216 C 237.896 101.359,238.065 99.524,235.099 97.991 C 234.120 97.484,228.193 97.405,188.034 97.358 C 75.294 97.227,37.576 96.911,36.978 96.092 C 36.161 94.974,36.161 10.490,36.978 9.373 C 37.513 8.642,38.883 8.626,116.843 8.435 C 301.952 7.984,382.171 8.024,382.917 8.569 M81.622 108.821 C 107.636 108.875,150.091 108.875,175.966 108.821 C 201.840 108.766,180.556 108.722,128.667 108.722 C 76.779 108.722,55.608 108.766,81.622 108.821 M177.885 157.718 C 177.182 158.404,174.020 162.244,170.860 166.251 C 167.700 170.259,164.939 173.732,164.724 173.970 C 164.509 174.207,161.918 177.468,158.965 181.217 C 156.012 184.965,150.834 191.512,147.459 195.767 C 144.084 200.021,139.856 205.359,138.063 207.629 C 129.342 218.668,112.627 239.779,108.533 244.926 C 107.162 246.650,103.624 251.125,100.671 254.870 C 97.718 258.615,93.156 264.369,90.533 267.657 C 87.910 270.944,79.126 282.263,71.012 292.809 C 62.899 303.356,50.820 318.802,44.170 327.133 C 28.112 347.253,23.297 353.336,21.093 356.284 C 20.566 356.990,18.921 359.133,17.439 361.046 C 6.762 374.827,3.520 379.694,4.240 380.859 C 4.652 381.526,352.012 381.883,353.760 381.218 L 354.749 380.843 354.547 336.442 C 354.330 288.424,354.421 291.066,352.956 290.282 C 351.831 289.680,309.260 289.563,226.846 289.934 C 183.386 290.130,157.086 289.826,155.238 289.106 C 153.350 288.370,153.375 288.079,156.655 272.483 C 157.410 268.897,158.183 265.187,158.374 264.238 C 159.208 260.094,161.885 247.419,162.221 246.021 C 162.651 244.231,164.430 235.954,166.258 227.229 C 166.966 223.854,167.895 219.453,168.324 217.450 C 168.753 215.446,169.619 211.390,170.249 208.437 C 170.879 205.484,171.843 200.997,172.391 198.466 C 172.938 195.935,173.542 193.087,173.734 192.138 C 173.925 191.189,174.694 187.478,175.444 183.893 C 181.253 156.107,181.424 154.270,177.885 157.718 M334.899 284.838 C 335.479 284.926,336.429 284.926,337.009 284.838 C 337.589 284.751,337.114 284.679,335.954 284.679 C 334.794 284.679,334.319 284.751,334.899 284.838 "
+                stroke="none" fill="#b3b3b3" fill-rule="evenodd"></path>
+              <path id="path1"
+                d="M116.843 8.435 C 38.883 8.626,37.513 8.642,36.978 9.373 C 36.161 10.490,36.161 94.974,36.978 96.092 C 37.576 96.911,75.294 97.227,188.034 97.358 C 228.193 97.405,234.120 97.484,235.099 97.991 C 238.065 99.524,237.896 101.359,232.598 125.216 C 227.371 148.754,217.028 197.295,212.490 219.587 C 210.188 230.897,210.292 230.840,224.162 213.231 C 229.856 206.001,239.439 193.853,245.456 186.236 C 265.977 160.258,279.051 143.636,292.092 126.942 C 299.260 117.766,313.389 99.818,323.489 87.057 C 380.855 14.580,384.519 9.741,382.917 8.569 C 382.171 8.024,301.952 7.984,116.843 8.435 "
+                stroke="none" fill="#4c4c4c" fill-rule="evenodd"></path>
+              <path id="path2"
+                d="M24.582 1.208 C 24.285 2.061,24.165 16.987,24.175 52.119 C 24.189 104.381,24.198 104.667,25.856 107.198 C 27.312 109.419,21.600 109.300,126.819 109.300 C 187.817 109.300,223.202 109.435,223.202 109.666 C 223.202 109.868,221.385 118.791,219.165 129.496 C 216.944 140.200,215.208 149.171,215.308 149.431 C 215.408 149.690,215.358 149.957,215.197 150.023 C 214.865 150.160,213.651 155.819,204.600 199.407 C 201.952 212.158,199.872 222.815,199.977 223.088 C 200.082 223.362,199.980 223.586,199.752 223.586 C 199.516 223.586,199.414 223.996,199.516 224.531 C 199.615 225.051,199.582 225.526,199.442 225.586 C 199.151 225.710,198.557 228.337,196.119 240.268 C 195.171 244.909,194.060 250.029,193.650 251.646 C 191.455 260.308,193.965 264.453,200.009 262.145 C 201.966 261.398,201.889 261.486,213.429 246.788 C 220.801 237.399,226.824 229.751,236.050 218.064 C 240.748 212.113,252.094 197.659,269.799 175.072 C 275.255 168.111,284.303 156.570,289.907 149.425 C 295.511 142.279,303.979 131.474,308.725 125.414 C 321.361 109.277,325.827 103.583,336.629 89.833 C 342.331 82.576,346.237 77.280,346.078 77.022 C 345.919 76.764,345.976 76.688,346.216 76.836 C 346.447 76.979,347.760 75.626,349.227 73.732 C 350.658 71.885,353.101 68.781,354.656 66.833 C 356.329 64.739,357.370 63.109,357.206 62.843 C 357.041 62.576,357.094 62.496,357.336 62.646 C 357.872 62.977,368.666 49.199,368.315 48.632 C 368.164 48.388,368.223 48.310,368.450 48.451 C 368.674 48.589,373.706 42.505,379.897 34.608 C 385.973 26.858,392.261 18.965,393.871 17.066 C 395.480 15.168,397.517 12.693,398.398 11.567 L 400.000 9.519 400.000 4.759 L 400.000 0.000 212.502 0.000 L 25.003 0.000 24.582 1.208 M385.169 6.111 C 386.446 6.596,387.073 7.820,386.765 9.224 C 386.363 11.054,367.957 34.759,314.870 101.822 C 306.521 112.368,297.890 123.327,295.689 126.174 C 289.953 133.596,277.812 149.054,254.122 179.099 C 209.325 235.910,211.891 232.790,209.971 232.790 C 207.905 232.790,207.800 230.833,209.422 222.521 C 212.070 208.952,224.368 151.170,230.295 124.449 C 235.350 101.661,235.440 100.816,232.882 100.115 C 231.925 99.852,199.138 99.681,134.420 99.600 C 28.382 99.467,35.870 99.644,34.612 97.241 C 33.825 95.736,33.330 12.516,34.092 9.720 C 34.673 7.586,35.603 6.521,37.210 6.152 C 39.193 5.697,383.972 5.656,385.169 6.111 M175.966 108.821 C 150.091 108.875,107.636 108.875,81.622 108.821 C 55.608 108.766,76.779 108.722,128.667 108.722 C 180.556 108.722,201.840 108.766,175.966 108.821 M180.735 144.991 C 179.413 145.394,178.766 146.116,171.634 155.164 C 166.035 162.266,160.321 169.481,152.304 179.573 C 148.329 184.577,145.792 188.088,145.958 188.357 C 146.118 188.615,146.070 188.703,145.844 188.563 C 145.295 188.224,144.060 189.684,144.413 190.256 C 144.585 190.533,144.541 190.624,144.307 190.478 C 143.770 190.147,136.792 198.920,137.142 199.485 C 137.301 199.742,137.247 199.823,137.013 199.678 C 136.474 199.345,127.972 210.042,128.323 210.610 C 128.476 210.857,128.426 210.944,128.208 210.810 C 127.996 210.679,125.945 212.939,123.650 215.832 C 121.355 218.726,116.830 224.412,113.595 228.469 C 110.061 232.902,107.824 236.025,107.991 236.295 C 108.151 236.554,108.103 236.641,107.877 236.502 C 107.327 236.162,106.092 237.623,106.445 238.194 C 106.613 238.465,106.574 238.562,106.354 238.426 C 106.145 238.297,104.765 239.694,103.288 241.531 C 96.608 249.837,76.645 275.196,70.771 282.838 C 67.204 287.478,62.325 293.824,59.929 296.939 C 57.436 300.180,55.688 302.790,55.842 303.039 C 55.996 303.289,55.941 303.369,55.712 303.227 C 55.170 302.893,54.322 303.975,54.676 304.549 C 54.843 304.818,54.798 304.908,54.569 304.766 C 54.020 304.427,52.785 305.888,53.138 306.459 C 53.307 306.733,53.266 306.827,53.039 306.686 C 52.524 306.368,45.925 314.778,46.261 315.323 C 46.416 315.573,46.348 315.638,46.095 315.482 C 45.595 315.173,22.023 344.549,22.104 345.380 C 22.133 345.675,22.027 345.837,21.868 345.738 C 21.392 345.444,20.226 346.987,20.539 347.494 C 20.712 347.773,20.668 347.862,20.431 347.716 C 20.071 347.493,14.984 353.821,7.143 364.244 C 5.466 366.473,4.298 368.371,4.451 368.618 C 4.610 368.875,4.551 368.949,4.308 368.799 C 4.071 368.653,3.080 369.715,1.982 371.294 L 0.069 374.044 0.025 378.776 L -0.020 383.509 180.335 383.509 L 360.690 383.509 360.580 337.776 C 360.460 288.005,360.498 288.865,358.312 286.446 C 355.732 283.591,359.250 283.754,301.092 283.791 C 272.531 283.809,249.028 283.908,248.862 284.010 C 247.895 284.608,161.482 283.949,160.872 283.340 C 160.729 283.196,161.071 280.888,161.632 278.211 C 162.193 275.534,162.558 273.098,162.443 272.798 C 162.327 272.497,162.365 272.333,162.526 272.433 C 162.687 272.532,163.297 270.255,163.881 267.371 C 164.465 264.488,167.099 252.044,169.734 239.719 C 172.369 227.393,174.442 217.093,174.340 216.829 C 174.239 216.565,174.296 216.294,174.468 216.228 C 174.932 216.048,176.895 206.412,176.573 205.891 C 176.400 205.611,176.462 205.545,176.738 205.716 C 177.004 205.880,177.181 205.740,177.181 205.367 C 177.181 205.025,178.123 200.312,179.274 194.894 C 183.691 174.105,185.667 164.276,185.737 162.744 C 185.777 161.869,185.963 161.247,186.149 161.360 C 186.336 161.474,186.409 161.024,186.312 160.361 C 186.214 159.699,186.256 159.156,186.405 159.156 C 186.650 159.156,187.185 156.010,187.710 151.486 C 188.291 146.478,185.225 143.623,180.735 144.991 M180.249 158.438 C 180.249 160.249,178.966 167.046,175.444 183.893 C 174.694 187.478,173.925 191.189,173.734 192.138 C 173.542 193.087,172.938 195.935,172.391 198.466 C 171.843 200.997,170.879 205.484,170.249 208.437 C 169.619 211.390,168.753 215.446,168.324 217.450 C 167.895 219.453,166.966 223.854,166.258 227.229 C 164.430 235.954,162.651 244.231,162.221 246.021 C 161.885 247.419,159.208 260.094,158.374 264.238 C 158.183 265.187,157.410 268.897,156.655 272.483 C 153.375 288.079,153.350 288.370,155.238 289.106 C 157.086 289.826,183.386 290.130,226.846 289.934 C 309.260 289.563,351.831 289.680,352.956 290.282 C 354.421 291.066,354.330 288.424,354.547 336.442 L 354.749 380.843 353.760 381.218 C 352.012 381.883,4.652 381.526,4.240 380.859 C 3.520 379.694,6.762 374.827,17.439 361.046 C 18.921 359.133,20.566 356.990,21.093 356.284 C 23.297 353.336,28.112 347.253,44.170 327.133 C 50.820 318.802,62.899 303.356,71.012 292.809 C 79.126 282.263,87.910 270.944,90.533 267.657 C 93.156 264.369,97.718 258.615,100.671 254.870 C 103.624 251.125,107.162 246.650,108.533 244.926 C 112.627 239.779,129.342 218.668,138.063 207.629 C 139.856 205.359,144.084 200.021,147.459 195.767 C 150.834 191.512,156.012 184.965,158.965 181.217 C 161.918 177.468,164.509 174.207,164.724 173.970 C 164.939 173.732,167.700 170.259,170.860 166.251 C 179.198 155.678,180.249 154.803,180.249 158.438 M337.009 284.838 C 336.429 284.926,335.479 284.926,334.899 284.838 C 334.319 284.751,334.794 284.679,335.954 284.679 C 337.114 284.679,337.589 284.751,337.009 284.838"
+                stroke="none" fill="#fafafa" fill-rule="evenodd"></path>
+            </g>
+          </svg><br><br><br></h10>
+
+      </div>
+    </div>
+  </section>
+
+  <section data-bs-version="5.1" class="mbr-section cid-ODuO7vYA8O" id="design-block-ODuO7vYA8O">
+
+
+
+
+
+    <div style="padding:1rem; background-color:#c1c1c1;" class="hidden">
+      <div class="align-center">
+        <br>Disable mouse right-click - This line is not published, it's only for ease of access to the blue gear<br>
+
+      </div>
+    </div>
+  </section>
+  <script src="{{ url_for('static', filename='bootstrap/js/bootstrap.bundle.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='smoothscroll/smooth-scroll.js') }}"></script>
+  <script src="{{ url_for('static', filename='ytplayer/index.js') }}"></script>
+  <script src="{{ url_for('static', filename='dropdown/js/navbar-dropdown.js') }}"></script>
+  <script src="{{ url_for('static', filename='vimeoplayer/player.js') }}"></script>
+  <script src="{{ url_for('static', filename='scrollgallery/scroll-gallery.js') }}"></script>
+  <script src="{{ url_for('static', filename='embla/embla.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='embla/script.js') }}"></script>
+  <script src="{{ url_for('static', filename='countdown/countdown.js') }}"></script>
+  <script src="{{ url_for('static', filename='theme/js/script.js') }}"></script>
+  <script src="{{ url_for('static', filename='formoid/formoid.min.js') }}"></script>
+  <script src="{{ url_for('static', filename='preloader.js') }}"></script>
+
+
+  <input name="animation" type="hidden">
+</body>
+
 </html>
